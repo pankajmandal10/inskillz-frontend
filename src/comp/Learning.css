@@ -1,0 +1,49 @@
+
+.flowers{
+    position: absolute;
+    margin-top: 18%; 
+    margin-left: -35%
+}
+.start{
+    text-align: left;
+    font: normal normal bold 30px/35px Roboto;
+    letter-spacing: 0px;
+    color: #143754;
+    text-transform: capitalize;
+    opacity: 1;
+    margin-bottom: 20px !important;
+}
+.option{
+    text-align: left; 
+    font: normal normal bold 30px/35px Roboto; 
+    letter-spacing: 0px;
+    color: #143754;
+    text-transform: capitalize;
+    opacity: 1
+}
+.text-learn{
+    width: 465px;
+height: 84px;
+text-align: left;
+font: normal normal 300 20px/24px Roboto;
+letter-spacing: 0px;
+color: #143754;
+opacity: 1;
+}
+/* .flowers-1{
+    margin-left: 115%;
+     margin-top: -93%
+} */
+@media only screen and (max-width: 544px) {
+    .text-learn{
+     width: 90%;
+     height: 167px;
+    }
+    /* .flowers-1{
+        margin-top: -56%;
+        margin-left: 66%;
+    } */
+    .start{
+        margin-top: -79px;
+    }
+  }

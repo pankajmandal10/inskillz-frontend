@@ -1,0 +1,59 @@
+.sidenav {
+        width: 250px;
+        top: 151px;
+        height: 900px;
+        margin-left: 100px;
+        background-color: #FFFFFF;
+        overflow-x: hidden;
+        
+       text-align: left;
+       font: normal normal 300 20px/35px Roboto;
+       letter-spacing: 0px;
+       color: #143754;
+       opacity: 1;
+        
+    }
+    .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        color: #818181;
+        display: block;
+
+        text-align: left;
+        font: normal normal 300 20px/35px Roboto;
+        letter-spacing: 0px;
+        color: #143754;
+        opacity: 1;
+      }
+      
+      .sidenav a:hover {
+        color: #FFFFFF;
+        background: #2066A2 0% 0% no-repeat padding-box;
+      }
+      
+      .main {
+        margin-left: 360px;
+        font-size: 28px;
+        padding: 0px 10px;
+        margin-top: -55%;
+        margin-bottom: 100px;
+      }
+      .numb{
+        top: 746px;
+        width: 45px;
+        height: 24px;
+        text-align: right;
+        font: normal normal normal 20px/35px Roboto;
+        letter-spacing: 0px;
+        color: #315069;
+        opacity: 1;
+      }
+      
+      @media screen and (max-width: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+        .main{
+          margin-left: 4px;
+          margin-top: 6%;
+        }
+      } 

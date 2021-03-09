@@ -1,0 +1,75 @@
+.ensure{
+    width: 440px;
+    height: 70px;
+    text-align: left;
+    font: normal normal bold 30px/35px Roboto;
+    letter-spacing: 0px;
+    color: #143754;
+    opacity: 1
+}
+.text-3{
+    width: 465px;
+    height: 84px;
+    text-align: left;
+    font: normal normal 300 20px/24px Roboto;
+    letter-spacing: 0px;
+    color: #143754;
+    opacity: 1
+}
+.pic-icon{
+    width: 57px;
+    height: 57px;
+    opacity: 1;
+}
+.interactive{
+ text-align: left;
+ font: normal normal bold 21px/24px Roboto;
+ letter-spacing: 0px;
+ color: #143754;
+ opacity: 1;
+}
+.realtime{
+text-align: left;
+font: normal normal normal 14px/19px Roboto;
+letter-spacing: 0px;
+color: #143754;
+opacity: 1;
+}
+.learn{
+    width: 170px;
+    height: 42px;
+    text-align: center;
+    background: #D3262A 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 6px;
+    opacity: 1;
+    border:none;
+    color:#FFFFFF
+}
+.animated{
+    left: 55px;
+    width: 627px;
+    height: 453px;
+    opacity: 1;
+}
+.Group-193{
+    position: absolute;
+}
+
+@media only screen and (max-width: 544px){
+    .ensure{
+    width: 100%;
+    height: 72px;
+    }
+    .text-3{
+        width: 100%;
+    height: 103px;
+    margin-top: 19px;
+    }
+    .animated{
+        height: 197px;
+    }
+    .pic-icon{
+        width: 89px;
+    }
+}

@@ -1,0 +1,48 @@
+
+.img{
+    width: 100%;
+    margin-top: -20px;
+    filter: brightness(60%);
+    background: #00000098 0% 0% no-repeat padding-box;
+    
+}
+.course-1{
+     color: #fff;
+    position:absolute; 
+    margin-top:-20%;
+    margin-left: 93px;
+    font-size: 42px; 
+    text-align: left;
+    font: normal normal bold 42px/49px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    opacity: 1;
+}
+.detail{
+    padding-top: 9px;
+    width: 40%;
+    text-align: left;
+    color: #fff;
+    position:absolute; 
+    margin-top:-17%;
+    margin-left: 97px;
+    font-size: 19px;
+}
+@media only screen and (max-width: 544px) {
+    .course{ 
+        margin-top:-21%;
+        margin-left: 12%;
+        font-size: 12px;
+    }
+    .course-1{
+        margin-left: 12%;
+        font: normal normal bold 22px/9px Roboto;
+    }
+    .detail{ 
+        margin-top:-15%;
+        margin-left: 12%;
+        line-height: 12px;
+        font-size: 8px;
+    }
+  }

@@ -1,0 +1,3 @@
+.container-fluid.nav_bg div,.video-stream.html5-main-video, .ytp-cued-thumbnail-overlay-image,#player div,video{
+    max-width: 100vw !important;
+}

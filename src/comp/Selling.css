@@ -1,0 +1,92 @@
+
+.card-head{
+    background: transparent linear-gradient(258deg, #2E5B9A 0%, #3583C5 100%) 0% 0% no-repeat;
+    /* left: 45px; */
+    width: 337px;
+    text-align:left;
+    width: 257px;
+    height: 105px;
+    margin-top: 0%;
+    position: absolute;
+    border-radius:0px 0px 3px 3px;
+    padding-left: 7px;
+        
+}
+.font{
+    color: #fff; 
+}
+.name{
+    text-align: left;
+    font: normal normal small 20px/24px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1
+}
+.instructor{
+    top: 2432px;
+    left: 104px;
+    width: 121px;
+    height: 16px;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    font-size: 12px;
+}
+.star{
+    padding-left: 56px;
+    height: 14px;
+    margin-left: -57px;
+}
+.view{
+    margin-left:25%; 
+    color:#fff;
+    font-size: 10px;
+}
+.corner{
+    border-style: solid;
+    border-color: transparent transparent transparent #183E72;
+    border-width: 9px 0 0 9px;
+    margin-left: 249px;
+    margin-top: -17px;
+    
+}
+.InfiniteCarouselScrollTrack{
+    padding:0px 35px
+}
+
+@media only screen and (max-width: 544px) {
+    .card-head{
+        left: 28px;
+        width: 80%;
+        margin-left: -27px;
+    }
+    .card-abc{
+        width: 100%; 
+    }
+    .font{ 
+        font-size:13px
+    }
+    .name{
+        font-size:10px
+    }
+    .view{
+        margin-left:15%;
+        font-size: 10px; 
+    }
+    .corner{
+        margin-left: 86.5%;
+    }
+    .InfiniteCarouselSlide{
+        width: 100% !important;
+        margin-left: 10% !important;
+    }
+    .sliderimg{
+        width:87% !important;
+        margin-left: -12%;
+
+    }
+    .slidercard{
+        width:90% !important;
+    }
+  }

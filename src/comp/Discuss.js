@@ -10,8 +10,8 @@ export default function Discuss() {
       <div className="py-5">
           <div className="card px-5 mx-5 shadow-lg p-3 mb-5 ">
              <div className="card-body py-5 my-5">
-               <p className="discuss">Let's Discuss</p>
-               <p className="text-abc" >CLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+               <p className="discuss">Want to know more from us.</p>
+               <p className="text-abc" >Would you like to know more about Inskillz? Please enter your details below and we will call you back.<br></br>Orr else you can contact us directly on our Customer Support number.</p>
              <div className="container">
                <div className="row">
                  <div className="col-sm">
@@ -35,7 +35,7 @@ export default function Discuss() {
                </div>
                <div className="col-sm">
                  <div className="form-group">
-                  <input type="text" className="form-page"   placeholder="Select the Course" />
+                  <input type="text" className="form-page"   placeholder="Enquiery Type" />
                  </div>
                </div>
              </div>

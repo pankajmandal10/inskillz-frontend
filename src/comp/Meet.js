@@ -10,8 +10,8 @@ export default class Meet extends Component {
     render() {
         return (
             <div style={{alignContent:'center'}}>
-              <p className="meet-1">Meet Them Who Will Help You</p>
-              <p className="meet">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+              <p className="meet-1">Meet Our Subject Matter Experts</p>
+              <p className="meet">Our Instructors are influencers from every walk of life.<br></br>Browse through to find your Tutor.</p>
               
                {/* first row */}
                <div className="container">

@@ -27,7 +27,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <img src={Image8} />
-                </li>f
+                </li>
               </ul>
             </div>
           </div>

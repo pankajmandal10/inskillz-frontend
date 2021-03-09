@@ -1,20 +1,21 @@
 .meet-1{
-    height: 35px;
+    /* height: 35px; */
     text-align: center;
     font: normal normal bold 30px/35px Roboto;
     letter-spacing: 0px;
     color: #143754
 }
 .meet{
-   height: 25px;
+   
    text-align: center;
-   font: normal normal medium 30px/35px Roboto;
+   font: normal normal 300 20px/24px Roboto;
    letter-spacing: 0px;
    color: #143754;
    opacity: 1;
-   margin-bottom: 7%;
+   margin-bottom: 5%;
    width:40%;
    margin-left: 30%;
+   margin-top: 15px;
 }
 .profile{
    width: 164px;

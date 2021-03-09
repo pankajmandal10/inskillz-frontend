@@ -11,7 +11,7 @@ export default class Dream extends Component {
     render() {
         return (
             <>
-        <section id="header" className="d-flex align-items-center">
+        <section id="header" className="d-flex align-items-center dreamContain">
           <div className="container-fluid nav_bg">
             <div className="row">
               <div className="col-10 mx-auto">
@@ -19,7 +19,7 @@ export default class Dream extends Component {
                   <div className="col-md-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column">
                     <p className="ensure">We Ensure Your Dream TO Be Successful</p>
                     <p className="text-3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                   Learn from Inskillz and be industry ready. Leaverage the online learning environment by using our transformaional courses. 
                     </p>
                     <ul >
                         <li>

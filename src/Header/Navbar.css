@@ -78,6 +78,14 @@ height: 21px;
     .MuiPaper-root.makeStyles-root-1.MuiPaper-elevation1.MuiPaper-rounded{
         width: 344px;
     }
+    .inskillzNav .navbar-nav>li>a{
+text-align: start;
+    }
+    .butt{
+        font-size:14px ;
+  height: 30px;
+
+    }
 }
 @media (min-width: 1200px){
     .container{

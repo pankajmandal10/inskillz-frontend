@@ -19,7 +19,8 @@
     font: normal normal 300 20px/24px Roboto;
     letter-spacing: 0px;
     color: #143754;
-    opacity: 1
+    opacity: 1;
+    margin-bottom:20px
   }
   .join{
     top: 533px;

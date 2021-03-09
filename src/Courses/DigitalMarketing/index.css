@@ -241,8 +241,8 @@ ul.inline {
   -webkit-padding-start: 0px;
 }
 
-/* ul.inline,
-li {
+
+.tabs li {
   display: inline-block;
   margin-left: 103px;
   padding: 10px;
@@ -252,7 +252,7 @@ li {
   font-weight: 300;
   cursor: pointer;
   color: #6b6d6f;
-}  */
+} 
 
 ul.inline,
 li.selected {

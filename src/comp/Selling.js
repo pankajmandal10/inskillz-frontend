@@ -34,7 +34,7 @@ export default class Selling extends Component{
                showSides={true}
                sidesOpacity={.5}
                sideSize={.1}
-               slidesToScroll={4}
+              //  slidesToScroll={4}
                slidesToShow={4}
                scrollOnDevice={true}
                >

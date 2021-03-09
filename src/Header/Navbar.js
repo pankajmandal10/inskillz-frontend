@@ -8,7 +8,7 @@ import Searchbox from "./Searchbox"
 
 export default function Navbar () {
     return (
-      <div >
+      <div className="inskillzNav" >
           <nav className="navbar navbar-expand-lg navbar-light" style={{background: "#3583c5", opacity:"1"}}>
             <div className="container">
               <Link  to="/"><img className="inskill logo" src={Inskills} /></Link>

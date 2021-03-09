@@ -1,99 +1,99 @@
-.head{
-  top: 326px;
-  left: 97px;
-  width: 525px;
-  height: 98px;
-  text-align: left;
-  font: normal normal bold 42px/49px Roboto;
-  letter-spacing: 0px;
-  color: #143754;
-  text-transform: capitalize;
-  opacity: 1
-}
-.inst{
-  top: 442px;
-  left: 99px;
-  width: 550px;
-  height: 53px;
-  text-align: left;
-  font: normal normal 300 20px/24px Roboto;
-  letter-spacing: 0px;
-  color: #143754;
-  opacity: 1
-}
-.join{
-  top: 533px;
-  left: 97px;
-  width: 170px;
-  height: 42px;
-  background: #D3262A 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 6px #00000029;
-  border-radius: 6px;
-  opacity: 1;
-  border:none;
-  color:#FFFFFF
-}
-.pic{
-  position: absolute;
-  top: 105px;
-  left: 45px;
-  width: 560px;
-  height: 359px;
-}
-.ellipse-3{
-  top: 183px;
-  left: 767px;
-  width: 519px;
-  height: 519px;
-  opacity: 1;
-}
-.group191{
-  position: absolute;
-  top: 39px;
-  left: 50px;
-  width: 604px;
-  height: 229px;
-  opacity: 1;
-}
-.flower{
-  top: 292px;
- margin-left: -77px;
- width: 123px;
- height: 203px;
- position: absolute;
- margin-left: -35%;
- margin-top: -25%
-}
-
-@media only screen and (max-width: 544px) {
-  .head{
-  width: 100%;
-  text-align: left;
-  font: normal normal bold 32px/45px Roboto;
-  color: #143754;
+ .head{
+    top: 326px;
+    left: 97px;
+    width: 525px;
+    height: 98px;
+    text-align: left;
+    font: normal normal bold 42px/49px Roboto;
+    letter-spacing: 0px;
+    color: #143754;
+    text-transform: capitalize;
+    opacity: 1
   }
   .inst{
-    margin-top: 14%;
-    height: 27%;
-    width: 100%;
+    top: 442px;
+    left: 99px;
+    width: 550px;
+    height: 53px;
+    text-align: left;
+    font: normal normal 300 20px/24px Roboto;
+    letter-spacing: 0px;
+    color: #143754;
+    opacity: 1
+  }
+  .join{
+    top: 533px;
+    left: 97px;
+    width: 170px;
+    height: 42px;
+    background: #D3262A 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 6px;
+    opacity: 1;
+    border:none;
+    color:#FFFFFF
   }
   .pic{
-    height: 163px;
-    left: -4%;
-  top: 27%;
+    position: absolute;
+    top: 105px;
+    left: 45px;
+    width: 560px;
+    height: 359px;
   }
   .ellipse-3{
-    height: 133px;
-    
+    top: 183px;
+    left: 767px;
+    width: 519px;
+    height: 519px;
+    opacity: 1;
   }
   .group191{
-    top: -35px;
-  left: 0px;
+    position: absolute;
+    top: 39px;
+    left: 50px;
+    width: 604px;
+    height: 229px;
+    opacity: 1;
   }
   .flower{
-    position: absolute;
-    margin-left: -52%;
-    margin-top: -167%;
+    top: 292px;
+   margin-left: -77px;
+   width: 123px;
+   height: 203px;
+   position: absolute;
+   margin-left: -35%;
+   margin-top: -25%
   }
-}
+
+  @media only screen and (max-width: 544px) {
+    .head{
+    width: 100%;
+    text-align: left;
+    font: normal normal bold 32px/45px Roboto;
+    color: #143754;
+    }
+    .inst{
+      margin-top: 14%;
+      height: 27%;
+      width: 100%;
+    }
+    .pic{
+      height: 163px;
+      left: -4%;
+    top: 27%;
+    }
+    .ellipse-3{
+      height: 133px;
+      
+    }
+    .group191{
+      top: -35px;
+    left: 0px;
+    }
+    .flower{
+      position: absolute;
+      margin-left: -52%;
+      margin-top: -167%;
+    }
+  }
 

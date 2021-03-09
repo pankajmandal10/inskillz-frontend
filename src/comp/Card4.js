@@ -6,9 +6,9 @@ import star from "../image/star.svg";
 export default class Card4 extends Component {
     render() {
         return (
-          <div style={{height:"290px"}} >
-            <img style={{width: "269px", height: "161px"}} alt='' src={image6} />
-            <div className="corner" style={{marginLeft: "295px", marginTop: "-23px",position: "absolute"}}></div>
+          <div style={{height:"290px",width:"249px"}} >
+            <img style={{width: "249px", height: "161px"}} alt='' src={image6} />
+            <div className="corner" style={{ marginTop: "-23px",position: "absolute"}}></div>
             <div className="card-head" style={{marginTop: "-14px"}}>
               <p className="name">Java to Javascript</p>
               <p className="instructor">By instructor Name</p>

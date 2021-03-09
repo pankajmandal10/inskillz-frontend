@@ -130,7 +130,7 @@ export default function Footer() {
                 </li>
                 
                 <li style={{fontSize:"100px", marginTop:"-42px"}}>
-                <img style={{marginLeft: "32px"}} src={fb} />
+                <img style={{marginLeft: "0px"}} src={fb} />
                 <img style={{marginLeft: "32px"}} src={inst} />
                 <img style={{marginLeft: "32px"}} src={linkedin} />
                 <img style={{marginLeft: "32px"}} src={youtube} />

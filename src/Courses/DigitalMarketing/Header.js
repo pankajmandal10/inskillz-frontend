@@ -29,7 +29,7 @@ export default function Header () {
               </Box>
               </div>
 
-            {/*  <div className="marketing-buttons" style={{left: "97px"}}>
+              <div className="marketing-buttons" style={{left: "97px"}}>
                 <Buttons name="22 Hours On Demand Videos" Group={icons1} />
               </div>
               <div className="marketing-buttons" style={{left: "272px"}}>
@@ -44,8 +44,7 @@ export default function Header () {
 
               <button className="marketing-button" style={{left: "97px", width: "247px",background: "#D3262A 0% 0% no-repeat padding-box", color: "#FFFFFF"}}> $300 Enroll Now </button>
               <button className="marketing-button" style={{left: "358px", width: "160px",background: "#FFFFFF 0% 0% no-repeat padding-box"}}>View Batches</button>
-              <button className="marketing-button" style={{left: "530px", width: "247px",background: "#FFFFFF 0% 0% no-repeat padding-box"}}><img src={pdf} />Download Brochure</button> */}
+              <button className="marketing-button" style={{left: "530px", width: "247px",background: "#FFFFFF 0% 0% no-repeat padding-box"}}><img src={pdf} />Download Brochure</button>
             </div>
         )
     }
-

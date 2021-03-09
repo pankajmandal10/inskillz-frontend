@@ -7,8 +7,8 @@ import star1 from "../image/star1.svg";
 export default class Card1 extends Component {
     render() {
         return (
-          <div style={{height:"290px"}} >
-            <img style={{width: "249px", height: "151px"}} alt='' src={image3} />
+          <div className="slidercard" style={{height:"290px",width:"249px"}} >
+            <img className="sliderimg" style={{width: "249px", height: "151px"}} alt='' src={image3} />
             <div className="corner"></div>
             <div className="card-head">
               <p className="name">Java to Javascript</p>

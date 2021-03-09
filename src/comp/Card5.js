@@ -6,7 +6,7 @@ import star from "../image/star.svg";
 export default class Card5 extends Component {
     render() {
         return (
-            <div  >
+            <div style={{width:"249px"}} >
                  <img style={{width: "249px", height: "151px"}} alt='' src={image4} />
                   <div class="card-head" style={{marginTop: "-8px"}}>
                     <p className="name">Knowledge is everything</p>

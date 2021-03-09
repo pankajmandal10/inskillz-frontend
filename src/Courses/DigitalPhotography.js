@@ -5,6 +5,7 @@ import Card3 from "../comp/Card3"
 import Card4 from "../comp/Card4"
 import InfiniteCarousel from 'react-leaf-carousel';
 import { Link } from "react-router-dom";
+ 
 
 export default class DigitalPhotography extends Component{
     render() {
@@ -37,7 +38,6 @@ export default class DigitalPhotography extends Component{
                >
                <div>
                <Link to="/digital-marketing"><Card1 /></Link>
-                
                 <Card1 />
                 <Card1 />
               </div>

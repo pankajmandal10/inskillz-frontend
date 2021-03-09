@@ -6,11 +6,12 @@ import ReactPlayer from 'react-player'
 export default class VideoPlayer extends React.Component {
     render () {
       return (
-        <div className='player-wrapper'>
+        <div stylle={{maxHeight:'300px'}} className='player-wrapper'>
           <ReactPlayer
             className='react-player'
             url='https://www.youtube.com/watch?v=TsEyQx2mpJg'
             width='100%'
+            height="300px"
           />
         </div>
       )

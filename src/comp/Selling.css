@@ -39,9 +39,10 @@
     margin-left: -57px;
 }
 .view{
-    margin-left:25%; 
+    float: right;
     color:#fff;
-    font-size: 10px;
+    margin-right: 15px;
+    font-size: 12px;
 }
 .corner{
     border-style: solid;

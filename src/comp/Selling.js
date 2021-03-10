@@ -39,11 +39,11 @@ export default class Selling extends Component{
                scrollOnDevice={true}
                >
                  
-               <Card1 />
-               <Card1 />
-               <Card1 />
-               <Card1 />
-               <Card1 />
+               <Card1 name={"Course 01"}/>
+               <Card1 name={"Course 02"} />
+               <Card1 name={"Course 03"}/>
+               <Card1 name={"Course 04"}/>
+               <Card1 name={"Course 05"}/>
                {/* <Card2 />
                <Card3 />
                <Card4 />

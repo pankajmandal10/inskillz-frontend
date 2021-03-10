@@ -11,14 +11,14 @@ export default class Card1 extends Component {
             <img className="sliderimg" style={{width: "249px", height: "151px"}} alt='' src={image3} />
             <div className="corner"></div>
             <div className="card-head">
-              <p className="name">Java to Javascript</p>
+              <p className="name">{this.props.name}</p>
               <p className="instructor">By instructor Name</p>
               <img className="star" style={{width:"27%"}} src={star} />
               <span><img className="star" style={{width:"27%"}} src={star} /></span>
               <span><img className="star" style={{width:"27%"}} src={star} /></span>
               <span><img className="star" style={{width:"27%"}} src={star} /></span>
               <span><img className="star" style={{width:"26%"}} src={star1} /></span>
-              <span className="rate" style={{color:"#ffffff", fontSize: "10px"}}> 5.0</span>
+              <span className="rate" style={{color:"#ffffff", fontSize: "12px"}}> 5.0</span>
               <span className="view">View Course</span>
             </div>
           </div>

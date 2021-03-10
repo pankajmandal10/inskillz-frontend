@@ -15,7 +15,7 @@
     padding-left: 10px;
     top: 623px;
     margin-left: 115px;
-    width:50vw;
+    width:45vw;
     height: 39px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #BEBEBE;
@@ -23,7 +23,7 @@
     opacity: 1;
 }
 .uk-search-input{
-    width: 50vw !important;
+    width: 45vw !important;
 border-radius: 10px 0px 0px 10px;
 
 }
@@ -33,7 +33,7 @@ border-radius: 10px 0px 0px 10px;
 }
 
 .uk-search-default{
-    width: 50vw !important;
+    width: 45vw !important;
 margin-left: 5vw;
 border-radius: 10px 0px 0px 10px;
 

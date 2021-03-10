@@ -21,13 +21,13 @@
 }
 .detail{
     padding-top: 9px;
-    width: 40%;
+    width: 45%;
     text-align: left;
     color: #fff;
     position:absolute; 
     margin-top:-17%;
     margin-left: 97px;
-    font-size: 19px;
+    font-size: 22px;
 }
 @media only screen and (max-width: 544px) {
     .course{ 

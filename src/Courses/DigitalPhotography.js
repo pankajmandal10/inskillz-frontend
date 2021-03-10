@@ -5,73 +5,70 @@ import Card3 from "../comp/Card3"
 import Card4 from "../comp/Card4"
 import InfiniteCarousel from 'react-leaf-carousel';
 import { Link } from "react-router-dom";
- 
 
-export default class DigitalPhotography extends Component{
-    render() {
-        return(
-            <div>
-              <InfiniteCarousel
-                breakpoints={[
-                {
-                  breakpoint: 500,
-                  settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 2,
-                  },
-                },
-                {
-                 breakpoint: 768,
-                 settings: {
-                   slidesToShow: 3,
-                   slidesToScroll: 3,
-                 },
-                },
-               ]}
-               dots={true}
-               showSides={true}
-               sidesOpacity={.5}
-               sideSize={.1}
-               slidesToScroll={4}
-               slidesToShow={3}
-               scrollOnDevice={true}
-               >
-               <div>
-               <Link to="/digital-marketing"><Card1 /></Link>
-                <Card1 />
-                <Card1 />
-              </div>
-                 
-               
-               <div>
-                <Card2 />
-                <Card2 />
-                <Card2 />
-               </div>
-        
 
-              <div>
-                <Card3 />
-                <Card3 />
-                <Card3 />
-              </div>
-                
-              
-              <div>
-                <Card4 />
-                <Card4 />
-                <Card4 />
-              </div>
+export default class DigitalPhotography extends Component {
+  render() {
+    return (
+      <div class="photoContain">
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="true">
 
-              <div>
-                <Card1 />
-                <Card1 />
-                <Card1 />
+          <ul class="uk-slideshow-items">
+            <li>
+              <div className='uk-width-1-1 uk-grid uk-child-width-1-3'>
+                <div>
+                <Card1></Card1>
+                </div>
+                <div>
+                <Card1></Card1>
+                </div>
+                <div>
+                <Card1></Card1>
+                </div>
+                <div>
+                <Card1></Card1>
+                </div>
+                <div>
+                <Card1></Card1>
+                </div>
+                <div>
+                <Card1></Card1>
+                </div>
+                <div>
+                <Card1></Card1>
+                </div>
+                <div>
+                <Card1></Card1>
+                </div>
+                <div>
+                <Card1></Card1>
+                </div>
               </div>
+            </li>
+            <li>
+              <div className='uk-width-1-1 uk-grid uk-child-width-1-3'>
+                <Card1></Card1>
+                <Card1></Card1>
+                <Card1></Card1>
 
-              </InfiniteCarousel>
-              
-           </div>
-        )
-    }
+              </div>
+            </li>
+            <li>
+              <div className='uk-width-1-1 uk-grid uk-child-width-1-3'>
+                <Card1></Card1>
+                <Card1></Card1>
+                <Card1></Card1>
+
+              </div>
+            </li>
+          </ul>
+
+          <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+          <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+        </div>
+
+      </div>
+    )
+  }
 }

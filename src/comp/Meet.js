@@ -15,43 +15,44 @@ export default class Meet extends Component {
               
                {/* first row */}
                <div className="container">
-                  <div className="row m-5" >
-                     <div className="col-sm text-center">
+                  <div className="uk-child-width-1-4 uk-grid" >
+                     <div className="uk-text-center">
                          <div className="image_div" >
-                             <img src={meet1} className="profile" alt="..."/>
+                             <img src="http://pngimg.com/uploads/question_mark/question_mark_PNG99.png" className="profile" alt="..."/>
                          </div>
-                         <p className="title-2">Selena</p>
-                         <p className="position">Graphic Designer</p>
-                         <p className="text-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                         <p className="title-2">Name Of Institute/ Tutor</p>
+                         <p className="position">Subject / Specialization</p>
+                         <p className="text-1">Brief Profile : </p>
                      </div>
-                     <div className="col-sm text-center">
+                     <div className="uk-text-center">
                          <div className="image_div">
-                             <img src={meet2} className="profile" alt="..." />
+                             <img src="http://pngimg.com/uploads/question_mark/question_mark_PNG99.png" className="profile" alt="..." />
                          </div>
-                         <p className="title-2">Eric Johnson</p>
-                         <p className="position">Frontend Developer</p>
-                         <p className="text-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                         <p className="title-2">Name Of Institute/ Tutor</p>
+                         <p className="position">Subject / Specialization</p>
+                         <p className="text-1">Brief Profile : </p>
                      </div>
-                     <div className="col-sm text-center">
+                     <div className="uk-text-center">
                          <div className="image_div">
-                             <img src={meet3} className="profile" alt="..." />
+                             <img src="http://pngimg.com/uploads/question_mark/question_mark_PNG99.png" className="profile" alt="..." />
                          </div>
-                         <p className="title-2">Kristina Smith</p>
-                         <p className="position" >Fullstack Developer</p>
-                         <p className="text-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                         <p className="title-2">Name Of Institute/ Tutor</p>
+                         <p className="position">Subject / Specialization</p>
+                         <p className="text-1">Brief Profile : </p>
                      </div>
-                     <div className="col-sm text-center">
+                     <div className="uk-text-center">
                          <div className="image_div">
-                             <img src={meet4} className="profile" alt="..." />
+                             <img src="http://pngimg.com/uploads/question_mark/question_mark_PNG99.png" className="profile" alt="..." />
                          </div> 
-                         <p className="title-2">Erich Carpenter</p>
-                         <p className="position">Marketing Head</p>
-                         <p className="text-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                         <p className="title-2">Name Of Institute/ Tutor</p>
+                         <p className="position">Subject / Specialization</p>
+                         <p className="text-1">Brief Profile : </p>
                      </div>
-                     <div className="mt-3">
+                    
+                  </div>
+                  <div className="mt-3">
                       <button className="view-all-1"  type="submit">View All</button>
                     </div>
-                  </div>
                </div>
           </div>
         )

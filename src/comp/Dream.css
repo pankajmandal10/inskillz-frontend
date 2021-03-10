@@ -23,6 +23,7 @@
     width: 57px;
     height: 57px;
     opacity: 1;
+    margin-top: 8px;
 }
 .interactive{
  text-align: left;
@@ -30,6 +31,7 @@
  letter-spacing: 0px;
  color: #143754;
  opacity: 1;
+ margin-bottom:8px !important;
 }
 .realtime{
 text-align: left;

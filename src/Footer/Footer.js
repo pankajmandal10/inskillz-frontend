@@ -40,13 +40,13 @@ export default function Footer() {
               <h4 className="footer-widget-title" style={{color:"#143754",font:"normal normal bold 25px/29px Roboto"}}> General </h4>
               <ul className="text-info" >
                 <li >
-                  <a to="#" style={{color:"#143754"}}>SignUp</a>
+                  <a to="#" style={{color:"#143754"}}>Sign Up</a>
                 </li>
                 <li>
                   <a to="#" style={{color:"#143754"}}>About Us</a>
                 </li>
                 <li>
-                  <a to="#" style={{color:"#143754"}}>Tech On Inskillz</a>
+                  <a to="#" style={{color:"#143754"}}>Teach On Inskillz</a>
                 </li>
                 <li>
                   <a to="#" style={{color:"#143754"}}>Contact Us</a>
@@ -122,7 +122,7 @@ export default function Footer() {
               <ul>
                 <li >
                   <a to="#" >
-                    <p style={{color:"#143754",font: "normal normal normal 15px/24px Roboto"}}>FutureLabs Interactive Pvt. Ltd <br/> No 6/858-M 2nd Floor Valamkottil Towers, Judgemukku, Kakkanad, kochi</p>
+                    <p style={{color:"#143754",font: "normal normal normal 15px/24px Roboto"}}>FutureLabs Interactive Pvt. Ltd <br/> No 6/858-M , 2nd Floor , Valamkottil Towers, Judgemukku,<br></br> Kakkanad, Kochi ,Kerala</p>
                   </a>
                 </li>
                 <li>
@@ -131,9 +131,9 @@ export default function Footer() {
                 
                 <li style={{fontSize:"100px", marginTop:"-42px"}}>
                 <img style={{marginLeft: "0px"}} src={fb} />
-                <img style={{marginLeft: "32px"}} src={inst} />
-                <img style={{marginLeft: "32px"}} src={linkedin} />
-                <img style={{marginLeft: "32px"}} src={youtube} />
+                <img style={{marginLeft: "30px"}} src={inst} />
+                <img style={{marginLeft: "30px"}} src={linkedin} />
+                <img style={{marginLeft: "30px"}} src={youtube} />
                 </li>
               </ul>
             </div>

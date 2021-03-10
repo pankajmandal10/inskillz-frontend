@@ -24,7 +24,7 @@ export default class Home extends React.Component {
                     <button className="join" >Join For Free</button>
                   </div>
 
-                  <div className="col-lg-6 order-1 order-lg-2 header-img py-5 my-5">
+                  <div className="col-lg-6 order-1 order-lg-2 header-img py-3 my-3">
                   <img src={Ellipse3} className="ellipse-3" />
                   <img src={Group191} className="group191" />
                     <img

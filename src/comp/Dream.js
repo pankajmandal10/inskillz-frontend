@@ -55,7 +55,7 @@ export default class Dream extends Component {
                         <li>
                         <div class="card mb-2" style={{maxWidth: "340px",border:"0"}}>
                           <div class="row g-0">
-                           <div class="col-md-2 py-5">
+                           <div class="col-md-2 py-33">
                              <img className="pic-icon" src={Group7} alt="..." />
                            </div>
                            <div class="col-md-10">

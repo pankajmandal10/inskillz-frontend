@@ -6,10 +6,19 @@
     height: 78px;
     
 }
+.beta{
+    width: 100vw;
+    background-color:rgb(197, 197, 7);
+    color: black;
+    padding-top: 10px;
+    height: 40px;
+    font-weight: bold;
+
+}
 .inskill{
   top: 14px;
   left: 95px;
-  width: 178px;
+  /* width: 178px; */
   min-width: 13vw;
   margin-right: 3vw;
   height: 43px;

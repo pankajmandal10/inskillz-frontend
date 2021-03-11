@@ -10,7 +10,7 @@ export default function Discuss() {
       <div className="py-5">
           <div className="card px-3 mx-3 shadow-lg p-2 mb-5 ">
              <div className="card-body py-5 my-5">
-               <p className="discuss">Want to know more from us.</p>
+               <p className="discuss">Want to KNOW MORE from us </p>
                <p className="text-abc" >Would you like to know more about Inskillz? Please enter your details below and get a call back from us.<br></br>Also you can contact us directly on our Customer Support number.</p>
              <div className="container">
                <div className="row">

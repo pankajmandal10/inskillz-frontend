@@ -19,10 +19,11 @@ export default class Learning extends Component {
 
                   <div className="col-lg-7 order-1 order-lg-2 header-img py-5 my-5">
                     <div >
-                      <p className="start">Start Learning from Inskillz and<br></br>
-                  Expand your career opportunities</p>
+                      <p className="start">Start learning from Inskillz and <br></br>
+                             expand your CAREER OPPORTUNITIES
+                      </p>
                       <p className="text-learn">
-                        With more than 100+ Online Courses and Interactive Classes, your learning experience with us is packed with cutting edge technology.And which will help you to achieve your goals and ambitions.
+                      Taking advantage of cutting edge technology, we offer you an impeccable learning experience with more than 100+ Online Courses & Interactive Classes on Inskillz. 
                      </p>
                     </div>
                   </div>

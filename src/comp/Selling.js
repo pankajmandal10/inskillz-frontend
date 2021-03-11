@@ -5,6 +5,13 @@ import Card2 from "./Card2"
 import Card3 from "./Card3"
 import Card4 from "./Card4"
 import Card5 from "./Card5"
+import image6 from "../image/image6.png"
+import image2 from "../image/image2.png"
+import image3 from "../image/image3.png"
+import image4 from "../image/image4.png"
+import image5 from "../image/image5.png"
+
+
 import InfiniteCarousel from 'react-leaf-carousel';
  
 
@@ -39,11 +46,11 @@ export default class Selling extends Component{
                scrollOnDevice={true}
                >
                  
-               <Card1 name={"Course 01"}/>
-               <Card1 name={"Course 02"} />
-               <Card1 name={"Course 03"}/>
-               <Card1 name={"Course 04"}/>
-               <Card1 name={"Course 05"}/>
+               <Card1 name={"Course 01"} img={image3}/>
+               <Card1 name={"Course 02"} img={image2} />
+               <Card1 name={"Course 03"} img={image5}/>
+               <Card1 name={"Course 04"} img={image6}/>
+               <Card1 name={"Course 05"} img={image4}/>
                {/* <Card2 />
                <Card3 />
                <Card4 />

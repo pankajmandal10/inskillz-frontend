@@ -62,9 +62,11 @@ height: 25px;
   .cont {
     width: 100%;
     margin-bottom: 84px;
+    text-align: center;
   }
   .pro{
     margin-top: -103px;
+    text-align: center !important;
   }
   .Group-192{
     left: 16px;

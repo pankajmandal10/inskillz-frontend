@@ -10,12 +10,13 @@ export default class Meet extends Component {
     render() {
         return (
             <div style={{alignContent:'center'}}>
-              <p className="meet-1">Meet Our Subject Matter Experts</p>
-              <p className="meet">Our Instructors are influencers from every walk of life.<br></br>Browse through to find your Tutor.</p>
+              <p className="meet-1">Meet our subject matter EXPERTS </p>
+              <p className="meet">Our Instructors are influencers from every walks of life. <br></br>
+Browse through to find your Tutor. </p>
               
                {/* first row */}
                <div className="container">
-                  <div className="uk-child-width-1-4 uk-grid" >
+                  <div className="uk-child-width-1-4@s uk-grid" >
                      <div className="uk-text-center">
                          <div className="image_div" >
                              <img src="http://pngimg.com/uploads/question_mark/question_mark_PNG99.png" className="profile" alt="..."/>

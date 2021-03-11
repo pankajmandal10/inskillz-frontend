@@ -66,6 +66,12 @@ opacity: 1;
     width: 100%;
     height: auto;
     }
+    .interactive,.realtime{
+        text-align: center;
+    }
+    .learn{
+        align-self: center;
+    }
     .text-3{
         width: 100%;
     height: 103px;

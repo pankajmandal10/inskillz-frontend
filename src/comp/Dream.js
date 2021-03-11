@@ -17,9 +17,9 @@ export default class Dream extends Component {
               <div className="col-10 mx-auto">
                 <div className="row">
                   <div className="col-md-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column">
-                    <p className="ensure">We Ensure Your Dream TO Be Successful</p>
+                    <p className="ensure">We ensure your dream to be SUCCESSFUL </p>
                     <p className="text-3">
-                   Learn from Inskillz and be industry ready. Leaverage the online learning environment by using our transformaional courses. 
+                    Learn from Inskillz and be industry ready. Leaverage the online learning environment by using our transformational courses.  
                     </p>
                     <ul >
                         <li>
@@ -30,8 +30,8 @@ export default class Dream extends Component {
                            </div>
                            <div class="col-md-10">
                             <div class="card-body">
-                              <p className="interactive">Interactive Classess</p>
-                              <p className="realtime">Realtime interactive classes for all the courses</p>
+                              <p className="interactive">Interactive Classes </p>
+                              <p className="realtime">Real-time interactive classes for all the courses </p>
                             </div>
                            </div>
                           </div>
@@ -45,8 +45,8 @@ export default class Dream extends Component {
                            </div>
                            <div class="col-md-10">
                             <div class="card-body">
-                              <p className="interactive">Expert Instructors</p>
-                              <p className="realtime">Learn from industry Experts</p>
+                              <p className="interactive">Expert Instructors </p>
+                              <p className="realtime">Learn from Industry Experts </p>
                             </div>
                            </div>
                           </div>
@@ -60,8 +60,8 @@ export default class Dream extends Component {
                            </div>
                            <div class="col-md-10">
                             <div class="card-body">
-                              <p className="interactive">Learn</p>
-                              <p className="realtime">Realtime interactive classes for all the courses</p>
+                              <p className="interactive">Learn from Home </p>
+                              <p className="realtime">Save your time & money by learning from home. </p>
                             </div>
                            </div>
                           </div>

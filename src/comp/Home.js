@@ -10,6 +10,8 @@ export default class Home extends React.Component {
   render() {
     return (
       <>
+          <div className="betatag"><h3>Beta</h3></div>
+
         <section id="header" className="d-flex align-items-center">
           <div className="container-fluid nav_bg">
             <div className="row">
@@ -19,8 +21,8 @@ export default class Home extends React.Component {
                                 
                   <div className="col-md-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column">
                   <div className="col-1" ><img className="flower" src={Path} /></div>
-                    <p className="head">Courses That Are Designed For Your Success</p>
-                    <p className="inst">Molding your inner skills with Online Courses from world-class Institutes and Tutors.</p>
+                    <p className="head">Courses that are designed for your SUCCESS </p>
+                    <p className="inst">Molding your inner skills with Online Courses from World-Class Institutes and Tutors. </p>
                     <button className="join" >Join For Free</button>
                   </div>
 

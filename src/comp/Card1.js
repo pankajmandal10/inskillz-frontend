@@ -8,7 +8,7 @@ export default class Card1 extends Component {
     render() {
         return (
           <div className="slidercard" style={{height:"290px",width:"249px"}} >
-            <img className="sliderimg" style={{width: "249px", height: "151px"}} alt='' src={image3} />
+            <img className="sliderimg" style={{width: "249px", height: "151px"}} alt='' src={this.props.img} />
             <div className="corner"></div>
             <div className="card-head">
               <p className="name">{this.props.name}</p>

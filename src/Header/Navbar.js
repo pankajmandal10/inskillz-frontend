@@ -9,7 +9,7 @@ import Searchbox from "./Searchbox"
 export default function Navbar () {
     return (
       <div className="inskillzNav" >
-        <div className="beta">This site is under Development , some functionalities may not work properly.</div>
+        <div className="beta uk-visible@s">This site is under Development , some functionalities may not work properly.</div>
           <nav className="navbar navbar-expand-lg navbar-light" style={{background: "#3583c5", opacity:"1"}}>
             <div className="container">
               <Link  to="/"><img className="inskill logo" src={Inskills} /></Link>

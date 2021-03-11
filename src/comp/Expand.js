@@ -24,11 +24,11 @@ export default class Expand extends Component {
                   </div>
 
                   <div className="col-lg-6 order-1 order-lg-2 header-img px-5 py-5 my-5">
-                    <p className="pro">Join Inskillz as an Instructor</p>
+                    <p className="pro">Join Inskillz as an INSTRUCTOR </p>
                     <p className="cont">
-                    Earn while your students learn the skills.Create your own teaching platform with us.Top Institutes and Independent Tutors teacj millions  of studens on Inskillz.
+                    Earn while your students learn the skills. Create your own teaching platform with us. Top Institutes and Independent Tutors teach millions of students on Inskillz. 
                     </p>
-                    <button className="buttons" type="submit">Start teaching with us</button>
+                    <button className="buttons" type="submit">Start Teaching With Us </button>
                   </div>
                 </div>
               </div>

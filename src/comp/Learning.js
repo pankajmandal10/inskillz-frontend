@@ -17,7 +17,7 @@ export default class Learning extends Component {
                     <div><VideoPlayer /></div>
                   </div>
 
-                  <div className="col-lg-7 order-1 order-lg-2 header-img py-5 my-5">
+                  <div className="col-lg-7 order-1 order-lg-2 header-img py-5 my-5 pb-0 mb-0 pb-md-5 mb-md-5">
                     <div >
                       <p className="start">Start learning from Inskillz and <br></br>
                              expand your CAREER OPPORTUNITIES

@@ -7,7 +7,7 @@ export default class Featured extends Component {
             <div className="card ">
               <div className="card-body py-3 my-5">
               <p className="featured">Featured Courses</p>
-                 <div className="row row-cols-2 row-cols-md-4 g-4 pt-3 mt-5">
+                 <div className="row row-cols-2 row-cols-md-4 g-4 pt-3 mt-5 uk-hidden">
                      <div className="col">
                         <p className="featured-1" >Illustration</p>
                      </div>

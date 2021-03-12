@@ -22,7 +22,8 @@
    height: 143px;
    opacity: 1;
    background: #E7F3FE;
-   border-radius:36%
+   border-radius:36%;
+   margin-bottom: 10px;
 }
 .position{
    height: 21px;

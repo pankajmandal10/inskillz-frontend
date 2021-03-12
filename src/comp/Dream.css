@@ -65,6 +65,7 @@ opacity: 1;
     .ensure{
     width: 100%;
     height: auto;
+    text-align: center;
     }
     .interactive,.realtime{
         text-align: center;
@@ -82,5 +83,8 @@ opacity: 1;
     }
     .pic-icon{
         width: 89px;
+    }
+    .dreamContain{
+        padding-top: 0vh;
     }
 }

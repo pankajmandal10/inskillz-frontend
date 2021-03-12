@@ -29,5 +29,10 @@
     opacity: 1;
     border:none;
     color:#ffffff;
-    margin-top: 10vh;
+    margin-top: 8vh;
+}
+@media only screen and (max-width: 544px) {
+    .view-all-1{
+        margin-top:0vh;
+    }
 }

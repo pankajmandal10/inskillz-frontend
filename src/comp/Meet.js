@@ -4,7 +4,7 @@ import meet1 from "../image/meet1.png"
 import meet2 from "../image/meet2.png"
 import meet3 from "../image/meet3.png"
 import meet4 from "../image/meet4.png"
-
+import profile from '../image/profile.png'
 
 export default class Meet extends Component {
     render() {
@@ -19,7 +19,7 @@ Browse through to find your Tutor. </p>
                   <div className="uk-child-width-1-4@s uk-grid" >
                      <div className="uk-text-center">
                          <div className="image_div" >
-                             <img src="http://pngimg.com/uploads/question_mark/question_mark_PNG99.png" className="profile" alt="..."/>
+                             <img src={profile} className="profile" alt="..."/>
                          </div>
                          <p className="title-2">Name Of Institute/ Tutor</p>
                          <p className="position">Subject / Specialization</p>
@@ -27,7 +27,7 @@ Browse through to find your Tutor. </p>
                      </div>
                      <div className="uk-text-center">
                          <div className="image_div">
-                             <img src="http://pngimg.com/uploads/question_mark/question_mark_PNG99.png" className="profile" alt="..." />
+                             <img src={profile} className="profile" alt="..." />
                          </div>
                          <p className="title-2">Name Of Institute/ Tutor</p>
                          <p className="position">Subject / Specialization</p>
@@ -35,7 +35,7 @@ Browse through to find your Tutor. </p>
                      </div>
                      <div className="uk-text-center">
                          <div className="image_div">
-                             <img src="http://pngimg.com/uploads/question_mark/question_mark_PNG99.png" className="profile" alt="..." />
+                             <img src={profile} className="profile" alt="..." />
                          </div>
                          <p className="title-2">Name Of Institute/ Tutor</p>
                          <p className="position">Subject / Specialization</p>
@@ -43,7 +43,7 @@ Browse through to find your Tutor. </p>
                      </div>
                      <div className="uk-text-center">
                          <div className="image_div">
-                             <img src="http://pngimg.com/uploads/question_mark/question_mark_PNG99.png" className="profile" alt="..." />
+                             <img src={profile} className="profile" alt="..." />
                          </div> 
                          <p className="title-2">Name Of Institute/ Tutor</p>
                          <p className="position">Subject / Specialization</p>

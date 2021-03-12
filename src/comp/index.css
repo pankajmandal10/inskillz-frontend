@@ -76,6 +76,7 @@
     right: 20px;
     opacity: .5;
     position: absolute;
+    z-index: 1000;
 }
 .betatag h3{
   color: white;

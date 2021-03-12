@@ -16,7 +16,7 @@ export default class Dream extends Component {
             <div className="row">
               <div className="col-10 mx-auto">
                 <div className="row">
-                  <div className="col-md-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column">
+                  <div className="col-md-6 pt-md-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column">
                     <p className="ensure">We ensure your dream to be SUCCESSFUL </p>
                     <p className="text-3">
                     Learn from Inskillz and be industry ready. Leaverage the online learning environment by using our transformational courses.  
@@ -73,7 +73,7 @@ export default class Dream extends Component {
               
                   </div>
 
-                  <div className="col-lg-6 order-1 order-lg-2 header-img py-5 my-5">
+                  <div className="col-lg-6 order-1 order-lg-2 header-img py-5 my-5 mb-0 mb-md-5">
                     {/* <img src={Ellipse6} /> */}
                     <img src={Group193} className="Group-193" />
                     <img

@@ -7,13 +7,13 @@ import Group192 from "../image/Group192.svg"
 export default class Expand extends Component {
     render() {
         return (
-            <div className="py-5 my-5">
+            <div className="py-0 my-0 py-md-5 my-md-5 pt-5 ">
         <section id="header" className="d-flex align-items-center">
           <div className="container-fluid nav_bg">
             <div className="row">
               <div className="col-10 mx-auto">
                 <div className="row">
-                  <div className="col-md-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column">
+                  <div className="col-md-6 pt-5 pt-lg-0  order-1 order-lg-1 d-flex justify-content-center flex-column">
                   <img src={Ellipse4} className="ellipse-4" />
                   <img src={Group192} className="Group-192" />
                   <img
@@ -23,7 +23,7 @@ export default class Expand extends Component {
                     />
                   </div>
 
-                  <div className="col-lg-6 order-1 order-lg-2 header-img px-5 py-5 my-5">
+                  <div className="col-lg-6 order-2 order-lg-2 header-img px-5 py-5 my-5">
                     <p className="pro">Join Inskillz as an INSTRUCTOR </p>
                     <p className="cont">
                     Earn while your students learn the skills. Create your own teaching platform with us. Top Institutes and Independent Tutors teach millions of students on Inskillz. 

@@ -35,7 +35,7 @@ export default function Discuss() {
                </div>
                <div className="col-sm">
                  <div className="form-group">
-                  <input type="text" className="form-page"   placeholder="Enquiery Type" />
+                  <input type="text" className="form-page"   placeholder="Enquiry Type" />
                  </div>
                </div>
              </div>

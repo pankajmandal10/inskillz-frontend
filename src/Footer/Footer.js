@@ -122,7 +122,7 @@ export default function Footer() {
                   <ul>
                     <li >
                       <a to="#" >
-                        <p style={{ color: "#143754", font: "normal normal normal 15px/24px Roboto" }}>FutureLabs Interactive Pvt. Ltd <br /> No 6/858-M , 2nd Floor , Valamkottil Towers, Judgemukku,<br></br> Kakkanad, Kochi ,Kerala <br></br><br></br>Phone <i  className="fas fa-phone uk-margin-left"></i> : +91-484-2388023 <br></br>
+                        <p style={{ color: "#143754", font: "normal normal normal 15px/24px Roboto" }}>FutureLabs Interactive Pvt. Ltd <br /> No 6/858-M , 2nd Floor ,<br></br> Valamkottil Towers, Judgemukku,<br></br> Kakkanad, Kochi ,Kerala. <br></br><br></br>Phone <i  className="fas fa-phone uk-margin-left"></i> : +91-484-2388023 <br></br>
                           Support <i className="fas fa-question-circle uk-margin-small-left"></i> :	+91-9037310060</p>
                       </a>
                     </li>
@@ -130,11 +130,11 @@ export default function Footer() {
                       <img style={{ width: "261px", height: "151px" }} src={Map} />
                     </li>
 
-                    <li style={{ fontSize: "100px", marginTop: "-42px" }}>
-                      <img style={{ marginLeft: "0px" }} src={fb} />
-                      <img style={{ marginLeft: "30px" }} src={inst} />
-                      <img style={{ marginLeft: "30px" }} src={linkedin} />
-                      <img style={{ marginLeft: "30px" }} src={youtube} />
+                    <li style={{ fontSize: "100px", marginTop: "-52px" }}>
+                      <a href="https://www.facebook.com/inskillz/" target="_blank"><img style={{ marginLeft: "0px" }} src={fb} /></a>
+                      <a href="https://www.instagram.com/inskillz/" target="_blank"><img style={{ marginLeft: "30px" }} src={inst} /></a>
+                      <a href="www.linkedin.com/in/inskillz" target="_blank"><img style={{ marginLeft: "30px" }} src={linkedin} /></a>
+                      <a href="https://www.youtube.com/channel/UC4Yj5pz_tbTwIL6NJLD7kqg" target="_blank"><img style={{ marginLeft: "30px" }} src={youtube} /></a>
                     </li>
                   </ul>
                 </div>

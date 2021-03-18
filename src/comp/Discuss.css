@@ -38,6 +38,12 @@
     width:60%;
     margin-bottom: 12%;
 }
+.query{
+    margin-top: 5%;
+    margin-left: 20%;
+    width:60%;
+    margin-bottom: 5%; 
+}
 .imag{
     position: absolute;
     margin-left: -33%;
@@ -50,8 +56,15 @@
 .dis .form-group{
     margin-top: 15px;
 }
+.query .form-group{
+    margin-top: 15px;
+}
 @media only screen and (max-width: 544px) {
     .dis{
+        margin-left: 0%;
+        width: 100%
+    }
+    .query{
         margin-left: 0%;
         width: 100%
     }

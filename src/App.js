@@ -8,6 +8,7 @@ import Courses from "./Courses/Courses"
 import Teach from "./Teach/Teach"
 import Contact from "./Contact/Contact"
 import DigitalMarketing from './Courses/DigitalMarketing/DigitalMarketing';
+import UserDetails from './Courses/ProfileDetails/UserDetails';
 
 function App() {
   return (
@@ -18,8 +19,10 @@ function App() {
         <Route exact path="/" component={Page} />
         <Route exact path="/courses" component={Courses} />
         <Route exact path="/teach-on-inskills" component={Teach} />
-        <Route exact path="/contact" component={Contact} />
+        {/* <Route exact path="/contact" component={Contact} /> */}
         <Route exact path="/digital-marketing" component={DigitalMarketing} />
+        <Route exact path="/profile-details" component={UserDetails} />
+
       </Switch>
       <Footer />
     </BrowserRouter>

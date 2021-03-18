@@ -7,7 +7,7 @@ export default function Offered() {
         <div className="box" >
         <img className="img" src={imag1} />
         <p className="course-1">Courses Offered</p> 
-        <p className="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        <p className="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
         </div>
         
     )

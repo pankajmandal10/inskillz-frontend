@@ -30,66 +30,67 @@ export default class categories extends Component {
                             <div class="uk-width-auto">
                                 <ul class="uk-tab-left" uk-tab="connect: #my-id">
                                     <li>
-                                    <a style={{padding:"0px"}}>
-                                        <ul uk-accordion="true">
-                                            
-                                        <li>
-                                            <a class="uk-accordion-title" href="#">ALL</a>
-                                            <div class="uk-accordion-content">
-                                            <a style={{ justifyContent: 'space-between', display: 'flex' }}>Photography  <span className="numb" >23</span></a>
-                                            <a style={{ justifyContent: 'space-between', display: 'flex' }}>Photography  <span className="numb" >23</span></a> </div>
-                                        </li></ul>
+                                        <a style={{ padding: "0px" }}>
+                                            <ul uk-accordion="true">
+
+                                                <li>
+                                                    <a class="uk-accordion-title" href="#">ALL</a>
+                                                    <div class="uk-accordion-content">
+                                                        <a style={{ justifyContent: 'space-between', display: 'flex' }}>Photography  <span className="numb" >23</span></a>
+                                                        <a style={{ justifyContent: 'space-between', display: 'flex' }}>Photography  <span className="numb" >23</span></a> </div>
+                                                </li></ul>
                                         </a>
-                                        </li>
-                                        {/* <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>All  <span className="numb" >1234</span></a></li> */}
-                            <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Photography  <span className="numb" >23</span></a></li>
-                            <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Illustration  <span className="numb" >33</span></a></li>
-                            <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Graphic-Design  <span className="numb" >12</span></a></li>
-                            <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>UI UX Design  <span className="numb" >15</span></a></li>
-                            <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Motion Graphics  <span className="numb" >12</span></a></li>
-                            <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Web Development  <span className="numb" >45</span></a></li>
-                            <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >06</span></a></li>
-                            <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Graphic Design  <span className="numb" >32</span></a></li>
-                            <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>UI UX Design  <span className="numb" >45</span></a></li>
-                            <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Motion Graphics  <span className="numb" >34</span></a></li>
-                            <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Web Development  <span className="numb" >23</span></a></li>
-                            <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Web Development  <span className="numb" >23</span></a></li>
-                            <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
-                            <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
-                            <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
-                            <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
-                            <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
-                            <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Web Development  <span className="numb" >23</span></a></li>
-                            <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
-                            <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
-                            <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
-                            <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
-                            <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
-                            <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
-                        </ul>
-                    </div>
-
-                            </div>
-
-
-                       <hr></hr>
-                        </div>
-
-                        <div className="uk-width-3-4" >
-                            <div class="uk-width-expand">
-                                <ul id="my-id" class="uk-switcher">
-                                    <BrowserRouter>
-                                        <Switch>
-                                            <Route path="/" component={DigitalPhotography} />
-
-                                        </Switch>
-                                    </BrowserRouter>
+                                    </li>
+                                    {/* <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>All  <span className="numb" >1234</span></a></li> */}
+                                    <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Photography  <span className="numb" >23</span></a></li>
+                                    <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Illustration  <span className="numb" >33</span></a></li>
+                                    <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Graphic-Design  <span className="numb" >12</span></a></li>
+                                    <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>UI UX Design  <span className="numb" >15</span></a></li>
+                                    <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Motion Graphics  <span className="numb" >12</span></a></li>
+                                    <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Web Development  <span className="numb" >45</span></a></li>
+                                    <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >06</span></a></li>
+                                    <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Graphic Design  <span className="numb" >32</span></a></li>
+                                    <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>UI UX Design  <span className="numb" >45</span></a></li>
+                                    <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Motion Graphics  <span className="numb" >34</span></a></li>
+                                    <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Web Development  <span className="numb" >23</span></a></li>
+                                    <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Web Development  <span className="numb" >23</span></a></li>
+                                    <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
+                                    <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
+                                    <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
+                                    <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
+                                    <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
+                                    <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Web Development  <span className="numb" >23</span></a></li>
+                                    <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
+                                    <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
+                                    <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
+                                    <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
+                                    <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
+                                    <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
                                 </ul>
                             </div>
 
                         </div>
+
+
+                        <hr></hr>
+                    </div>
+
+                    <div className="uk-width-3-4" >
+                        <div class="uk-width-expand">
+                            <ul id="my-id" class="uk-switcher">
+                                {/* <BrowserRouter>
+                                        <Switch>
+                                            <Route path="/" component={DigitalPhotography} />
+
+                                        </Switch>
+                                    </BrowserRouter> */}
+                                <DigitalPhotography></DigitalPhotography>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
+            </div>
         )
     }
 }

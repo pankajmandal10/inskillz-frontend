@@ -1,0 +1,539 @@
+.card-user{
+    width: 21.5vw;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 6px 13px #00000029;
+    border-radius: 10px;
+    margin-left: 7vw;
+    opacity: 1;
+    padding-bottom: 20px;
+}
+.fullHeight{
+height: 100%;
+}
+.progress-card .card-body{
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+.fullHeight img{
+  height: 190px;
+  border-radius: 10px 0px 0px 10px;
+}
+.roundProfile{
+    width: 162px;
+    height: 162px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.card-profile-name{
+    text-align: center;
+    font: normal normal 500 20px/24px Roboto;
+    letter-spacing: 0px;
+    color: #143754;
+    opacity: 1;
+}
+.profile-enrolled{
+  text-align: left;
+  font: normal normal normal 15px/18px Roboto;
+  letter-spacing: 0px;
+  color: #143754;
+  opacity: 1;
+  width: 132px;
+  margin-left: 10px;
+}
+.contact-details-dropdown{
+
+  width: 21vw;
+  height: 70px;
+  background: #EAEAEA 0% 0% no-repeat padding-box;
+  padding-top: 25px;
+  padding-left: 14px;
+  text-align: left;
+  font: normal normal bold 20px/24px Roboto;
+  letter-spacing: 0px;
+  color: #143754;
+  opacity: 1;
+}
+.contact-details{
+  margin-left: 7vw;;
+  margin-top: 25px;
+  border: none;
+}
+.contact-toggle{
+  background: #EAEAEA 0% 0% no-repeat padding-box;
+  border-radius: 0px 0px 10px 10px;
+  width: 21vw;
+  text-align: left;
+  padding-left: 14px;
+}
+.contact-text{
+  text-align: left;
+font: normal normal normal 15px/18px Roboto;
+letter-spacing: 0px;
+color: #143754;
+
+}
+.progress-bar{
+  border-radius: 100px !important;
+}
+.profileTabgrp .MuiTabs-root{
+  border-bottom: none !important;
+}
+.profileTabgrp .MuiTabs-flexContainer button.Mui-selected {
+  border-bottom: 5px solid #337ab7;
+font: normal normal normal 22px/25px Roboto;
+letter-spacing: 0px;
+color: #143754;
+font-weight: 500;
+opacity: 1;
+}
+.profileTabgrp .MuiTabs-flexContainer button {
+  display: inline-block;
+  margin-right: 3vw;
+  width:13vw;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 5px solid #ADB9C3;
+  transition: all 0.5s;
+  font: normal normal normal 22px/25px Roboto;
+  font-weight: 400;
+  cursor: pointer;
+  color: #6b6d6f;
+} 
+.profile-tabs .MuiBox-root{
+  padding-left: 0px !important;
+}
+.contactContainer{
+  margin-top: 40px;
+  max-width: 100%;
+}
+.contactCardHead{
+  font: normal normal 500 20px/24px Roboto;
+letter-spacing: 0px;
+color: #143754;
+margin-top: 8px;
+}
+.accContainer{
+  width: 21.5vw;
+    margin-left: 7vw;
+    margin-top:25px;
+    background-color:#EAEAEA;
+    border-radius: 10px !important;
+    overflow: hidden;
+}
+.accContainer .MuiTypography-root.MuiTypography-body1{
+  width: 100%;
+}
+.fa-edit{
+  color: #D3262A;
+}
+.accContainer .MuiAccordion-root.Mui-expanded.MuiPaper-elevation1 {
+  background-color:#EAEAEA;
+  border-radius: 10px !important;
+  border: none;
+
+}
+.accContainer .MuiButtonBase-root.MuiAccordionSummary-root {
+  background-color:#EAEAEA;
+  border-radius: 10px !important;
+  border: none;
+
+
+
+}
+/* .profileTabgrp .MuiTab-wrapper{
+    font-size: 22px;
+    padding-right: 78px;
+    text-align: center;
+} */
+.progress-card{
+    /* width: 793px; */
+    box-shadow: 0px 2px 6px #00000029;
+    margin-bottom: 40px;
+    border-radius: 10px !important;
+    overflow: hidden;
+    height: 190px;
+    margin-top: 10px;
+    /* overflow: hidden; */
+}
+
+.start-date{
+    text-align: right;
+    font: normal normal normal 12px/14px Roboto;
+    letter-spacing: 0px;
+    color: #A5A5A5;
+    padding-right: 15px;
+    padding-top: 8px;
+}
+.card-title-name{
+  text-align: left;
+  font: normal normal 500  18px/21px Roboto;
+  letter-spacing: 0px;
+  color: #143754;
+  margin-bottom: 8px;
+}
+.instructor-names{
+    text-align: left;
+    font: normal normal normal 12px/14px Roboto;
+    letter-spacing: 0px;
+    color: #143754;
+    margin-top: 0px;
+    line-height: 23px;
+    margin-bottom: 8px;
+    
+}
+.progressTxt{
+  text-align: left;
+  font: normal normal normal 12px/14px Roboto;
+  letter-spacing: 0px;
+  color: #143754;
+  margin-top: 0px;
+  line-height: 23px;
+  margin-bottom: 0px;
+  
+}
+.progress-percentage{
+  margin-top: -3px;
+  font: normal normal normal 12px/14px Roboto;
+  letter-spacing: 0px;
+  color: #143754;
+  margin-left: 10px;
+  margin-bottom: 10px !important;
+}
+.view-status{
+  text-decoration: underline;
+  font: normal normal normal 10px/18px Roboto;
+  letter-spacing: 0px;
+  color: #143754;
+  opacity: 1;
+  margin-top: -6px;
+    padding-left: 15px;
+  margin-bottom: 10px !important;
+
+}
+.chapterTag{
+  text-align: left;
+  font: normal normal normal 14px/21px Roboto;
+  letter-spacing: 0px;
+  color: #143754;
+}
+.continue-button{
+  float: right; 
+  color:#FFFFFF;
+  border:none;
+  width: 142px;
+  height: 40px;
+  background: #D3262A 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 6px;
+  font-size: 18px;
+  margin-top: -52px;
+ }
+ .recommended{
+  text-align: left;
+    font: normal normal normal 30px/35px Roboto;
+    letter-spacing: 0px;
+    color: #143754;
+    padding-left: 7vw;
+    margin-bottom: 45px;
+    margin-top: 20px;
+ }
+ .recommendedCards{
+   padding:0px 2vw 0px 7vw
+ }
+ .course-carousel{
+   padding-left: 97px;
+ }
+ .card-instructors{
+  border-radius: 10px;
+  box-shadow: 0px 3px 12px #00000029;
+  margin-bottom: 30px !important;
+text-align: start;
+ }
+ .message-instructor-button{
+  /* float: left;  */
+  color: #143754;
+  font: normal normal normal 12px/14px Roboto !important;
+  border:none;
+  width: 147px;
+  height: 30px;
+  background: #F4F4F4 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  margin-top: 16px;
+ }
+ .instructors-card-img{
+ width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  opacity: 1;
+ }
+ .card-title-instructors{
+  text-align: left;
+  font: normal normal bold 15px/18px Roboto;
+  letter-spacing: 0px;
+  color: #143754;
+  opacity: 1;
+ }
+ .card-text-instructors{
+  text-align: left;
+  font: normal normal normal 12px/14px Roboto;
+  letter-spacing: 0px;
+  color: #143754;
+  opacity: 1;
+ }
+ .get-start-discussions{
+  height: 9vh;
+ }
+ .get-started-text{
+  text-align: left;
+  font: normal normal bold 18px/21px Roboto;
+  letter-spacing: 0px;
+  color: #143754;
+  padding: 16px 0px 22px 22px;
+ }
+ .opened-on{
+  font: normal normal 300 10px/18px Roboto;
+  letter-spacing: 0px;
+  color: #b9b9b9;
+  opacity: 1;
+  padding-right: 10px;
+  padding-top: 10px;
+ }
+ .get-start-card{
+  /* width: 35vw; */
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 6px;
+  margin: 18px 0px 0px 15px;
+  padding: 10px 12px;
+  align-items: flex-start;
+ }
+ .discussions-avtar{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 15px;
+ 
+ }
+ .discussion-student-text{
+  padding-left: 48px;
+ }
+ .discussion-student-text-2{
+  padding-left: 22px;
+  margin-top: 4px;
+ }
+ .get-start-card hr{
+   margin-top: 13px;
+   margin-bottom: 6px;
+ }
+ .discussion-student-name{
+  text-align: left;
+  font: normal normal bold 14px/16px Roboto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #143754;
+ }
+ .discussion-student{
+  text-align: left;
+  font: normal normal normal 10px/1px Roboto;
+  letter-spacing: 0px;
+  color: #464646;
+  margin-top: -6px;
+
+ }
+ .discussion-student-chat{
+  width: 95%;
+  text-align: left;
+  font: normal normal normal 12px/14px Roboto;
+  letter-spacing: 0px;
+  color: #282A2C;
+  padding-left: 70px;
+ }
+ .discussions-avtar-1{
+  width: 25px;
+  height: 25px;
+  margin-left: -19px;
+  border-radius: 50%;
+  margin-right: 15px;
+ }
+ .more-replies{
+  text-align: right;
+  text-decoration: underline;
+  font: normal normal normal 10px/38px Roboto;
+  letter-spacing: 0px;
+  color: #464646;
+  margin-left: -14px;
+ }
+ .reply-button{
+  width: 71px;
+  height: 22px;
+  border: none;
+  background: #143754 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  text-align: center;
+  font: normal normal normal 12px/14px Roboto !important;
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  margin-left: -14px;
+  margin-top: 5px;
+ }
+ .discussion-icons{
+  float: right;
+ }
+ .icon-text{
+  text-align: left;
+  font: normal normal normal 10px/11px Roboto;
+  letter-spacing: 0px;
+  color: #464646;
+  padding-right: 9px;
+ }
+ .MuiDataGrid-root .MuiDataGrid-colCellTitle {
+  font: normal normal 600 12px/17px Open Sans;
+  color: #3F433D;
+ }
+.MuiDataGrid-root .MuiDataGrid-window {
+  font: normal normal normal 13px/18px Open Sans;
+  color: #3F433D;
+}
+.payment-table{
+}
+.makeStyles-demo1-7 {
+  margin-top: 0px;
+}
+.disSwitcher .tabSec{
+  height: 600px;
+  overflow-y: auto;
+}
+.tabSec{
+  padding-left: 20px !important;
+}
+.tabSec p{
+text-transform: capitalize;
+margin-bottom: 0px;
+}
+.tabSec h5{
+ font-size: 17px;
+ color: #143754;
+ font: normal normal medium 18px/21px Roboto;
+ margin-top: 13px;
+ margin-bottom: 30px !important;
+  }
+  .tabSec .tabTxt1{
+    font: normal normal normal 12px/14px Roboto;
+    color: #143754;
+  }
+  .tabSec .tabTxt2{
+    font: normal normal normal 13px/15px Roboto;
+    color: #282A2C;
+  }
+.disSwitcher .uk-tab-left{
+  width: 220px;
+ 
+}
+#discussion{
+  padding-left: 25px;
+  width: 70%;
+}
+.disSwitcher .uk-tab-left .uk-active a{
+  background-color: #f3f1f1 !important;
+}
+.disSwitcher .uk-tab-left  a{
+  padding-top: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightgray;
+
+}
+th .MuiButtonBase-root{
+  font-size: 15px !important;
+}
+
+@media only screen and (max-width: 544px) {
+  .MuiTabs-fixed {
+    margin-top: 141px;
+  }
+  .recommendedCards{
+    padding:0px
+  }
+  .contact-toggle {
+    width: 87vw;
+  }
+  .contact-details-dropdown {
+    width: 87vw;
+  }
+  .card-user{
+    width: 86.5vw;
+    height: 79vh;
+  }
+  .card-img-top{
+    width: 42.5vw;
+  }
+  .profile-tabs{
+    margin-top: 633px;
+    margin-left: -119px;
+    width: 100%;
+  }
+  .MuiTab-wrapper{
+    font-size: 12px;
+    padding-right: 0px;
+  }
+  .Component-root-10{
+    margin-right: -16px;
+  }
+  .progress-card {
+    width: 96vw;
+    margin-left: -21px;
+  }
+  .card-title-name {
+    width: 59vw;
+  }
+  .image-card{
+    height: 192px !important;
+  }
+  .continue-button{
+    margin: auto;
+  }
+  .row>* {
+    padding-bottom: 20px
+  }
+  .view-status{
+    padding-left: 46vw;
+  }
+  .makeStyles-demo1-7.makeStyles-demo1-48 {
+    width: 350px;
+  }
+  .MuiTabs-root{
+    width: 350px;
+  }
+  .Component-root-10 {
+    margin-right: -1px !important;
+  }
+  .recommended{
+    padding-left: 15px;
+  }
+  .progress-percentage {
+    margin-left: 78px;
+  }
+  .course-carousel{
+    padding-left: 12px;
+  }
+  .instructors-card-img {
+    width: 62vw;
+  }
+  .card-instructors {
+    width: 62vw;
+  }
+  .card-title-instructors {
+   width: 42vw;
+  }
+  .payment-table{
+    margin-left: -25px;
+    width: 350px;
+    height: 400px;
+  }
+  .MuiTabs-root.makeStyles-tabs-21.MuiTabs-vertical{
+    margin-left: -28px;
+    margin-right: -18px;
+  }
+  .MuiBox-root-17 {
+    padding-top: 67px;
+  }
+}

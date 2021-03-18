@@ -24,7 +24,25 @@
         color: #143754;
         opacity: 1;
       }
-      
+      .uk-accordion-title::before{
+        float: left;
+        margin-left: 0px !important;
+        margin-right: 10px;
+      content:"\002B";
+      width: 1.4em;
+      height: 1.4em;
+      margin-left: 10px;
+      /* float: right; */
+      background-image: unset !important;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      color: white ;
+      /* background-color: white; */
+  }
+  .uk-open>.uk-accordion-title::before{
+    content:"\2212";
+
+  }
       .catSwitcher a:hover {
         color: #FFFFFF;
         background: #2066A2 0% 0% no-repeat padding-box;
@@ -66,9 +84,7 @@
         min-height: 850px !important;
 
       }
-      .uk-accordion-title::before{
-        background-color: white;
-      }
+      
       .catSwitcher .uk-active ,.catSwitcher .uk-active span,.catSwitcher .uk-active .uk-accordion-title {
         color: white !important;
         border-left: none !important;

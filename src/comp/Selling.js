@@ -19,7 +19,7 @@ export default class Selling extends Component{
     render() {
         return(
             <div className="sliderHome">
-            <p className="card-title text-center my-5 py-4" style={{textAlign: "center", font: "normal normal bold 30px/35px Roboto", letterSpacing: "0px", color: "#143754"}}> Best Selling Courses</p>
+            <p className="card-title text-center my-5 py-4" style={{textAlign: "center", font: "normal normal bold 30px/35px Roboto", letterSpacing: "0px", color: "#143754",display:this.props.title}}> Best Selling Courses</p>
               <InfiniteCarousel
                 breakpoints={[
                 {

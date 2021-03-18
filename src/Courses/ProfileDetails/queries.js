@@ -1,16 +1,16 @@
 import React from 'react'
-import "./Discuss.css"
-import Path1 from "../image/Path1.png"
-import Path from "../image/Path.png"
+// import "./Discuss.css"
+import Path1 from "../../image/Path1.png"
+import Path from "../../image/Path.png"
 
-export default function Discuss() {
+export default function Queries() {
     return (
-      <div className="dis">
+      <div className="query">
       <img src={Path1} className="imag" />
       <div className="py-5">
           <div className="card px-3 mx-3 shadow-lg p-2 mb-5 ">
              <div className="card-body py-3 my-3">
-               <p className="discuss">Want to KNOW MORE from us </p>
+               <p className="discuss">Any Queries on Digital Marketing ? </p>
                <p className="text-abc" >Would you like to know more about Inskillz? Please enter your details below and get a call back from us.<br></br>Also you can contact us directly on our Customer Support number.</p>
              <div className="container">
                <div className="row">

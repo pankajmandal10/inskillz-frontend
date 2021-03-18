@@ -6,8 +6,8 @@
     background: #00000098 0% 0% no-repeat padding-box;
 }
 .header{
-    top: 157px;
-    left: 97px;
+    top: 200px;
+    left: 8vw;
     width: 334px;
     height: 49px;
     text-align: left;
@@ -19,8 +19,8 @@
     position: absolute;
 }
 .marketing-text{
-    top: 215px;
-    left: 99px;
+    top: 258px;
+    left: 8vw;
     width: 635px;
     height: 34px;
     text-align: left;
@@ -31,14 +31,14 @@
     position: absolute;
 }
 .marketing-stars{
-    top: 260px;
-    width: 19px;
+    top: 293px;
+    width: 100px;
     height: 19px;
-    left: 97px;
+    left: 8vw;
     position: absolute;
 }
 .marketing-rate{
-    top: 261px;
+    top: 294px;
     left: 229px;
     width: 23px;
     height: 19px;
@@ -49,45 +49,87 @@
     position: absolute;
 }
 .marketing-buttons{
-    top: 311px;    
     width: 165px;
     height: 63px; 
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #707070;
     border-radius: 10px;
     opacity: 1;
-    position: absolute;
     text-align: left;
     font: normal normal medium 14px/16px Roboto;
     letter-spacing: 0px;
     color: #000000;
+    margin-right: 10px;
+}
+.bannerBtns{
+    left: 8vw;
+    top: 345px;    
+display: flex;
+position: absolute;
+
+}
+.bannerBtns2{
+    left: 8vw;
+display: flex;
+position: absolute;
+top: 430px;
+
+
+}
+.enrolBtn{
+    height: 50px;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 6px;
+    border: none;
+    text-align: center;
+    letter-spacing: 0px;
+    color:white;
+    width:330px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    background-color: #D3262A;
+}
+.dwnldBtn{
+    height: 50px;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 6px;
+    border: none;
+    text-align: center;
+    letter-spacing: 0px;
+    color:#282A2C;
+    width:330px;
+    background-color: white;
 }
 .marketing-button{
-    top: 402px;
     height: 50px;
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 6px;
     opacity: 1;
-    position: absolute;
     border: none;
     text-align: center;
     letter-spacing: 0px;
     color:#282A2C;
     opacity: 1; 
+    margin-right: 10px;
 }
 .card-profile{
-    margin-left: 1033px;
-    position: absolute;
-    margin-top: -226px;
-    width: 333px;
+    right: 5vw;
+    /* position: absolute; */
+    margin-top: -224px;
+    width: 330px;
     height: 226px;
     border: none;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    /* border-radius: 14px; */
+}
+.profileDetails{
+    border-radius: 0px 0px 10px 10px !important;
+    padding-bottom: 25px;
+    background-color: #ffffff;
 }
 .profile-details{
     top: 521px;
     left: 956px;
-    width: 77px;
     height: 21px;
     text-align: left;
     font: normal normal normal 17px Roboto;
@@ -99,9 +141,9 @@
     top: 521px;
     left: 1116px;
     width: 120px;
-    height: 42px;
+    margin-bottom: 20px;
     text-align: left;
-    font: normal normal medium 18px/21px Roboto;
+    font: normal normal 500 18px/21px Roboto;
     letter-spacing: 0px;
     color: #143754;
     opacity: 1;
@@ -174,7 +216,7 @@
 }
 .overview-text{
     top: 622px;
-    left: 99px;
+    left: 8vw;
     width: 791px;
     height: 441px;
     text-align: left;
@@ -199,7 +241,7 @@
     height: 63px;
     margin-top: 9px;
     text-align: left;
-    font: normal normal medium 14px/16px Roboto; 
+    font: normal normal 500 14px/16px Roboto;
     letter-spacing: 0px;
     color: #000000;
    opacity: 1;
@@ -207,12 +249,15 @@
 .button-image{
     top: 328px;
     left: 107px;
-    width: 68px;
+    width: 42px;
     height: 24px;
     opacity: 1;
 }
 
-
+.panelTxt{
+    font: normal normal 300 15px/24px Roboto;
+    color: #143754;
+}
 
 
 
@@ -240,34 +285,78 @@ ul.inline {
   -webkit-margin-end: 0px;
   -webkit-padding-start: 0px;
 }
-
-
-.tabs li {
+.marketing{
+    padding-left: 12vw;
+    margin-top: 25px;
+}
+.marketing .MuiTabs-root{
+    border-bottom: none !important;
+}
+.marketing .MuiTypography-root {
+    text-align: start;
+    
+}
+.marketing .MuiBox-root{
+    padding-left: 0px !important;
+    padding-top: 50px !important;
+}
+.marketing .MuiTabs-flexContainer button {
   display: inline-block;
-  margin-left: 103px;
+  margin-right: 5vw;
+  width:10vw;
+  text-align: center;
   padding: 10px;
-  border-bottom: 2px solid #eee;
+  border-bottom: 5px solid #ADB9C3;
   transition: all 0.5s;
   font: normal normal normal 22px/25px Roboto;
-  font-weight: 300;
+  font-weight: 400;
   cursor: pointer;
   color: #6b6d6f;
 } 
 
-ul.inline,
-li.selected {
+.marketing .MuiTabs-flexContainer button.Mui-selected {
   border-bottom: 5px solid #337ab7;
-  text-align: left;
 font: normal normal normal 22px/25px Roboto;
 letter-spacing: 0px;
 color: #143754;
+font-weight: 500;
 opacity: 1;
+}
+.tabImg{
+    width: 45vw;
+    margin-top: 40px;
+}
+.chapters{
+    padding: 18px 0px 18px 33px;
+    width: 330px;
+    margin-top: 310px;
+    background-color: #143754;
+    border-radius: 10px;
+    text-align: start;
+}
+.chapterHead{
+    color: white;
+    margin-bottom: 25px;
+}
+.chapterName{
+    padding-left: 10px;
+    /* font-size: 20px; */
+    margin-bottom: 25px;
+    font: normal normal 300 20px/25px Roboto;
+    color: #FFFFFF;
+    opacity: .8;
+
+
 }
 .tabs{
     text-align: left;
     font-size: 20px;
-    margin-left: 97px;
+    margin-left: 8vw;
+    margin-top: 25px;
 } 
+.navbar-collapse{
+    width: 400px;
+}
 
 /* @media only screen and (max-width: 544px) {
     .header{

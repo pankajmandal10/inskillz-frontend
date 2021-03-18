@@ -5,7 +5,11 @@ import Card3 from "../comp/Card3"
 import Card4 from "../comp/Card4"
 import InfiniteCarousel from 'react-leaf-carousel';
 import { Link } from "react-router-dom";
-
+import image6 from "../image/image6.png"
+import image2 from "../image/image2.png"
+import image3 from "../image/image3.png"
+import image4 from "../image/image4.png"
+import image5 from "../image/image5.png"
 
 export default class DigitalPhotography extends Component {
   render() {
@@ -17,48 +21,99 @@ export default class DigitalPhotography extends Component {
             <li>
               <div className='uk-width-1-1 uk-grid uk-child-width-1-3'>
                 <div>
-                <Card1></Card1>
+                  <Link to="/digital-marketing">
+                <Card1 name={"Course 01"} img={image3}/>
+                </Link>
                 </div>
                 <div>
-                <Card1></Card1>
+                <Card1 name={"Course 02"} img={image2} />
                 </div>
                 <div>
-                <Card1></Card1>
+                <Card1 name={"Course 03"} img={image5}/>
                 </div>
                 <div>
-                <Card1></Card1>
+                <Card1 name={"Course 04"} img={image6}/>
                 </div>
                 <div>
-                <Card1></Card1>
+                <Card1 name={"Course 05"} img={image4}/>
                 </div>
                 <div>
-                <Card1></Card1>
+                <Card1 name={"Course 01"} img={image3}/>
                 </div>
                 <div>
-                <Card1></Card1>
+                <Card1 name={"Course 02"} img={image2} />
                 </div>
                 <div>
-                <Card1></Card1>
+                <Card1 name={"Course 03"} img={image5}/>
                 </div>
                 <div>
-                <Card1></Card1>
+                <Card1 name={"Course 04"} img={image6}/>
                 </div>
+               
               </div>
             </li>
             <li>
               <div className='uk-width-1-1 uk-grid uk-child-width-1-3'>
-                <Card1></Card1>
-                <Card1></Card1>
-                <Card1></Card1>
-
+              <div>
+                <Card1 name={"Course 01"} img={image3}/>
+                </div>
+                <div>
+                <Card1 name={"Course 02"} img={image2} />
+                </div>
+                <div>
+                <Card1 name={"Course 03"} img={image5}/>
+                </div>
+                <div>
+                <Card1 name={"Course 04"} img={image6}/>
+                </div>
+                <div>
+                <Card1 name={"Course 05"} img={image4}/>
+                </div>
+                <div>
+                <Card1 name={"Course 01"} img={image3}/>
+                </div>
+                <div>
+                <Card1 name={"Course 02"} img={image2} />
+                </div>
+                <div>
+                <Card1 name={"Course 03"} img={image5}/>
+                </div>
+                <div>
+                <Card1 name={"Course 04"} img={image6}/>
+                </div>
+               
               </div>
             </li>
             <li>
               <div className='uk-width-1-1 uk-grid uk-child-width-1-3'>
-                <Card1></Card1>
-                <Card1></Card1>
-                <Card1></Card1>
-
+              <div>
+                <Card1 name={"Course 01"} img={image3}/>
+                </div>
+                <div>
+                <Card1 name={"Course 02"} img={image2} />
+                </div>
+                <div>
+                <Card1 name={"Course 03"} img={image5}/>
+                </div>
+                <div>
+                <Card1 name={"Course 04"} img={image6}/>
+                </div>
+                <div>
+                <Card1 name={"Course 05"} img={image4}/>
+                </div>
+                <div>
+                <Card1 name={"Course 01"} img={image3}/>
+                </div>
+                <div>
+                <Card1 name={"Course 02"} img={image2} />
+                </div>
+                <div>
+                <Card1 name={"Course 03"} img={image5}/>
+                </div>
+                <div>
+                <Card1 name={"Course 04"} img={image6}/>
+                </div>
+               
               </div>
             </li>
           </ul>

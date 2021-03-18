@@ -9,7 +9,7 @@ export default class DigitalMarketing extends Component {
         return (
             <div>
                 <Header />
-                <ProfileCard />
+             
                 <Headline />
                 <Discuss />
             </div>

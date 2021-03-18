@@ -1,84 +1,174 @@
 import React from 'react'
-import "./index.css"
-// import Overview from "./Overview"
-// import ReactDOM from "react-dom";
 
-import Tabs from "./Tabs";
-import Panel from "./Panel";
 
-import { events } from "./Data";
 
-const myInfluencers = [33, 81];
+import { makeStyles, withStyles } from '@material-ui/core/styles';
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
+import Typography from '@material-ui/core/Typography';
+import PropTypes from 'prop-types';
+import Box from '@material-ui/core/Box';
 
-const userId = 4;
+import Profile from "../Image/profile.png"
+import ProfileCard from './ProfileCard';
 
-export default function Headline() {
-    return (
-        // <div className="headline">
-        //   <div className="container">
-        //     <div className="row">
-        //       <div className="col-3 col-sm-2">
-        //         <p className="overview">Overview</p>
-        //         <hr className="line" style={{ align:"center"}}/>
-        //       </div>
-        //       <div className="col-3 col-sm-2">
-        //         <span><p className="curriculum">Curriculum</p>
-        //         <hr className="line-1" style={{ align:"center"}}/>
-        //         </span>
-        //       </div>
-        //       <div className="col-3 col-sm-2">
-        //         <span><p className="instructors">Instructor</p>
-        //         <hr className="line-1" style={{ align:"center"}}/>
-        //         </span>
-        //       </div>
-        //       <div className="col-3 col-sm-2">
-        //         <span><p className="review">Review</p>
-        //         <hr className="line-1" style={{ align:"center"}}/>
-        //         </span>
-        //       </div>
-        //     </div>
-        //   </div>  
-        //   <div className="overview-text">
-        //   <p className="overview-text-1" >"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        //   <p className="overview-text-1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
-        //   </div>
-        // </div>
-        <div className="tabs">
-        <Tabs>
-        <Panel title="Overview">
-        <div className="overview-text">
-        {events
-          .filter(event => event.host_id !== userId)
-          .map(event => {
-            return <div key={event.id}>{event.title}</div>;
-          })}
-        </div>
-        
-      </Panel>
-      
-      <Panel title="Curriculum" >
-        {events
-          .filter(event => myInfluencers.includes(event.host_id))
-          .map(event => {
-            return <div key={event.id}>{event.title}</div>;
-          })}
-      </Panel>
-      <Panel title="Instructor">
-      <div className="overview-text">
-      {events.map(event => {
-          return <div key={event.id}>{event.title}</div>;
-        })}
-        </div>
-      </Panel>
-        
-      <Panel title="Review">
-      <div className="overview-text">
-        {events.map(event => {
-          return <div key={event.id}>{event.title}</div>;
-        })}
-        </div>
-      </Panel>
-    </Tabs>
+function TabPanel(props) {
+  const { children, value, index, ...other } = props;
+
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+      {...other}
+    >
+      {value === index && (
+        <Box p={3}>
+          <Typography>{children}</Typography>
+        </Box>
+      )}
     </div>
-    )
+  );
+}
+
+TabPanel.propTypes = {
+  children: PropTypes.node,
+  index: PropTypes.any.isRequired,
+  value: PropTypes.any.isRequired,
+};
+
+function a11yProps(index) {
+  return {
+    id: `simple-tab-${index}`,
+    'aria-controls': `simple-tabpanel-${index}`,
+  };
+}
+
+const AntTabs = withStyles({
+  root: {
+    borderBottom: '1px solid #e8e8e8',
+  },
+  indicator: {
+    backgroundColor: '#1890ff',
+  },
+})(Tabs);
+
+const AntTab = withStyles((theme) => ({
+  root: {
+    textTransform: 'none',
+    minWidth: 72,
+    fontWeight: theme.typography.fontWeightRegular,
+    marginRight: theme.spacing(4),
+    fontFamily: [
+      '-apple-system',
+      'BlinkMacSystemFont',
+      '"Segoe UI"',
+      'Roboto',
+      '"Helvetica Neue"',
+      'Arial',
+      'sans-serif',
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+    ].join(','),
+    '&:hover': {
+      color: '#40a9ff',
+      opacity: 1,
+    },
+    '&$selected': {
+      color: '#1890ff',
+      fontWeight: theme.typography.fontWeightMedium,
+    },
+    '&:focus': {
+      color: '#40a9ff',
+    },
+  },
+  selected: {},
+}))((props) => <Tab disableRipple {...props} />);
+
+const StyledTabs = withStyles({
+  indicator: {
+    display: 'flex',
+    justifyContent: 'center',
+    backgroundColor: 'transparent',
+    '& > span': {
+      maxWidth: '55vw',
+      width: '100%',
+      backgroundColor: '#635ee7',
+    },
+  },
+})((props) => <Tabs {...props} TabIndicatorProps={{ children: <span /> }} />);
+
+const StyledTab = withStyles((theme) => ({
+  root: {
+    textTransform: 'none',
+    color: '#fff',
+    fontWeight: theme.typography.fontWeightRegular,
+    fontSize: theme.typography.pxToRem(15),
+    marginRight: theme.spacing(1),
+    '&:focus': {
+      opacity: 1,
+    },
+  },
+}))((props) => <Tab disableRipple {...props} />);
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  padding: {
+    padding: theme.spacing(3),
+  },
+  demo1: {
+    backgroundColor: theme.palette.background.paper,
+  }
+}));
+
+export default function ProfileTabs() {
+
+  const classes = useStyles();
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  return (
+    <div className="uk-grid">
+      <div className="uk-width-2-3@s marketing">
+        <div className={classes.root}>
+          <div className={classes.demo1}>
+            <AntTabs value={value} onChange={handleChange} aria-label="ant example">
+              <AntTab label="Overview" {...a11yProps(0)} />
+              <AntTab label="Curriculum" {...a11yProps(0)} />
+              <AntTab label="Instructor" {...a11yProps(0)} />
+              <AntTab label="Review" {...a11yProps(0)} />
+            </AntTabs>
+            <TabPanel value={value} index={0}>
+              <p className="panelTxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p className="panelTxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <img className="tabImg" src="https://cdn1.expresscomputer.in/wp-content/uploads/2018/12/06112143/Digitisation.jpg"></img>
+            </TabPanel>
+            <TabPanel value={value} index={1}>
+              <p className="panelTxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <img className="tabImg" src="https://cdn1.expresscomputer.in/wp-content/uploads/2018/12/06112143/Digitisation.jpg"></img>
+            </TabPanel>
+            <TabPanel value={value} index={2}>
+              <p className="panelTxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <img className="tabImg" src="https://cdn1.expresscomputer.in/wp-content/uploads/2018/12/06112143/Digitisation.jpg"></img>
+            </TabPanel>
+            <TabPanel value={value} index={3}>
+              <p className="panelTxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <img className="tabImg" src="https://cdn1.expresscomputer.in/wp-content/uploads/2018/12/06112143/Digitisation.jpg"></img>
+            </TabPanel>
+          </div>
+        </div>
+      </div>
+      <div>
+       <ProfileCard></ProfileCard>
+      </div>
+      
+    </div>
+  )
 }

@@ -1,0 +1,39 @@
+.Component-root-8 {
+    padding: 23px 0px 0px 42px;
+}
+.login-button{
+  width: 153px;
+  height: 40px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 10px;
+  opacity: 1; 
+  border:none;
+  color:#D3262A
+}
+.inskills-logo{
+  width: 151px;
+  height: 46px;
+background: #3583C5 0% 0% no-repeat padding-box;
+}
+.forget{
+text-align: left;
+padding-left: 106px;
+font: normal normal normal 12px/24px Roboto;
+letter-spacing: 0px;
+color: #3583C5;
+opacity: 1;
+}
+.login-submit-button{
+    width: 200px;
+    height: 35px;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 6px;
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width: 544px){
+  .MuiTabs-scroller.MuiTabs-fixed {
+    margin-top: 0px;
+  }
+}

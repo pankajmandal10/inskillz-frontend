@@ -12,7 +12,7 @@ import Discuss from './Discuss';
 
 export default function Page() {
     return (
-        <div>
+        <div className="home">
             <Home />
             <Learning />
             <Featured />

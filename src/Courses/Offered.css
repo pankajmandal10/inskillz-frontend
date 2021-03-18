@@ -10,6 +10,7 @@
      color: #fff;
     position:absolute; 
     margin-top:-20%;
+    margin-bottom: 10px;
     margin-left: 93px;
     font-size: 42px; 
     text-align: left;
@@ -21,13 +22,13 @@
 }
 .detail{
     padding-top: 9px;
-    width: 45%;
+    width: 40%;
     text-align: left;
     color: #fff;
     position:absolute; 
     margin-top:-17%;
     margin-left: 97px;
-    font-size: 22px;
+    font: normal normal 300 22px/24px Roboto;
 }
 @media only screen and (max-width: 544px) {
     .course{ 

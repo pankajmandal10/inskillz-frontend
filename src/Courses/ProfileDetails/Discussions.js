@@ -67,47 +67,8 @@ export default function Discussions(props) {
   };
 
   return (
-    // <div className={classes.root}>
-    //   <Tabs
-    //     orientation="vertical"
-    //     variant="scrollable"
-    //     value={value}
-    //     onChange={handleChange}
-    //     aria-label="Vertical tabs example"
-    //     className={classes.tabs}
-    //   >
-    //     <Tab label="Why Digital Marketing" {...a11yProps(0)} ></Tab>
-    //     <Tab label="Why Digital Marketing" {...a11yProps(1)} />
-    //     <Tab label="Why Digital Marketing" {...a11yProps(2)} />
-    //     <Tab label="Why Digital Marketing" {...a11yProps(3)} />
-    //     <Tab label="Why Digital Marketing" {...a11yProps(4)} />
-    //     <Tab label="Why Digital Marketing" {...a11yProps(5)} />
-    //     <Tab label="Why Digital Marketing" {...a11yProps(6)} />
-    //   </Tabs>
+   
 
-    //   <TabPanel value={value} index={0}>
-
-
-    //   </TabPanel>
-    //   <TabPanel value={value} index={1}>
-    //     Item Two
-    //   </TabPanel>
-    //   <TabPanel value={value} index={2}>
-    //     Item Three
-    //   </TabPanel>
-    //   <TabPanel value={value} index={3}>
-    //     Item Four
-    //   </TabPanel>
-    //   <TabPanel value={value} index={4}>
-    //     Item Five
-    //   </TabPanel>
-    //   <TabPanel value={value} index={5}>
-    //     Item Six
-    //   </TabPanel>
-    //   <TabPanel value={value} index={6}>
-    //     Item Seven
-    //   </TabPanel>
-    // </div>
     <div className="disSwitcher uk-grid" uk-grid="true">
       <div className="tabSec">
         <ul class="uk-tab-left" uk-tab="connect: #discussion">

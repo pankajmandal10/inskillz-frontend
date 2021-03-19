@@ -16,12 +16,14 @@ import Batches from './Enroll/Batches'
 
 import Enroll from './Enroll/EnrollCourse'
 import StudentLogin from './Enroll/StudentLogin';
+import ViewProgress from './Enroll/ViewProgress';
 export default function Header() {
   const [value, setValue] = React.useState(5);
 
   const [open, setOpen] = React.useState(false);
   const [enrol, setEnrol] = React.useState(false);
   const [stdLogin, setStdLogin] = React.useState(false);
+  const [progress, setProgress] = React.useState(false);
 
 
   const handleClickOpen = () => {
@@ -35,14 +37,19 @@ export default function Header() {
 
     setStdLogin(true);
   };
+  const progressOpen = () => {
+    setProgress(true);
+  };
   const handleClose = () => {
     setOpen(false);
     setEnrol(false);
     setStdLogin(false);
-
+    setProgress(false);
   };
+  
   return (
     <div >
+      <ViewProgress handleClose={handleClose} open={progress}></ViewProgress>
       <Batches handleClose={handleClose} open={open}></Batches>
       <Enroll modalOpen={handleClickOpenStdLogin} handleClose={handleClose} open={enrol}></Enroll>
       <StudentLogin handleClose={handleClose} open={stdLogin}></StudentLogin>
@@ -73,7 +80,7 @@ export default function Header() {
         <div className="bannerBtns2 uk-visible@s">
           <button onClick={handleClickOpenEnrol} className="marketing-button" style={{  width: "247px", background: "#D3262A 0% 0% no-repeat padding-box", color: "#FFFFFF" }}> $300 Enroll Now </button>
           <button onClick={handleClickOpen} className="marketing-button" style={{  width: "160px", background: "#FFFFFF 0% 0% no-repeat padding-box" }}>View Batches</button>
-          <button className="marketing-button" style={{  width: "247px", background: "#FFFFFF 0% 0% no-repeat padding-box" }}><img className="uk-margin-small-right" src={pdf} />Download Brochure</button>
+          <button onClick={progressOpen} className="marketing-button" style={{  width: "247px", background: "#FFFFFF 0% 0% no-repeat padding-box" }}><img className="uk-margin-small-right" src={pdf} />Download Brochure</button>
         </div>
       </div>
     </div>

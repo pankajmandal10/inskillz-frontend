@@ -11,17 +11,18 @@ export default class categories extends Component {
     render() {
         return (
             <div className="categorySec">
-                <div className='container d-flex mb-5'>
-                    <h3 className="categoryHead">Categories</h3>
-                    <Breadcrumbs separator={<NavigateNextIcon fontSize="small" />} aria-label="breadcrumb">
-                        <Link color="inherit" href="/" >
-                            Material-UI
+                <div className='container  mb-0'>
+                    <div className="d-flex">
+                        <h3 className="categoryHead">Categories</h3>
+                        <Breadcrumbs separator={<NavigateNextIcon fontSize="small" />} aria-label="breadcrumb">
+                            <Link color="inherit" href="/" >
+                                Photography
                         </Link>
-                        <Link color="inherit" href="/getting-started/installation/" >
-                            Core
-                        </Link>
-                        <Typography color="textPrimary">Breadcrumb</Typography>
-                    </Breadcrumbs>
+
+                            <Typography color="textPrimary">Digital Photography</Typography>
+                        </Breadcrumbs>
+                    </div>
+                    <hr></hr>
                 </div>
 
                 <div className="container  uk-grid">
@@ -36,9 +37,18 @@ export default class categories extends Component {
                                                 <li>
                                                     <a class="uk-accordion-title" href="#">ALL</a>
                                                     <div class="uk-accordion-content">
-                                                        <a style={{ justifyContent: 'space-between', display: 'flex' }}>Photography  <span className="numb" >23</span></a>
-                                                        <a style={{ justifyContent: 'space-between', display: 'flex' }}>Photography  <span className="numb" >23</span></a> </div>
-                                                </li></ul>
+                                                        <ul class="uk-tab-left" uk-tab="connect: #secondSwitch">
+                                                            <li>
+                                                                <a style={{ justifyContent: 'space-between', display: 'flex', textTransform: 'none' }}>Digital photography  <span className="numb" >23</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a style={{ justifyContent: 'space-between', display: 'flex', textTransform: 'none' }}>Wildlife photography  <span className="numb" >23</span></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                </li>
+                                            </ul>
                                         </a>
                                     </li>
                                     {/* <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>All  <span className="numb" >1234</span></a></li> */}
@@ -59,11 +69,6 @@ export default class categories extends Component {
                                     <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
                                     <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
                                     <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
-                                    <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Web Development  <span className="numb" >23</span></a></li>
-                                    <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
-                                    <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
-                                    <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
-                                    <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
                                     <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
                                     <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
                                 </ul>
@@ -78,13 +83,25 @@ export default class categories extends Component {
                     <div className="uk-width-3-4" >
                         <div class="uk-width-expand">
                             <ul id="my-id" class="uk-switcher">
+                                <li>
+                                    <ul id="secondSwitch" class="uk-switcher">
+                                        <li>
+                                            <DigitalPhotography></DigitalPhotography>
+
+                                        </li>
+                                        <li><h1>hii</h1></li>
+                                    </ul>
+                                </li>
+
                                 {/* <BrowserRouter>
                                         <Switch>
                                             <Route path="/" component={DigitalPhotography} />
 
                                         </Switch>
                                     </BrowserRouter> */}
-                                <DigitalPhotography></DigitalPhotography>
+                                <li>
+                                    <DigitalPhotography></DigitalPhotography>
+                                </li>
                             </ul>
                         </div>
 

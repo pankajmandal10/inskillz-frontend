@@ -12,6 +12,7 @@ import MuiDialogActions from '@material-ui/core/DialogActions';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 import Typography from '@material-ui/core/Typography';
+import TeachTab from './studTeachTab';
 
 
 const styles = (theme) => ({
@@ -48,7 +49,7 @@ const DialogContent = withStyles((theme) => ({
 }))(MuiDialogContent);
 
 
-export default function StudentLogin(props) {
+export default function NavLogin(props) {
   
 
   return (
@@ -58,7 +59,7 @@ export default function StudentLogin(props) {
         <img className="inskills-logo" src={Inskills} />
         </DialogTitle>
         <DialogContent>
-           <StudentTab />
+           <TeachTab></TeachTab>
         </DialogContent>
       </Dialog>
     </div>

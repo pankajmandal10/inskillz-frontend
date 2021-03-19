@@ -15,6 +15,7 @@ export default class DigitalPhotography extends Component {
   render() {
     return (
       <div class="photoContain">
+        <div uk-slideshow="true">
         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="true">
 
           <ul class="uk-slideshow-items">
@@ -122,7 +123,8 @@ export default class DigitalPhotography extends Component {
           <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
 
         </div>
-
+        <ul class="uk-slideshow-nav uk-dotnav uk-flex-center "></ul>
+        </div>
       </div>
     )
   }

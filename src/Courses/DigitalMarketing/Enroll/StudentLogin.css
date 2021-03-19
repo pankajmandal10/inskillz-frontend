@@ -1,6 +1,30 @@
 .Component-root-8 {
     padding: 23px 0px 0px 42px;
 }
+.googleSign{
+  width: 200px;
+  height: 32px;
+  background-color: #3583C5 !important;
+  color: #FFFFFF !important;
+  text-transform: none !important;
+  font: normal normal 400 11px/14px Roboto !important;
+  font-size: 12px !important;
+  border: none !important;
+  padding-left: 15px;
+  margin-top: 20px;
+}
+.facebookSign{
+  width: 200px;
+  height: 32px;
+
+background-color:#385898  !important;
+  color: #FFFFFF !important;
+  text-transform: none !important;
+  font: normal normal 400 11px/14px Roboto !important;
+  font-size: 12px !important;
+  border: none !important;
+  padding-left: 15px;
+}
 .login-button{
   width: 153px;
   height: 40px;
@@ -23,6 +47,7 @@ font: normal normal normal 12px/24px Roboto;
 letter-spacing: 0px;
 color: #3583C5;
 opacity: 1;
+margin-bottom: 24px;
 }
 .login-submit-button{
     width: 200px;
@@ -30,8 +55,50 @@ opacity: 1;
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 6px;
     color: #FFFFFF;
+    text-transform: capitalize !important;
+    font-weight: 500;
 }
+.studentLoginModal .MuiTabs-root{
+  border-bottom: none !important;
+}
+.studentLoginModal .MuiTabs-flexContainer button {
+  display: inline-block;
+  margin-right: 20px;
+  /* width:14vw; */
+  text-align: center;
+  border-bottom: 5px solid #ADB9C3;
+  transition: all 0.5s;
+  font: normal normal normal 22px/25px Roboto;
+  font-weight: 400;
+  cursor: pointer;
+  color: #6b6d6f;
+} 
 
+.studentLoginModal .MuiTabs-flexContainer button.Mui-selected {
+  border-bottom: 5px solid #337ab7;
+font: normal normal normal 22px/25px Roboto;
+letter-spacing: 0px;
+color: #143754;
+font-weight: 500;
+opacity: 1;
+}
+.studentLoginModal .MuiTabs-indicator {
+  display: none !important;
+}
+.separator{
+  width: 2px;
+  height: 220px;
+  position: absolute;
+  background-color: lightgray;
+  left:50%
+}
+.separatorTxt{
+  top: 65%;
+  left:49%;
+  position: absolute;
+  background-color: white;
+  font-size: 12px;
+}
 @media only screen and (max-width: 544px){
   .MuiTabs-scroller.MuiTabs-fixed {
     margin-top: 0px;

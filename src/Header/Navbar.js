@@ -5,10 +5,20 @@ import "bootstrap/dist/js/bootstrap.bundle";
 import {Link} from "react-router-dom";
 import Inskills from "../image/Group174.png"
 import Searchbox from "./Searchbox"
+import NavLogin from '../Courses/DigitalMarketing/Enroll/navLogin';
 
 export default function Navbar () {
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+  const handleClose = () => {
+    setOpen(false);
+  };
     return (
       <div className="inskillzNav" >
+        <NavLogin handleClose={handleClose} open={open}></NavLogin>
         <div className="beta uk-visible@s">This site is under Development , some functionalities may not work properly.</div>
           <nav className="navbar navbar-expand-lg navbar-light" style={{background: "#3583c5", opacity:"1"}}>
             <div className="containerNav">
@@ -32,9 +42,9 @@ export default function Navbar () {
                   <Link className="nav-link" to="/profile-details">Contact</Link>
                  </li>
                 </ul>
-                <form className="d-flex">
-                 <button className="butt" type="submit">Login / Signup</button>
-                </form>
+                <div className="d-flex">
+                 <button onClick={handleClickOpen} className="butt" >Login / Signup</button>
+                </div>
               </div>
            </div>
          </nav>

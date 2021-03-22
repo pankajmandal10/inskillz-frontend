@@ -118,6 +118,17 @@ border-radius: 10px 0px 0px 10px;
     color: #143754;
     opacity: 1;
 }
+.viewSearch .fa-circle{
+color: black;
+font-size: 15px !important;
+}
+.viewSearch span{
+margin-top: 2px;
+}
+.viewSearch .fa-check-circle{
+    color: #3583C5;
+    font-size: 15px !important;  
+}
 
 @media screen and (max-width: 450px) {
     .view-1{

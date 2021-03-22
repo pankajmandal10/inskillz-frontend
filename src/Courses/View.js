@@ -13,7 +13,9 @@ import { makeStyles, withStyles } from '@material-ui/core/styles';
 import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
-
+import Checkbox from '@material-ui/core/Checkbox';
+import CheckBoxOutlineBlankIcon from '@material-ui/icons/CheckBoxOutlineBlank';
+import CheckBoxIcon from '@material-ui/icons/CheckBox';
 
 const BootstrapInput = withStyles((theme) => ({
     root: {
@@ -47,7 +49,7 @@ export default function View() {
         setSearch(event.target.value);
     };
     return (
-        <div>
+        <div className="viewSearch">
             <p className="view-1"> View Our Courses</p>
             <form className="d-flex container">
                 <form class="uk-search uk-search-default ">
@@ -65,18 +67,23 @@ export default function View() {
                         input={<BootstrapInput />}
                     >
                         <option selected value={10}>By Name</option>
-                        <option  value={20}>Twenty</option>
+                        <option value={20}>Twenty</option>
                         <option value={30}>Thirty</option>
                     </NativeSelect>
                 </FormControl>
                 <div className="uk-visible@s">
-                <FormControlLabel value={value} onChange={handleChange} control={<Radio />} label="Show only New courses" />
+                    <FormControlLabel
+                        control={<Checkbox icon={<i className="fas fa-check-circle"></i>} checkedIcon={<i className="far fa-circle"></i>} name="checkedH" />}
+                        label="Show only New courses"
+                    />
                 </div>
             </form>
             <div className="uk-hidden@s mobileRadio">
-                <FormControlLabel value={value} onChange={handleChange} control={<Radio />} label="Show only New courses" />
-                </div>
-           
+            <FormControlLabel
+                        control={<Checkbox icon={<i className="fas fa-check-circle"></i>} checkedIcon={<i className="far fa-circle"></i>} name="checkedH" />}
+                        label="Show only New courses"
+                    />            </div>
+
         </div>
     )
 }

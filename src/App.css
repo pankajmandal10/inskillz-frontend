@@ -140,4 +140,7 @@ top: 188px !important;
   .MuiDialogTitle-root{
     max-width: 90vw;
   }
+  .navbar{
+    z-index: 1000;
+  }
 }

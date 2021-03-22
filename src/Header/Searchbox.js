@@ -40,6 +40,7 @@ export default function Searchbox() {
   const classes = useStyles();
 
   return (
+    <div className="homeSearch">
     <Paper component="form" className={classes.root}>
       <IconButton type="submit" className={classes.iconButton} aria-label="search">
        <img src={search}></img>
@@ -52,5 +53,6 @@ export default function Searchbox() {
         inputProps={{ "aria-label": "Search" }}
       />      
     </Paper>
+    </div>
   );
 }

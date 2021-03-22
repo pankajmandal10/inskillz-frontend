@@ -9,6 +9,7 @@ import Teach from "./Teach/Teach"
 import Contact from "./Contact/Contact"
 import DigitalMarketing from './Courses/DigitalMarketing/DigitalMarketing';
 import UserDetails from './Courses/ProfileDetails/UserDetails';
+import Curx from './Courses/Curx/Curx';
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
         {/* <Route exact path="/contact" component={Contact} /> */}
         <Route exact path="/digital-marketing" component={DigitalMarketing} />
         <Route exact path="/profile-details" component={UserDetails} />
-
+        <Route exact path="/curx" component={Curx} />
       </Switch>
       <Footer />
     </BrowserRouter>

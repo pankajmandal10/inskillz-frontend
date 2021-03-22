@@ -122,6 +122,17 @@
         width: 14px !important;
         height: 14px !important;
       }
+      #demo-simple-select-outlined-label{
+        top:17px !important
+      }
+      .mobileSelect svg{
+margin-top: -3px;
+      }
+      .mobileSelect .MuiOutlinedInput-input{
+        color: black !important;
+        padding: 12px 14px !important;
+        margin-top: -4px !important;
+      }
       @media screen and (max-width: 450px) {
         .sidenav {padding-top: 15px;}
         .sidenav a {font-size: 18px;}

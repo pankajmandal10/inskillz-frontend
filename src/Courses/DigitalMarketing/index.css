@@ -22,7 +22,6 @@
     top: 258px;
     left: 8vw;
     width: 635px;
-    height: 34px;
     text-align: left;
     font: normal normal 300 22px/24px Roboto;
     letter-spacing: 0px;
@@ -117,9 +116,8 @@ top: 430px;
     /* position: absolute; */
     margin-top: -224px;
     width: 330px;
-    height: 226px;
     border: none;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    /* box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); */
     /* border-radius: 14px; */
 }
 .profileDetails{
@@ -329,7 +327,7 @@ opacity: 1;
 .chapters{
     padding: 18px 0px 18px 33px;
     width: 330px;
-    margin-top: 310px;
+    margin-top: 30px;
     background-color: #143754;
     border-radius: 10px;
     text-align: start;

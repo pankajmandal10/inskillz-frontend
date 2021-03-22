@@ -39,4 +39,105 @@
   to {
     transform: rotate(360deg);
   }
+
+ 
+}
+@media only screen and (max-width: 544px) {
+  .navbar-collapse{
+      width: 100vw !important;
+      margin-left: -200px !important;
+      margin-top: 60px;
+      z-index: 100;
+      background-color: rgb(53, 131, 197);
+  }
+  .homeSearch{
+    max-width: 85vw !important;
+  }
+  .homeSearch .MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded{
+    max-width: 100% !important;
+
+  }
+  .navbar-toggler{
+    position: absolute;
+    right: 20px;
+    top: 13px;
+    height: 50px;
+  }
+  .discuss{
+    font: normal normal bold 18px/35px Roboto !important;
+  }
+  .navbar-nav li{
+    height: 28px !important;
+  }
+  .butt{
+    margin-top: 10px;
+  }
+  .marketing-text{
+width: auto !important;
+top: 188px !important;
+  }
+  .MuiTabs-flexContainer button{
+    width: 15vw !important;
+    /* margin-right: 2vw !important; */
+  }
+  .MuiTabs-flexContainer button span{
+    font-size: 15px !important;
+
+  }
+  .card-profile{
+    margin-top: 30px !important;
+    width: 90% !important;
+    margin-left: 5%;
+  }
+  .chapters{
+    width: 90% !important;
+    margin-left: 5%;
+  }
+  .profileCardContain{
+    padding: 0px auto;
+    width: 100%;
+
+  }
+  .tabImg{
+    width: 90vw !important;
+  }
+  .marketing-stars {
+    top: 245px !important;
+  }
+  .marketing-buttons{
+    width: 150px !important;
+  }
+  .header{
+    top:130px !important;
+
+  }
+  .bannerBtns{
+    top: 280px !important;
+  }
+  .bannerBtns2{
+    top: 420px !important;
+  }
+  .bannerBtns3{
+    top: 350px !important;
+  }
+  .mobileEnroll{
+    margin-top: -100px;
+    width: 200px;
+    z-index: 1000;
+  }
+  .bannerBtns4{
+    top:465px !important;
+  }
+  .card-img-top{
+    width: auto !important;
+  }
+  .MuiDialog-paperWidthSm{
+    width:auto !important
+  }
+  .MuiDialog-paper{
+    margin:10px !important;
+  }
+  .MuiDialogTitle-root{
+    max-width: 90vw;
+  }
 }

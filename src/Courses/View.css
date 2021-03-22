@@ -121,8 +121,9 @@ border-radius: 10px 0px 0px 10px;
 
 @media screen and (max-width: 450px) {
     .view-1{
-        margin-left: 45px;
-        font: normal normal bold 30px/5px Roboto;
+        margin-left: 0px;
+        width: auto !important;
+        font: normal normal bold 22px/5px Roboto;
     }
     .search-name{
         margin-left: 8px;
@@ -156,4 +157,17 @@ border-radius: 10px 0px 0px 10px;
      width: 20px;
      height: 41px;
     }
+    .uk-search-default{
+        width: 60vw !important;
+      }
+      .uk-search-input{
+        width: 60vw !important;
+
+      }
+      .MuiInputBase-root.MuiInputBase-formControl{
+          width: 115px !important;
+      }
+      .mobileRadio{
+          /* margin-left: -75px; */
+      }
   } 

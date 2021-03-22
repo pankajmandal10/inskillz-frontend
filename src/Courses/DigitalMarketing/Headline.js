@@ -165,7 +165,7 @@ export default function ProfileTabs() {
           </div>
         </div>
       </div>
-      <div>
+      <div className="profileCardContain">
        <ProfileCard></ProfileCard>
       </div>
       

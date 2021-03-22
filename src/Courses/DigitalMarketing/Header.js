@@ -77,11 +77,36 @@ export default function Header() {
             <Buttons name="Certification of Completion" Group={icons3} />
           </div>
         </div>
+        <div className="bannerBtns uk-hidden@s">
+          <div className="marketing-buttons" >
+            <Buttons name="22 Hours On Demand Videos" Group={icons1} />
+          </div>
+          <div className="marketing-buttons" >
+            <Buttons name="Downloadable Resources" Group={icons2} />
+          </div>
+          </div>
+          <div className="bannerBtns2 bannerBtns3 uk-hidden@s">
+          <div className="marketing-buttons" >
+            <Buttons name="Full Lifetime Access" Group={clock} />
+          </div>
+          <div className="marketing-buttons" >
+            <Buttons name="Certification of Completion" Group={icons3} />
+          </div>
+        </div>
         <div className="bannerBtns2 uk-visible@s">
           <button onClick={handleClickOpenEnrol} className="marketing-button" style={{  width: "247px", background: "#D3262A 0% 0% no-repeat padding-box", color: "#FFFFFF" }}> $300 Enroll Now </button>
           <button onClick={handleClickOpen} className="marketing-button" style={{  width: "160px", background: "#FFFFFF 0% 0% no-repeat padding-box" }}>View Batches</button>
           <button onClick={progressOpen} className="marketing-button" style={{  width: "247px", background: "#FFFFFF 0% 0% no-repeat padding-box" }}><img className="uk-margin-small-right" src={pdf} />Download Brochure</button>
         </div>
+        <div className="bannerBtns2 uk-hidden@s">
+          <button onClick={handleClickOpen} className="marketing-button" style={{  width: "110px",height:'35px',background: "#FFFFFF 0% 0% no-repeat padding-box" }}>View Batches</button>
+          <button onClick={progressOpen} className="marketing-button" style={{  width: "190px",height:'35px', background: "#FFFFFF 0% 0% no-repeat padding-box" }}><img style={{width:'15px'}} className="uk-margin-small-right" src={pdf} />Download Brochure</button>
+        </div>
+        <div className="bannerBtns2 bannerBtns4 uk-hidden@s">
+        <button onClick={handleClickOpenEnrol} className="marketing-button" style={{  width: "310px",height:'35px',background: "#D3262A 0% 0% no-repeat padding-box", color: "#FFFFFF" }}> $300 Enroll Now </button>
+
+        </div>
+
       </div>
     </div>
   )

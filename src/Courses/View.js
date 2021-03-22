@@ -69,8 +69,13 @@ export default function View() {
                         <option value={30}>Thirty</option>
                     </NativeSelect>
                 </FormControl>
+                <div className="uk-visible@s">
                 <FormControlLabel value={value} onChange={handleChange} control={<Radio />} label="Show only New courses" />
+                </div>
             </form>
+            <div className="uk-hidden@s mobileRadio">
+                <FormControlLabel value={value} onChange={handleChange} control={<Radio />} label="Show only New courses" />
+                </div>
            
         </div>
     )

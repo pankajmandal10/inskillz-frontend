@@ -36,7 +36,7 @@ export default function Navbar () {
                    <Link className="nav-link" to="/courses" >Courses</Link>
                  </li>
                  <li className="nav-item-2 ">
-                   <Link className="nav-link" to="/teach-on-inskills">Teach On Inskills </Link>
+                   <Link className="nav-link" to="/curx">Teach On Inskills </Link>
                  </li>
                  <li className="nav-item-3 ">
                   <Link className="nav-link" to="/profile-details">Contact</Link>

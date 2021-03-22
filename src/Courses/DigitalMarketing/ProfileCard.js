@@ -5,7 +5,7 @@ import pdf from "../Image/pdf.svg"
 
 export default function ProfileCard() {
   return (
-    <div>
+    <div className="profileCardContain">
       <div className="card-profile">
         <div className="card shadow" style={{ borderRadius: "10px", border: "none" }}>
           <img src={ProfileImg} className="card-img-top" alt="..." />

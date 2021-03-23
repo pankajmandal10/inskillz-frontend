@@ -99,8 +99,51 @@ opacity: 1;
   background-color: white;
   font-size: 12px;
 }
+.login-blue-button{
+  margin-top: 13px !important;
+  width: 200px;
+  height: 35px;
+  /* background: #3583C5 0% 0% no-repeat padding-box; */
+  box-shadow: 0px 3px 6px #00000029 !important;
+  border-radius: 6px !important;
+  color: #FFFFFF !important;
+  text-transform:capitalize !important;
+  background-color: #3583C5 !important;
+}
+.visit {
+  text-decoration: underline;
+  font: normal normal normal 12px/14px Roboto;
+  color: #143754;
+  padding-left: 220px;
+}
 @media only screen and (max-width: 544px){
   .MuiTabs-scroller.MuiTabs-fixed {
     margin-top: 0px;
+  }
+  .studentLoginModal input{
+    width: 100% !important;
+  }
+  .login-submit-button{
+    width: 100% !important;
+  }
+  .login-blue-button{
+    width: 100% !important;
+  }
+  .MuiDialogContent-root{
+     padding: 10px !important;
+  }
+  .forget{
+    padding-left: 65px;
+  }
+  .progressRightContain{
+    padding-left: 45px !important;
+  }
+  .progressRightContain2{
+    padding-left: 15px !important;
+  }
+  .visit{
+    padding-left: 0px !important;
+    display: block !important;
+    margin-top: 10px;
   }
 }

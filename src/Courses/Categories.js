@@ -3,9 +3,9 @@ import "./Categories.css"
 import DigitalPhotography from "./DigitalPhotography";
 import Typography from '@material-ui/core/Typography';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
-import Link from '@material-ui/core/Link';
+
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
-import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Redirect,Link } from "react-router-dom";
 import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormHelperText from '@material-ui/core/FormHelperText';
@@ -13,7 +13,12 @@ import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import { makeStyles } from '@material-ui/core/styles';
 import image5 from "../image/image5.png"
+import image6 from "../image/image6.png"
+import image2 from "../image/image2.png"
+import image3 from "../image/image3.png"
+import image4 from "../image/image4.png"
 import Card1 from '../comp/Card1';
+import CarousalCard from '../comp/carousalCard';
 
 const useStyles = makeStyles((theme) => ({
     formControl: {
@@ -61,8 +66,19 @@ export default function Categories() {
                                 label=""
                             >
                                 <MenuItem value="All">All</MenuItem>
-                                <MenuItem value={20}>Twenty</MenuItem>
-                                <MenuItem value={30}>Thirty</MenuItem>
+                                <MenuItem value={1}>Digital Photography</MenuItem>
+                                <MenuItem value={2}>Wildlife Photography</MenuItem>
+                                <MenuItem value={3}>Illustration</MenuItem>
+                                <MenuItem value={4}>Graphic Design</MenuItem>
+                                <MenuItem value={5}>UI UX Design</MenuItem>
+                                <MenuItem value={6}>Motion Graphics </MenuItem>
+                                <MenuItem value={7}>Web Development </MenuItem>
+                                <MenuItem value={8}>Product Design</MenuItem>
+                                <MenuItem value={9}>Graphic Design</MenuItem>
+                                <MenuItem value={10}>UI UX Design</MenuItem>
+                                <MenuItem value={11}>Motion Graphics</MenuItem>
+                                <MenuItem value={12}>Web Development</MenuItem>
+                               
                             </Select>
                         </FormControl>
 
@@ -146,13 +162,6 @@ export default function Categories() {
                                     <li><h1>hii</h1></li>
                                 </ul>
                             </li>
-
-                            {/* <BrowserRouter>
-                                        <Switch>
-                                            <Route path="/" component={DigitalPhotography} />
-
-                                        </Switch>
-                                    </BrowserRouter> */}
                             <li>
                                 <DigitalPhotography></DigitalPhotography>
                             </li>
@@ -162,22 +171,29 @@ export default function Categories() {
                 </div>
             </div>
             <div className="uk-hidden@s uk-padding">
-            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="true">
+                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="true">
                     <ul class="uk-slider-items uk-child-width-1-1">
-                        {/* <li>
-                           <Card1 img={image5}></Card1>
-                        </li> */}
                         <li>
-                            <img src={image5} alt="" />
-                            <div class="uk-position-center uk-panel"><h1>1</h1></div>
+                            <Link to="/digital-marketing">
+                                <CarousalCard name={"Course 01"} img={image5}></CarousalCard>
+                            </Link>
+                        </li>
+
+
+                        <li>
+                            <Link to="/digital-marketing">
+                                <CarousalCard name={"Course 01"} img={image4}></CarousalCard>
+                            </Link>
                         </li>
                         <li>
-                            <img src={image5} alt="" />
-                            <div class="uk-position-center uk-panel"><h1>1</h1></div>
+                            <Link to="/digital-marketing">
+                                <CarousalCard name={"Course 01"} img={image3}></CarousalCard>
+                            </Link>
                         </li>
                         <li>
-                            <img src={image5} alt="" />
-                            <div class="uk-position-center uk-panel"><h1>1</h1></div>
+                            <Link to="/digital-marketing">
+                                <CarousalCard name={"Course 01"} img={image2}></CarousalCard>
+                            </Link>
                         </li>
 
                     </ul>

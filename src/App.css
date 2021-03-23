@@ -75,10 +75,17 @@
   .marketing-text{
 width: auto !important;
 top: 188px !important;
+font: normal normal 300 18px/24px Roboto !important;
+width: 90% !important;
   }
   .MuiTabs-flexContainer button{
-    width: 15vw !important;
+    width: unset !important;
+    margin-top: 20px;
     /* margin-right: 2vw !important; */
+  }
+  .marketing .MuiTabs-flexContainer button{
+    margin-right: 2vw !important;
+
   }
   .MuiTabs-flexContainer button span{
     font-size: 15px !important;
@@ -143,4 +150,20 @@ top: 188px !important;
   .navbar{
     z-index: 1000;
   }
+  .header {
+    
+    left: 8vw;
+    width: 334px;
+    height: 49px;
+    text-align: left;
+    font: normal normal bold 30px/49px Roboto !important;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    opacity: 1;
+    position: absolute;
+}
+.accContainer{
+  width: 86.5vw !important;
+}
 }

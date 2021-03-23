@@ -9,7 +9,7 @@ export default function Curx() {
         <div>
           <CurxHeader />
             <div class="uk-grid">
-               <div class="uk-width-2-3 xtraWidth">
+               <div class="uk-width-2-3@s xtraWidth">
                  <div className="curx-video-player">
                     <ReactPlayer
                      className='react-player'
@@ -23,7 +23,7 @@ export default function Curx() {
                   </div>
 
                 </div>
-                <div class="uk-width-1-3 nonPdLeft">
+                <div class="uk-width-1-3@s nonPdLeft">
                   <CourseContent />
                 </div>
             </div>

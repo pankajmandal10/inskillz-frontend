@@ -10,7 +10,8 @@
     padding-left: 8vw;
   }
   .curx-header-progress-padding{
-    padding-left: 42vw;
+    padding-right: 10vw;
+    padding-top: 20px;
   }
   .curxSocialMedia {
     text-align: left;
@@ -36,8 +37,8 @@
     font: normal normal normal 18px/23px Roboto;
     letter-spacing: 0px;
     color: #FFFFFF;
-    margin-left: 18vw;
-    margin-top: -32px;
+    margin-left: 10px;
+    margin-top: -8px;
   }
   .curx-view-status{
     text-align: left;
@@ -267,21 +268,39 @@ margin-top: 0px !important;
   margin-top: -8px;
   margin-left: 7px;
 }
+.curxHeader{
+  margin-top: -21px;
+    min-width: 275;
+    height: 116;
+    background: #143754 0% 0% no-repeat padding-box;
+    background-color:#143754 ;
+}
   @media only screen and (max-width: 544px) {
     .curx-header-padding{
-      padding-left: 5px;
+      padding-left: 3vw;
+    }
+    .nonPdLeft{
+      padding-left: 8vw !important;
+      margin-bottom: 30px;
+    }
+    .curxHeader .MuiPaper-root.MuiCard-root{
+      height: 90px !important;
+    }
+    .xtraWidth{
+    width: 100%;
     }
     .curx-header-progress-padding{
-      padding-left: 2vw;
+      padding-right: 3vw;
     }
     .digitalMarketing {
       width: 158px;
       font: normal normal bold 16px/24px Roboto;
     }
     .curxSocialMedia {
-      padding-top: 12px;
+      padding-top: 0px;
       font: normal normal 300 15px/25px Roboto;
     }
+   
     .crux-progress-name {
       font: normal normal normal 10px/12px Roboto;
     }
@@ -291,10 +310,18 @@ margin-top: 0px !important;
     .progress{
       height: 7px;
     width: 146px;
+    margin-bottom: 12px;
     }
     .crux-progress-percentage{
       font: normal normal normal 15px/20px Roboto;
-      margin-left: 41vw;
+      margin-left: 10px;
+      display: none;
+    }
+    .mobilePer{
+      margin-top: -2px;
+      color: white;
+      font-size: 12px;
+      margin-right: 10px;
     }
     .curx-view-status{
       font: normal normal normal 10px/10px Roboto;
@@ -304,7 +331,18 @@ margin-top: 0px !important;
       margin-top: 5px;
       width: 97vw
     }
-
+    .digitalTabgrp .MuiTabs-flexContainer button{
+      width: 24vw !important;
+    }
+    .digitalTabgrp .MuiTabs-flexContainer button span{
+      font-size: 13px !important;
+    }
+    .curxTabs .MuiBox-root{
+      padding: 20px 0px !important;
+    }
+    .makeStyles-curx-5{
+      height: 90px !important;
+    }
     /* course Content */
 
     .courseContent{
@@ -314,14 +352,11 @@ margin-top: 0px !important;
 
     /* review */
     .curxTabs {
-      padding-left: 0px;
-      width: 360px;
-      margin-top: 49px;
+      padding: 10px !important;
+      width:100%;
+      margin-top: 25px;
     }
-    .MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded {
-      width: 99vw;
-      /* height: 10.3vh; */
-    }
+    
     
     .review-chapter-name {
       padding-left: 19px;

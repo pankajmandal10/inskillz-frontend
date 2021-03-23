@@ -200,7 +200,7 @@ export default function TeachTab() {
             <button className="googleSign uk-text-left"><i className="fab fa-google fa-lg uk-margin-right"></i>Sign in with Google</button>
             <button className="facebookSign  uk-text-left uk-margin-small-top"><i className="fab fa-facebook fa-lg uk-margin-small-right"></i>Continue with Facebook</button>
             <Typography className={classes.enrolled}>Not Enrolled yet ? Why Don't you Sign up quickly here</Typography>
-            <Button className={classes.signIn}> Sign Up </Button>
+            <Button className="login-blue-button"> Sign Up </Button>
           </div>
           </div>
 
@@ -227,7 +227,7 @@ export default function TeachTab() {
             <button className="googleSign uk-text-left"><i className="fab fa-google fa-lg uk-margin-right"></i>Sign in with Google</button>
             <button className="facebookSign  uk-text-left uk-margin-small-top"><i className="fab fa-facebook fa-lg uk-margin-small-right"></i>Continue with Facebook</button>
             <Typography className={classes.enrolled}>Not Enrolled yet ? Why Don't you Sign up quickly here</Typography>
-            <Button className={classes.signIn}> Sign Up </Button>
+            <Button className="login-blue-button"> Sign Up </Button>
           </div>
           </div>
 

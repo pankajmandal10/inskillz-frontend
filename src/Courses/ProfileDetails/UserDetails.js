@@ -12,6 +12,9 @@ import image2 from "../../image/image2.png"
 import image3 from "../../image/image3.png"
 import image4 from "../../image/image4.png"
 import image5 from "../../image/image5.png"
+import CarousalCard from '../../comp/carousalCard'
+import { BrowserRouter, Switch, Route, Redirect,Link } from "react-router-dom";
+
 export default function UserDetails() {
   return (
     <div class="row contactContainer">
@@ -84,23 +87,54 @@ export default function UserDetails() {
         </div>
       </div>
       <p className="recommended">Courses Recommended</p>
-      <div className="uk-child-width-1-4@s uk-grid recommendedCards">
+      <div className="uk-child-width-1-4@s uk-visible@s uk-grid recommendedCards">
         <div>
-        <Card1 name={"Course 01"} img={image3} />
-        </div>
-        <div>
-        <Card1 name={"Course 02"} img={image2} />
+          <Card1 name={"Course 01"} img={image3} />
+          {/* <CarousalCard name={"Course 01"} img={image3}></CarousalCard> */}
         </div>
         <div>
-        <Card1 name={"Course 03"} img={image5} />
+          <Card1 name={"Course 02"} img={image2} />
         </div>
         <div>
-        <Card1 name={"Course 04"} img={image6} />
+          <Card1 name={"Course 03"} img={image5} />
         </div>
-          {/* <Card1 name={"Course 05"} img={image4} /> */}
+        <div>
+          <Card1 name={"Course 04"} img={image6} />
         </div>
-        
-        <Queries></Queries>
+        {/* <Card1 name={"Course 05"} img={image4} /> */}
       </div>
-    )
+      <div className="uk-hidden@s uk-padding ">
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="true">
+          <ul class="uk-slider-items recMobileSlider">
+            <li>
+              <Link to="/digital-marketing">
+                <CarousalCard name={"Course 01"} img={image5}></CarousalCard>
+              </Link>
+            </li>
+            <li>
+              <Link to="/digital-marketing">
+                <CarousalCard name={"Course 01"} img={image4}></CarousalCard>
+              </Link>
+            </li>
+            <li>
+              <Link to="/digital-marketing">
+                <CarousalCard name={"Course 01"} img={image3}></CarousalCard>
+              </Link>
+            </li>
+            <li>
+              <Link to="/digital-marketing">
+                <CarousalCard name={"Course 01"} img={image2}></CarousalCard>
+              </Link>
+            </li>
+
+          </ul>
+
+          <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous="true" uk-slider-item="previous"></a>
+          <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next="true" uk-slider-item="next"></a>
+
+        </div>
+      </div>
+      <Queries></Queries>
+    </div>
+  )
 }

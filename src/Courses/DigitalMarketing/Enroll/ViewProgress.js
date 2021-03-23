@@ -46,12 +46,7 @@ const useStyles = makeStyles((theme) => ({
         font: "normal normal bold 18px/21px Roboto",
         color: "#143754"
       },
-      visit: {
-        textDecoration: "underline",
-        font: "normal normal normal 12px/14px Roboto",
-        color: "#143754",
-        paddingLeft: "220px",
-      },
+     
       instructor: {
         textAlign: "left",
         font: "normal normal normal 16px/19px Roboto",
@@ -113,7 +108,7 @@ export default function ViewProgress(props) {
       <Dialog onClose={props.handleClose} aria-labelledby="customized-dialog-title" open={props.open}>
       <DialogTitle id="customized-dialog-title" onClose={props.handleClose}>
       <p className={classes.course}>Course Name</p>
-      <div className={classes.digital}>Why Digital Marketing ? <span className={classes.visit}>Visit Course page</span> </div>
+      <div className={classes.digital}>Why Digital Marketing ? <span className="visit">Visit Course page</span> </div>
         </DialogTitle>
         <DialogContent>
         <th>
@@ -125,7 +120,7 @@ export default function ViewProgress(props) {
             <p className={classes.instructor}>Progress</p>
             <p className={classes.instructor}>Current Lession</p>
         </th>
-        <th style={{paddingLeft:"158px"}}>
+        <th className="progressRightContain" style={{paddingLeft:"158px"}}>
             <p className={classes.instructorName}>Joseph Smith</p>
             <p className={classes.instructorName}>Independent</p>
             <p className={classes.instructorName}>7 Weeks</p>
@@ -147,11 +142,11 @@ export default function ViewProgress(props) {
             <p className={classes.instructor}>Chapter 01 Basice Intro</p>
             <p className={classes.instructor}>Chapter 01 The Crux of Social media</p>
         </th>
-        <th style={{paddingLeft:"73px"}}>
+        <th className="progressRightContain2" style={{paddingLeft:"73px"}}>
             <p className={classes.instructorName}>60/100</p>
             <p className={classes.instructorName}></p>
         </th>
-        <th style={{paddingLeft:"73px"}}>
+        <th className="progressRightContain2" style={{paddingLeft:"73px"}}>
             <p className={classes.passed}>Passed</p>
             <p className={classes.inProgress}> In Progress</p>
         </th>

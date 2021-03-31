@@ -24,10 +24,11 @@
         color: #143754;
         opacity: 1;
       }
+     
       .uk-accordion-title::before{
         float: left;
         margin-left: 0px !important;
-        margin-right: 10px;
+        margin-right: 0px;
       content:"\002B";
       width: 1.4em;
       height: 1.4em;
@@ -36,9 +37,24 @@
       background-image: unset !important;
       background-repeat: no-repeat;
       background-position: 50% 50%;
-      color: white ;
+      color: black ;
       /* background-color: white; */
   }
+  .uk-active .uk-accordion-title::before{
+    float: left;
+    margin-left: 0px !important;
+    margin-right: 0px;
+  content:"\002B";
+  width: 1.4em;
+  height: 1.4em;
+  margin-left: 10px;
+  /* float: right; */
+  background-image: unset !important;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  color: white ;
+  /* background-color: white; */
+}
   .uk-open>.uk-accordion-title::before{
     content:"\2212";
 

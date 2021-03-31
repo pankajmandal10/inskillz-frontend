@@ -59,7 +59,7 @@ export default function NavLogin(props) {
         <img className="inskills-logo" src={Inskills} />
         </DialogTitle>
         <DialogContent>
-           <TeachTab></TeachTab>
+           <TeachTab close={props.handleClose} />
         </DialogContent>
       </Dialog>
     </div>

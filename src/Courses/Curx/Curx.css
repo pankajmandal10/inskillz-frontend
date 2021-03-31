@@ -51,7 +51,8 @@
   .curx-video-player{
     margin-left: 97px;
     margin-top: 18px;
-    width: 55.7vw;
+    /* width: 55.7vw; */
+    margin-right: 30px;
     height: 438px;
   }
 
@@ -125,7 +126,7 @@
     opacity: 1;
   }
   .review-chapter-name-text{
-    width: 229px;
+    /* width: 229px; */
     text-align: left;
     font: normal normal normal 16px/20px Open Sans;
     letter-spacing: 0px;
@@ -166,13 +167,16 @@
   padding-left: 7px;
 }
 .curx-text-box{
-  margin-left: 49px;
+  margin-left: 0px;
   width: 211px;
-  height: 58px;
+  height: 50px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border: 1px solid #A5A5A5;
   border-radius: 6px;
   opacity: 1;
+}
+.review-course-material-text{
+  text-align: left;
 }
 /* hr:not([size]) {
   height: 1px;
@@ -260,8 +264,14 @@ margin-top: 0px !important;
 }
 .reviewHeadTab{
   box-shadow: 0px 3px 6px #00000029;
-  margin-bottom: 20px;
-  width: 110% !important;
+  margin-bottom: 40px !important;
+  width: 100% !important;
+  margin-left: 0px !important;
+
+}
+.reviewHeadTab th{
+  text-transform: capitalize !important;
+  color: black !important;
 
 }
 .revTxt{
@@ -279,9 +289,16 @@ margin-top: 0px !important;
     .curx-header-padding{
       padding-left: 3vw;
     }
+    .reviewHeadTab th{
+     font-size: 9px !important;
+    
+    }
     .nonPdLeft{
       padding-left: 8vw !important;
       margin-bottom: 30px;
+    }
+    .reviewRow{
+      padding:0px !important;
     }
     .curxHeader .MuiPaper-root.MuiCard-root{
       height: 90px !important;
@@ -372,12 +389,17 @@ margin-top: 0px !important;
       font: normal normal 600 12px/18px Open Sans;
     }
     .curx-text-box {
-      width: 100px;
+      width: 90px;
       height: 28px;
-      margin-left: 10px;
+      margin-left: 0px;
     }
-    .makeStyles-root-31 > .makeStyles-root-31 {
-      width: 99vw;
+    .review-chapter-name-text{
+      /* width: 229px; */
+      text-align: left;
+      font: normal normal normal 12px/20px Open Sans;
+      letter-spacing: 0px;
+      color: #3F433D;
+      padding-top: 0px !important;
     }
     
   }

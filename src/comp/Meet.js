@@ -21,7 +21,7 @@ Browse through to find your Tutor. </p>
                          <div className="image_div" >
                              <img src={profile} className="profile" alt="..."/>
                          </div>
-                         <p className="title-2">Name Of Institute/ Tutor</p>
+                         <p className="instName">Name Of Institute/ Tutor</p>
                          <p className="position">Subject / Specialization</p>
                          <p className="text-1">Brief Profile : </p>
                      </div>
@@ -29,7 +29,7 @@ Browse through to find your Tutor. </p>
                          <div className="image_div">
                              <img src={profile} className="profile" alt="..." />
                          </div>
-                         <p className="title-2">Name Of Institute/ Tutor</p>
+                         <p className="instName">Name Of Institute/ Tutor</p>
                          <p className="position">Subject / Specialization</p>
                          <p className="text-1">Brief Profile : </p>
                      </div>
@@ -37,7 +37,7 @@ Browse through to find your Tutor. </p>
                          <div className="image_div">
                              <img src={profile} className="profile" alt="..." />
                          </div>
-                         <p className="title-2">Name Of Institute/ Tutor</p>
+                         <p className="instName">Name Of Institute/ Tutor</p>
                          <p className="position">Subject / Specialization</p>
                          <p className="text-1">Brief Profile : </p>
                      </div>
@@ -45,7 +45,7 @@ Browse through to find your Tutor. </p>
                          <div className="image_div">
                              <img src={profile} className="profile" alt="..." />
                          </div> 
-                         <p className="title-2">Name Of Institute/ Tutor</p>
+                         <p className="instName">Name Of Institute/ Tutor</p>
                          <p className="position">Subject / Specialization</p>
                          <p className="text-1">Brief Profile : </p>
                      </div>

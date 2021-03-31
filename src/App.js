@@ -10,6 +10,10 @@ import Contact from "./Contact/Contact"
 import DigitalMarketing from './Courses/DigitalMarketing/DigitalMarketing';
 import UserDetails from './Courses/ProfileDetails/UserDetails';
 import Curx from './Courses/Curx/Curx';
+import BestPlan from "./Tutor/BestPlan"
+import EditCourseDetails from './Tutor/EditCourseDetails';
+import AddNewCourse from './Tutor/AddNewCourse';
+import Instructor from './Tutor/Instructor';
 
 function App() {
   return (
@@ -24,6 +28,10 @@ function App() {
         <Route exact path="/digital-marketing" component={DigitalMarketing} />
         <Route exact path="/profile-details" component={UserDetails} />
         <Route exact path="/curx" component={Curx} />
+        <Route exact path="/instructor" component={Instructor} />
+        <Route exact path="/best-plan" component={BestPlan} />
+        <Route exact path="/edit-course-Details" component={EditCourseDetails} />
+        <Route exact path="/add-new-course" component={AddNewCourse} />
       </Switch>
       <Footer />
     </BrowserRouter>

@@ -33,10 +33,18 @@
    color: #22435E;
    opacity: 1;
 }
+.instName{
+    text-align: center;
+    font: normal normal 500 30px/35px Roboto;
+    letter-spacing: 0px;
+    color: #22435E;
+    opacity: 1;
+    margin-top: 12px;
+}
 .title-2{
     height: 35px;
     text-align: center;
-    font: normal normal medium 30px/35px Roboto;
+    font: normal normal 500 30px/35px Roboto;
     letter-spacing: 0px;
     color: #22435E;
     opacity: 1;

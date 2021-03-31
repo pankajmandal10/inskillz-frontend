@@ -1,5 +1,6 @@
 import React from 'react'
 import "./StudentLogin.css"
+import { Link } from "react-router-dom"
 
 
 import { makeStyles, withStyles } from '@material-ui/core/styles';
@@ -10,7 +11,9 @@ import PropTypes from 'prop-types';
 import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
 import FacebookIcon from '@material-ui/icons/Facebook';
-
+import { useHistory } from 'react-router-dom';
+import { userLogin } from "../../../Store/actions/userActions";
+import { useDispatch, useSelector} from 'react-redux'
 
 
 function TabPanel(props) {
@@ -161,15 +164,21 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-export default function TeachTab() {
+export default function TeachTab(props) {
 
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
+  const history = useHistory();  
+  const dispatch= useDispatch()
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
+  const login = () => {
+    props.close();
+    history.push("/profile-details");   
+    dispatch(userLogin())
+  };
   return (
     <div className="studentLoginModal">
     <div className={classes.root}>
@@ -193,7 +202,9 @@ export default function TeachTab() {
               <br />
               <input className={classes.textbox} type="password" />
               <div className="forget">Forgot Password</div>
-              <Button className="login-submit-button" style={{ background: "#D3262A 0% 0% no-repeat padding-box", color: "#FFFFFF" }}> Sign In </Button>
+              
+              <Button onClick={login} className="login-submit-button" style={{ background: "#D3262A 0% 0% no-repeat padding-box", color: "#FFFFFF" }}> Sign In </Button>
+         
             </div>
          
           <div >
@@ -220,7 +231,11 @@ export default function TeachTab() {
               <br />
               <input className={classes.textbox} type="password" />
               <div className="forget">Forgot Password</div>
-              <Button className="login-submit-button" style={{ background: "#D3262A 0% 0% no-repeat padding-box", color: "#FFFFFF" }}> Sign In </Button>
+              <Link to="/instructor" >
+              <Button className="login-submit-button" style={{ background: "#D3262A 0% 0% no-repeat padding-box", color: "#FFFFFF" }}>
+                  Sign In
+               </Button>
+               </Link> 
             </div>
          
           <div >

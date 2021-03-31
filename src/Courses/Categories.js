@@ -5,7 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
-import { BrowserRouter, Switch, Route, Redirect,Link } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Redirect, Link } from "react-router-dom";
 import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormHelperText from '@material-ui/core/FormHelperText';
@@ -78,7 +78,7 @@ export default function Categories() {
                                 <MenuItem value={10}>UI UX Design</MenuItem>
                                 <MenuItem value={11}>Motion Graphics</MenuItem>
                                 <MenuItem value={12}>Web Development</MenuItem>
-                               
+
                             </Select>
                         </FormControl>
 
@@ -100,12 +100,13 @@ export default function Categories() {
                     <div >
                         <div class="uk-width-auto">
                             <ul class="uk-tab-left" uk-tab="connect: #my-id">
+                                <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>All  <span className="numb" >123</span></a></li>
                                 <li>
                                     <a style={{ padding: "0px" }}>
                                         <ul uk-accordion="true">
 
                                             <li>
-                                                <a class="uk-accordion-title" href="#">ALL</a>
+                                                <a class="uk-accordion-title" href="#">Photography</a>
                                                 <div class="uk-accordion-content">
                                                     <ul class="uk-tab-left" uk-tab="connect: #secondSwitch">
                                                         <li>
@@ -122,7 +123,6 @@ export default function Categories() {
                                     </a>
                                 </li>
                                 {/* <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>All  <span className="numb" >1234</span></a></li> */}
-                                <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Photography  <span className="numb" >23</span></a></li>
                                 <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Illustration  <span className="numb" >33</span></a></li>
                                 <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Graphic-Design  <span className="numb" >12</span></a></li>
                                 <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>UI UX Design  <span className="numb" >15</span></a></li>

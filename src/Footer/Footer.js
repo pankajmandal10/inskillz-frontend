@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Footer.css";
+import { Link } from "react-router-dom";
 import FacebookIcon from '@material-ui/icons/Facebook';
 import Image7 from "../image/Image7.png";
 import Image8 from "../image/Image8.png";
@@ -20,7 +21,11 @@ export default function Footer() {
             <div className="col-md-3 col-sm-3">
               <div className="footer-widget">
                 <div className="widget-about">
+                 {/* <Link to="best-plan">
                   <h4 className="footer-widget-title" style={{ color: "#143754", font: "normal normal bold 25px/29px Roboto" }}> Download The App Now </h4>
+                 </Link> */}
+                 <h4 className="footer-widget-title" style={{ color: "#143754", font: "normal normal bold 25px/29px Roboto" }}> Download The App Now </h4>
+
                   <ul className="text-info" >
                     <li>
                       <img src={Image7} />
@@ -88,7 +93,7 @@ export default function Footer() {
 
             <div className="col-md-2 col-sm-4">
               <div className="footer-widget">
-                <div className="footer-menu no-padding">
+                <div className="footer-menu ">
                   <h4 className="footer-widget-title" style={{ color: "#143754", font: "normal normal bold 25px/29px Roboto" }}>Support</h4>
                   <ul>
                     <li>

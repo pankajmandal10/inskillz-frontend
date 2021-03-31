@@ -58,7 +58,7 @@ export default function StudentLogin(props) {
         <img className="inskills-logo" src={Inskills} />
         </DialogTitle>
         <DialogContent>
-           <StudentTab />
+           <StudentTab close={props.handleClose} />
         </DialogContent>
       </Dialog>
     </div>

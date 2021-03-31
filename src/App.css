@@ -1,7 +1,24 @@
 .App {
   text-align: center;
 }
-
+Link,a{
+  text-decoration:none !important
+}
+.MuiPaper-elevation4{
+  box-shadow: none !important;
+}
+.MuiTableHead-root {
+  display: table-header-group;
+  box-shadow: 0px 4px 3px #00000029;
+}
+.MuiTableHead-root span{
+  font-size: 12px !important;
+  /* font-weight: 600 !important; */
+}
+.MuiToolbar-regular {
+  min-height: 20px !important;
+  max-height: 40px !important;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -9,6 +26,9 @@
 .home button{
   font-family:Roboto,sans-serif !important ;
   font-size: 20px !important;
+}
+.MuiTableCell-root{
+  padding: 20px 10px !important;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -165,5 +185,14 @@ width: 90% !important;
 }
 .accContainer{
   width: 86.5vw !important;
+}
+.MuiToolbar-regular {
+  min-height: unset !important;
+  max-height: unset !important;
+}
+.marketing-button,.enrolBtn,.dwnldBtn{
+
+  font: normal normal 500 14px/16px Roboto !important;
+
 }
 }

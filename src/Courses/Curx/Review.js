@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexWrap: 'wrap',
     '& > *': {
-      width: "95%",
+      width: "100%",
       height: "74px",
     },
   },
@@ -21,21 +21,52 @@ export default function Review() {
 
   return (
     <div className={classes.root}>
+      <table class="uk-table uk-width-1-1">
 
+        <thead className="reviewHeadTab">
+          <tr>
+            <th className="review-chapter-name" >Chapter Name</th>
+            <th className="review-course-material" >Course Material</th>
+            <th className="review-course-material" >Course Material</th>
+          </tr>
+        </thead>
+       
+        <tbody>
+        <tr>
+           <td></td>
+           <td></td>
+           <td></td>
+          </tr>
+        <tr>
+            <td> <p className="review-chapter-name-text">What are the cruxes of social Media</p></td>
+            <td>
+              <ReviewStar />
+              <input className="curx-text-box" type="text" />
+            </td>
+            <td>
+              <ReviewStar />
+              <input className="curx-text-box" type="text" />
+            </td>
 
-      <div className="reviewHeadTab uk-child-width-1-3 uk-grid">
-<div>
-<th className="review-chapter-name" >Chapter Name</th>
-</div>
-<div>
-<th className="review-course-material" >Course Material</th>
-</div>
-<div>
-<th className="review-instructor-performance" >Instructor Performance</th>
-</div>
+          </tr>
+          <tr>
+            <td> <p className="review-chapter-name-text">What are the cruxes of social Media</p></td>
+            <td>
+              <ReviewStar />
+              <input className="curx-text-box" type="text" />
+            </td>
+            <td>
+              <ReviewStar />
+              <input className="curx-text-box" type="text" />
+            </td>
 
-      </div>
-      <tr style={{ padding: "15px 0px 20px  14px", height: "96px" }}>
+          </tr>
+        </tbody>
+      </table>
+
+     
+
+      {/* <tr style={{ padding: "15px 0px 20px  14px", height: "96px" }}>
         <th className="review-chapter-name-text">What are the cruxes of social Media</th>
         <th className="review-course-material-text">
           <ReviewStar />
@@ -60,19 +91,6 @@ export default function Review() {
         </th>
       </tr>
       <hr />
-
-      <tr style={{ padding: "15px 0px 20px  14px", height: "96px" }}>
-        <th className="review-chapter-name-text">What are the cruxes of social Media</th>
-        <th className="review-course-material-text">
-          <ReviewStar />
-          <input className="curx-text-box" type="text" />
-        </th>
-        <th className="review-instructor-performance-text" >
-          <ReviewStar />
-          <input className="curx-text-box" type="text" />
-        </th>
-      </tr>
-      <hr />
       <tr style={{ padding: "15px 0px 20px  14px", height: "96px" }}>
         <th className="review-chapter-name-text">What are the cruxes of social Media</th>
         <th className="review-course-material-text">
@@ -85,7 +103,7 @@ export default function Review() {
         </th>
       </tr>
 
-      <hr />
-    </div>
+      <hr /> */}
+    </div >
   );
 }

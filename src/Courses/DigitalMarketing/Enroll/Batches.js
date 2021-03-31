@@ -72,20 +72,20 @@ export default function Batches(props) {
           <hr />
           <div className="uk-flex uk-flex-between">
             <p className="batch-name-date">Batch A 12th Jan 2021 - 14th Jan 2022</p>
-            <button className="enroll-now-button">Enroll Now</button>
+            <button onClick={props.enrol} className="enroll-now-button">Enroll Now</button>
           </div>
           <hr />
           <div className="uk-flex uk-flex-between">
             <p className="batch-name-date">Batch A 12th Jan 2021 - 14th Jan 2022</p>
-            <button className="enroll-now-button">Enroll Now</button>
+            <button  onClick={props.enrol} className="enroll-now-button">Enroll Now</button>
           </div>          <hr />
           <div className="uk-flex uk-flex-between">
             <p className="batch-name-date">Batch A 12th Jan 2021 - 14th Jan 2022</p>
-            <button className="enroll-now-button">Enroll Now</button>
+            <button  onClick={props.enrol} className="enroll-now-button">Enroll Now</button>
           </div>          <hr />
           <div className="uk-flex uk-flex-between">
             <p className="batch-name-date">Batch A 12th Jan 2021 - 14th Jan 2022</p>
-            <button className="enroll-now-button">Enroll Now</button>
+            <button  onClick={props.enrol} className="enroll-now-button">Enroll Now</button>
           </div>
         </DialogContent>
       </Dialog>

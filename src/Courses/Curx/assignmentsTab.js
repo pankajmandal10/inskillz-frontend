@@ -8,15 +8,15 @@ const option = {
 };
 
 const rows = [
-    ["1", 'Why do we need digital Marketing', "234342343", 'INR 4000', 'Success'],
-    ["1", 'Why do we need digital Marketing', "234342343", 'INR 4000', 'Success'],
-    ["1", 'Why do we need digital Marketing', "234342343", 'INR 4000', 'Success'],
-    ["1", 'Why do we need digital Marketing', "234342343", 'INR 4000', 'Success'],
-    ["1", 'Why do we need digital Marketing', "234342343", 'INR 4000', 'Success'],
+    ["12-1-2020", 'Why do we need digital Marketing', "234342343", 'INR 4000', 'Success'],
+    ["12-1-2020", 'Why do we need digital Marketing', "234342343", 'INR 4000', 'Success'],
+    ["12-1-2020", 'Why do we need digital Marketing', "234342343", 'INR 4000', 'Success'],
+    ["12-1-2020", 'Why do we need digital Marketing', "234342343", 'INR 4000', 'Success'],
+    ["12-1-2020", 'Why do we need digital Marketing', "234342343", 'INR 4000', 'Success'],
 
 
 ];
-const columns = ["ID", "Course Name", "Transaction ID", "Amount", "Transaction Status",
+const columns = ["Date", "Course Name", "Transaction ID", "Amount", "Transaction Status",
     {
         name: "Edit",
         options: {
@@ -25,7 +25,7 @@ const columns = ["ID", "Course Name", "Transaction ID", "Amount", "Transaction S
                 return (
 
                     <div style={{ minWidth: "20px" }}>
-                        <i className="fas fa-edit fa-lg"></i>
+                        <i style={{color:'#3583C5'}} className="fas fa-edit fa-lg"></i>
                     </div>
                 );
             },

@@ -74,7 +74,7 @@ const useStyles = makeStyles({
     display: 'flex',
     alignItems: 'center',
     color: "#282A2C",
-    marginLeft:50,
+    marginLeft:3,
     fontSize:11
   },
 });

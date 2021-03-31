@@ -6,6 +6,23 @@
     height: 78px;
     
 }
+.navbar .fa-caret-down{
+margin-top:3px;
+}
+.navbar .uk-dropdown{
+    padding: 10px !important;
+}
+.navDrop{
+    background-color: white;
+    border-radius: 100px;
+    padding: 5px 15px;
+    font-size: 15px;
+    width: 150px;
+    min-width:150px;
+    border: none;
+    justify-content: space-between;
+
+}
 .containerNav{
     display: flex;
     width: 100vw;

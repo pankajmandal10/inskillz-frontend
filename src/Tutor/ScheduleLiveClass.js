@@ -20,7 +20,7 @@ let batches = [1,2,3,4,5,6,7,8,9,10];
 const styles = (theme) => ({
   root: {
     margin: 0,
-    width:622
+    width: "100%",
   },
   closeButton: {
     position: 'absolute',

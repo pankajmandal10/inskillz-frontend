@@ -2,6 +2,7 @@ import React from 'react'
 import "./Tutor.css"
 import EditCourseDetails from "./EditCourseDetails"
 import { Link } from 'react-router-dom'
+import ScheduleLiveClass from './ScheduleLiveClass'
 
 export default function BestPlan() {
     return (
@@ -145,6 +146,7 @@ export default function BestPlan() {
            <Link to="/add-new-course" >
              <button>Edit Course Details</button>
            </Link>
+           <ScheduleLiveClass />
         </div>
     )
 }

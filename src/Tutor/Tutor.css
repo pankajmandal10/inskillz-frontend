@@ -13,6 +13,76 @@
     color: #143754;
     opacity: 1;
 }
+.overviewContain{
+  width: 100%;
+  height:auto;
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+  background-color:#F4F4F4 ;
+  border-radius: 6px;
+
+
+}
+.overviewImg{
+  height:120px;
+  width: 120px;
+  margin: 10px;
+  padding: 20px;
+  align-self: center ;
+  border: 2px dashed #D7D7D7;
+  border-radius: 4px;
+}
+.overviewThumbnail{
+  height:120px;
+  width: 120px;
+  margin: 10px;
+  
+  align-self: center ;
+  border: 2px dashed #D7D7D7;
+  border-radius: 4px;
+}
+.overviewContain textarea:focus{
+  outline: none !important;
+}
+.dragzone{
+  height:180px;
+  width: 200px;
+  margin: 10px;
+  padding: 20px;
+  align-self: center ;
+  border: 2px dashed #D7D7D7;
+  border-radius: 4px;
+}
+.dropContain{
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fa-file-pdf{
+  color: rgb(216, 10, 10);
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+.pdfCloseEdit{
+  float: right;
+  margin-right: -23px;
+  margin-top: -23px;
+  color:rgb(216, 10, 10) ;
+  /* position: absolute; */
+}
+.overviewCloseEdit{
+  position: absolute;
+  margin-left: 120px;
+  margin-top: 5px;
+  color:rgb(216, 10, 10) ;
+  /* position: absolute; */
+}
+.dragzone:hover{
+  border: 2px dashed rgb(68, 176, 238);
+
+}
 .tutor-plan .uk-grid {
     margin: 16vh 10vw 10vh 10vw
 }
@@ -340,6 +410,19 @@
     color: #143754;
     padding-left: 20px;
   }
+  .edit-inputBatch {
+    width: 100%;
+    height: 5.5vh;
+    background: #F4F4F4 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    opacity: 1;
+    border: none;
+    text-align: left;
+    font: normal normal 300 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #143754;
+    padding-left: 20px;
+  }
   .edit-course-includes {
     width: 32.8vw;
     height: 6.4vh;
@@ -405,7 +488,7 @@
       margin: 19px -17px;
     }
     .select-chapter-name{
-      width: 72.57vw;
+      width: 100%;
       height: 6.25vh;
       background: #F4F4F4 0% 0% no-repeat padding-box;
       border-radius: 6px;

@@ -54,7 +54,7 @@ export default function Batches(props) {
     <div>
       <Dialog onClose={props.handleClose} aria-labelledby="customized-dialog-title" open={props.open}>
         <DialogTitle id="customized-dialog-title" onClose={props.handleClose}>
-          <p className="digital-marketing-batchs">Digital Marketing - Batchs</p>
+          <p className="digital-marketing-batchs">Digital Marketing - Batches</p>
         </DialogTitle>
         <DialogContent>
           <div class="uk-flex uk-flex-between">

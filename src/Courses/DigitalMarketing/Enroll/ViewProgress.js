@@ -50,12 +50,15 @@ const useStyles = makeStyles((theme) => ({
       instructor: {
         textAlign: "left",
         font: "normal normal normal 16px/19px Roboto",
-        color: "#143754"
+        color: "#143754",
+        height:'30px'
       },
       instructorName: {
         textAlign: "left",
         font: "normal normal 500 16px/19px Roboto",
-        color: "#143754"
+        color: "#143754",
+        height:'30px'
+
       },
       passed: {
         textAlign: "right",
@@ -116,7 +119,7 @@ export default function ViewProgress(props) {
             <p className={classes.instructor}>Institute</p>
             <p className={classes.instructor}>Duration</p>
             <p className={classes.instructor}>Lectures</p>
-            <p className={classes.instructor}>Start / Purchase Date</p>
+            <p style={{marginBottom:'30px'}} className={classes.instructor}>Start / Purchase Date</p>
             <p className={classes.instructor}>Progress</p>
             <p className={classes.instructor}>Current Lession</p>
         </th>
@@ -125,7 +128,7 @@ export default function ViewProgress(props) {
             <p className={classes.instructorName}>Independent</p>
             <p className={classes.instructorName}>7 Weeks</p>
             <p className={classes.instructorName}>6</p>
-            <p className={classes.instructorName}>12-01-2021, 2.10PM</p>
+            <p style={{marginBottom:'30px'}} className={classes.instructorName}>12-01-2021, 2.10PM</p>
             <p className={classes.instructorName}>
             <div className="progress" style={{height: "7px",width:"190px"}}>
               <div className="progress-bar" role="progressbar" style={{width: "50%", background: "#35C635 0% 0% no-repeat padding-box"}} aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>

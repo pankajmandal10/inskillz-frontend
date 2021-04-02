@@ -47,8 +47,10 @@ export default function Categories() {
                             <Link color="inherit" href="/" >
                                 Photography
                         </Link>
-
-                            <Typography color="textPrimary">Digital Photography</Typography>
+                        <Link color="inherit" href="/" >
+                        Digital Photography(11)
+                        </Link>
+                            {/* <Typography color="textPrimary"></Typography> */}
                         </Breadcrumbs>
                     </div>
                 </div>
@@ -88,11 +90,15 @@ export default function Categories() {
                         <Link color="inherit" href="/" >
                             Photography
                         </Link>
+                        
 
                         <Typography color="textPrimary">Digital Photography</Typography>
                     </Breadcrumbs>
                 </div>
+                <div style={{marginLeft:'40px',marginRight:'25px'}}>
                 <hr></hr>
+                </div>
+                
             </div>
 
             <div className="container  uk-grid uk-visible@s">
@@ -133,13 +139,6 @@ export default function Categories() {
                                 <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>UI UX Design  <span className="numb" >45</span></a></li>
                                 <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Motion Graphics  <span className="numb" >34</span></a></li>
                                 <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Web Development  <span className="numb" >23</span></a></li>
-                                <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Web Development  <span className="numb" >23</span></a></li>
-                                <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
-                                <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
-                                <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
-                                <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
-                                <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
-                                <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
                                 <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Product Design  <span className="numb" >23</span></a></li>
                             </ul>
                         </div>

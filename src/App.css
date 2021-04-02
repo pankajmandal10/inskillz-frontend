@@ -31,6 +31,7 @@ Link,a{
   padding: 20px 10px !important;
 }
 
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -63,12 +64,31 @@ Link,a{
  
 }
 @media only screen and (max-width: 544px) {
+  .profile-enrolled{
+width: unset  !important;
+  }
+}
+
+@media only screen and (max-width: 544px) {
   .navbar-collapse{
       width: 100vw !important;
       margin-left: -200px !important;
       margin-top: 60px;
       z-index: 100;
       background-color: rgb(53, 131, 197);
+  }
+  
+  .MuiDialogTitle-root h6{
+    margin-top: 20px;
+  }
+ 
+  .MuiPopover-paper{
+    left: 2% !important;
+    width: 96% !important;
+    max-width: 96% !important;
+  }
+  .MuiPopover-paper input{
+    color: black !important;
   }
   .homeSearch{
     max-width: 85vw !important;
@@ -102,6 +122,10 @@ width: 90% !important;
     width: unset !important;
     margin-top: 20px;
     /* margin-right: 2vw !important; */
+  }
+  .profileTabgrp .MuiTabs-flexContainer button{
+    width: 21vw !important;
+
   }
   .marketing .MuiTabs-flexContainer button{
     margin-right: 2vw !important;

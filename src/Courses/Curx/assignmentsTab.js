@@ -8,24 +8,38 @@ const option = {
 };
 
 const rows = [
-    ["12-1-2020", 'Why do we need digital Marketing', "234342343", 'INR 4000', 'Success'],
-    ["12-1-2020", 'Why do we need digital Marketing', "234342343", 'INR 4000', 'Success'],
-    ["12-1-2020", 'Why do we need digital Marketing', "234342343", 'INR 4000', 'Success'],
-    ["12-1-2020", 'Why do we need digital Marketing', "234342343", 'INR 4000', 'Success'],
-    ["12-1-2020", 'Why do we need digital Marketing', "234342343", 'INR 4000', 'Success'],
+    ["12-1-2020", 'Why do we need Digital Marketing', "Find the capital", 'Success'],
+    ["12-1-2020", 'Why do we need digital Marketing', "Find the capital", 'Success'],
+    ["12-1-2020", 'Why do we need digital Marketing', "Find the capital", 'Success'],
+    ["12-1-2020", 'Why do we need digital Marketing', "Find the capital", 'Success'],
+    ["12-1-2020", 'Why do we need digital Marketing', "Find the capital", 'Success'],
 
 
 ];
-const columns = ["Date", "Course Name", "Transaction ID", "Amount", "Transaction Status",
+const columns = ["Date", "Chapter Name", "Task Name",
+{
+    name: "Assignment Status",
+    options: {
+        filter: true,
+        customBodyRender: (value) => {
+            return (
+
+                <div style={{ minWidth: "20px" }}>
+                    <span className='completedAssign' >Completed</span>
+                </div>
+            );
+        },
+    },
+},
     {
-        name: "Edit",
+        name: "",
         options: {
             filter: true,
             customBodyRender: (value) => {
                 return (
 
                     <div style={{ minWidth: "20px" }}>
-                        <i style={{color:'#3583C5'}} className="fas fa-edit fa-lg"></i>
+                        <i  className="fas fa-eye"></i>
                     </div>
                 );
             },

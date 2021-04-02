@@ -80,7 +80,7 @@ export default function Discussions(props) {
                     <p class="tabTxt2">23 Members</p>
                   </div>
                   <h5 className="uk-margin-bottom tabHead">Why Digital Marketing ?</h5>
-                  <p class="tabTxt2">12 Uanswered questions</p>
+                  <p class="tabTxt2">12 Unanswered questions</p>
                 </div>
               </a>
             </li>
@@ -92,7 +92,7 @@ export default function Discussions(props) {
                     <p class="tabTxt2">23 Members</p>
                   </div>
                   <h5 className="uk-margin-bottom tabHead">Why Digital Marketing ?</h5>
-                  <p class="tabTxt2">12 Uanswered questions</p>
+                  <p class="tabTxt2">12 Unanswered questions</p>
                 </div>
               </a>
             </li>
@@ -104,7 +104,7 @@ export default function Discussions(props) {
                     <p class="tabTxt2">23 Members</p>
                   </div>
                   <h5 className="uk-margin-bottom tabHead">Why Digital Marketing ?</h5>
-                  <p class="tabTxt2">12 Uanswered questions</p>
+                  <p class="tabTxt2">12 Unanswered questions</p>
                 </div>
               </a>
             </li>
@@ -116,7 +116,7 @@ export default function Discussions(props) {
                     <p class="tabTxt2">23 Members</p>
                   </div>
                   <h5 className="uk-margin-bottom tabHead">Why Digital Marketing ?</h5>
-                  <p class="tabTxt2">12 Uanswered questions</p>
+                  <p class="tabTxt2">12 Unanswered questions</p>
                 </div>
               </a>
             </li>
@@ -128,7 +128,7 @@ export default function Discussions(props) {
                     <p class="tabTxt2">23 Members</p>
                   </div>
                   <h5 className="uk-margin-bottom tabHead">Why Digital Marketing ?</h5>
-                  <p class="tabTxt2">12 Uanswered questions</p>
+                  <p class="tabTxt2">12 Unanswered questions</p>
                 </div>
               </a>
             </li>
@@ -208,7 +208,7 @@ export default function Discussions(props) {
             <p class="tabTxt2">23 Members</p>
           </div>
           <h5 className=" tabHead">Why Digital Marketing ?</h5>
-          <p class="tabTxt2">12 Uanswered questions</p>
+          <p class="tabTxt2">12 Unanswered questions</p>
         </div>
         <div className="ansBlock">
           <div className="shadow bg-body rounded ">

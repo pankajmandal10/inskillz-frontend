@@ -156,8 +156,12 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "0px 3px 6px #00000029",
     borderRadius: 6,
     color: "#FFFFFF",
-    textTransform:"capitalize"
+    textTransform:"capitalize",
+    border:'none',
+    fontSize:'14px',
+    fontWeight:500
   }
+
 }));
 
 
@@ -200,7 +204,7 @@ export default function StudentTab() {
             <button className="googleSign uk-text-left"><i className="fab fa-google fa-lg uk-margin-right"></i>Sign in with Google</button>
             <button className="facebookSign  uk-text-left uk-margin-small-top"><i className="fab fa-facebook fa-lg uk-margin-small-right"></i>Continue with Facebook</button>
             <Typography className={classes.enrolled}>Not Enrolled yet ? Why Don't you Sign up quickly here</Typography>
-            <Button className={classes.signIn}> Sign Up </Button>
+            <button className={classes.signIn}> Sign Up </button>
           </div>
           </div>
 

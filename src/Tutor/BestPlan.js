@@ -140,13 +140,13 @@ export default function BestPlan() {
              </div>
              </div>
            </div>
-           <Link to="/edit-course-Details" >
+           {/* <Link to="/edit-course-Details" >
              <button>Edit Course Details</button>
            </Link>
            <Link to="/add-new-course" >
              <button>Edit Course Details</button>
            </Link>
-           <ScheduleLiveClass />
+           <ScheduleLiveClass /> */}
         </div>
     )
 }

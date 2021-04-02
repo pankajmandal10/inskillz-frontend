@@ -21,7 +21,7 @@
     opacity: 1;
 }
 .uk-search-input{
-    width: 45vw !important;
+    width: 43vw !important;
 border-radius: 10px 0px 0px 10px;
 
 }
@@ -31,7 +31,7 @@ border-radius: 10px 0px 0px 10px;
 }
 
 .uk-search-default{
-    width: 45vw !important;
+    width: 43vw !important;
 margin-left: 5vw;
 border-radius: 10px 0px 0px 10px;
 
@@ -126,6 +126,20 @@ margin-top: 2px;
 .viewSearch .fa-check-circle{
     color: #3583C5;
     font-size: 15px !important;  
+}
+@media screen and (min-width: 1800px) {
+    .uk-search-input{
+        width: 32vw !important;
+    border-radius: 10px 0px 0px 10px;
+    
+    }
+    
+    .uk-search-default{
+        width: 32vw !important;
+    margin-left: 5vw;
+    border-radius: 10px 0px 0px 10px;
+    
+    }
 }
 
 @media screen and (max-width: 450px) {

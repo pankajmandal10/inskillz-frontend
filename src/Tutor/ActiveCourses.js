@@ -1,60 +1,59 @@
-// import React from 'react'
-// // import "../Courses/ProfileDetails/ProfileDetails.css"
-// import { Link } from "react-router-dom"
+import React from 'react'
+import "../Courses/ProfileDetails/ProfileDetails.css"
+import { Link } from 'react-router-dom'
 
-// export default function ActiveCourses(props) {
-//     return (
-//         // <div>
-//         //    <div className="card mb-3 shadaw" style={{border: "none"}}>
-//         //      <div className="row g-0">
-//         //        <div className="col-md-4">
-//         //          <div className="fullHeight">
-//         //            <img className="image-card" src="https://www.michaelpage.co.uk/sites/michaelpage.co.uk/files/How%20to%20create%20and%20maintain%20a%20good%20company%20culture-Blog%20article-MP.jpg"></img>
-//         //            {/* <img className="image-card" src={props.img} alt="..." /> */}
-//         //          </div>
-//         //        </div>
-//         //       <div className="col-md-8" >
-//         //       <div className="start-date">Start Date : {props.startDate}</div>
-//         //         <div className="card-body" style={{paddingLeft: "20px"}}>
-//         //           <p className="card-title-name">{props.name}</p>
-//         //           <p className="instructor-names">Instructor Name : {props.instructor}</p>
-//         //             <p className="progressTxt">Progress</p>
-//         //             <div className="uk-flex">
-//         //             <div className="progress"  style={{height: "7px",width:"190px"}}>
-//         //             <div className="progress-bar " role="progressbar" style={{width: "50%",fontSize: "8px",backgroundColor:"#35C635"}} aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-//         //           </div>
-//         //           <p className="progress-percentage">50%</p>
-//         //           <p className="view-status">View Status</p>
-//         //           </div>
-//         //           <p className="progressTxt">Chapter 02</p>
-//         //           <p className="chapterTag">The Crux of Social media</p>
-//         //           <span><Link to="/curx"><button className="continue-button" type="submit">Continue</button></Link></span>
-//         //         </div>
-//         //        </div>
-//         //       </div>
-//         //    </div>
-//         // </div>
-//         <div>
-//             hello
-//         </div>
-//     )
-// }
-
-import React from 'react';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
+import PropTypes from 'prop-types';
+import Box from '@material-ui/core/Box';
+import OfflineCourses from './OfflineCourses';
+import LiveCourses from './LiveCourses';
+import Button from '@material-ui/core/Button';
+
+import img1 from "../Courses/ProfileDetails/Img/img1.png"
+
+function TabPanel(props) {
+  const { children, value, index, ...other } = props;
+
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+      {...other}
+    >
+      {value === index && (
+        <Box p={3}>
+          <Typography>{children}</Typography>
+        </Box>
+      )}
+    </div>
+  );
+}
+
+TabPanel.propTypes = {
+  children: PropTypes.node,
+  index: PropTypes.any.isRequired,
+  value: PropTypes.any.isRequired,
+};
+
+function a11yProps(index) {
+  return {
+    id: `simple-tab-${index}`,
+    'aria-controls': `simple-tabpanel-${index}`,
+  };
+}
 
 const AntTabs = withStyles({
   root: {
-    // borderBottom: '1px solid #e8e8e8',
-    border:1,
-
+    borderBottom: '1px solid #e8e8e8',
   },
-// //   indicator: {
-// //     backgroundColor: '#1890ff',
-// //   },
+  indicator: {
+    backgroundColor: '#1890ff',
+  },
 })(Tabs);
 
 const AntTab = withStyles((theme) => ({
@@ -80,9 +79,8 @@ const AntTab = withStyles((theme) => ({
       opacity: 1,
     },
     '&$selected': {
-      color: '#ffffff',
+      color: '#1890ff',
       fontWeight: theme.typography.fontWeightMedium,
-      background: "#D3262A 0% 0% no-repeat padding-box",
     },
     '&:focus': {
       color: '#40a9ff',
@@ -97,8 +95,8 @@ const StyledTabs = withStyles({
     justifyContent: 'center',
     backgroundColor: 'transparent',
     '& > span': {
-      maxWidth: 40,
-      width: '500',
+      maxWidth: '55vw',
+      width: '100%',
       backgroundColor: '#635ee7',
     },
   },
@@ -126,13 +124,11 @@ const useStyles = makeStyles((theme) => ({
   },
   demo1: {
     backgroundColor: theme.palette.background.paper,
-  },
-  demo2: {
-    backgroundColor: '#2e1534',
-  },
+  }
 }));
 
-export default function CustomizedTabs() {
+export default function TutorTabs() {
+
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
@@ -143,15 +139,60 @@ export default function CustomizedTabs() {
   return (
     <div className={classes.root}>
       <div className={classes.demo1}>
-        <AntTabs value={value} onChange={handleChange} aria-label="ant example">
-          <AntTab label="Offline Courses" />
-          <AntTab label="Live Courses" />
-        </AntTabs>
-        {/* <Typography className={classes.padding} /> */}
-      </div>
+        <div className="activeCourses" >
+          <AntTabs value={value} onChange={handleChange} aria-label="ant example">
+            <AntTab label="Offline Courses" {...a11yProps(0)} />
+            <AntTab label="Live Courses" {...a11yProps(0)} />
+          </AntTabs>
+        </div>
+        <TabPanel value={value} index={0}>
+          <div>
+            <p style={{textAlign: "left"}}>Active Course (3) 
+             <span style={{marginLeft: "41vw"}}>
+              <Link to="/add-new-course">
+              <button className="addNewCourses">
+                + Add New Courses
+              </button>
+              </Link>
+             </span>
+            </p>
+            
+          </div>
+          <div className="progress-card">
+            <OfflineCourses img={img1} startDate="12th February 2021" name="Why Digital Marketing ?" instructor="Joseph Smith" coursesLanguage="English" />
+          </div>
+          <div className="progress-card">
+            <OfflineCourses img={img1} startDate="12th February 2021" name="Why Digital Marketing ?" instructor="Joseph Smith" coursesLanguage="English" />
+          </div>
+          <div className="progress-card">
+            <OfflineCourses img={img1} startDate="12th February 2021" name="Why Digital Marketing ?" instructor="Joseph Smith" coursesLanguage="English" />
+          </div>
+        </TabPanel>
+        <TabPanel value={value} index={1}>
+        <div>
+            <p style={{textAlign: "left"}}>Active Live Course (3) 
+             <span style={{marginLeft: "38vw"}}>
+              <button className="scheduleLiveCourses">
+                + Schedule Live Courses
+              </button>
+             </span>
+            </p>
+            
+          </div>
+          <div className="progress-card">
+            <LiveCourses img={img1} startDate="12th February 2021" name="Why Digital Marketing ?" instructor="Joseph Smith" coursesLanguage="English" />
+          </div>
+          <div className="progress-card">
+            <LiveCourses img={img1} startDate="12th February 2021" name="Why Digital Marketing ?" instructor="Joseph Smith" coursesLanguage="English" />
+          </div>
+          <div className="progress-card">
+            <LiveCourses img={img1} startDate="12th February 2021" name="Why Digital Marketing ?" instructor="Joseph Smith" coursesLanguage="English" />
+          </div>
+        </TabPanel>
       
+      </div>
     </div>
-  );
+  )
 }
 
 

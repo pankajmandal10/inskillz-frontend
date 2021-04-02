@@ -56,8 +56,10 @@ margin-bottom: 24px;
     border-radius: 6px;
     color: #FFFFFF;
     text-transform: capitalize !important;
-    font-weight: 500;
+    font-weight: 500 !important;
+    font-size: 14px !important;
 }
+
 .studentLoginModal .MuiTabs-root{
   border-bottom: none !important;
 }
@@ -120,6 +122,11 @@ opacity: 1;
   .MuiTabs-scroller.MuiTabs-fixed {
     margin-top: 0px;
   }
+  .googleSign,.facebookSign{
+    width:140px !important;
+    padding-left: 5px !important;
+    font-size: 10px !important; 
+  }
   .studentLoginModal input{
     width: 100% !important;
   }
@@ -133,7 +140,7 @@ opacity: 1;
      padding: 10px !important;
   }
   .forget{
-    padding-left: 65px;
+    padding-left: 40px;
   }
   .progressRightContain{
     padding-left: 45px !important;

@@ -4,12 +4,16 @@ import Offered from "./Offered"
 import View from "./View";
 import Categories from "./Categories"
 import Discuss from "../comp/Discuss"
+import Path from "../image/Path.png"
 
 
 export default function Courses() {
     return (
-        <div>
+        <div >
             <Offered />
+            <img className="sideArrows" src={Path}></img>
+            <img className="sideArrows2" src={Path}></img>
+
             <View />
             <Categories />
             <Discuss />

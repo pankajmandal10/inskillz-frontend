@@ -4,7 +4,8 @@ import Checkbox from '@material-ui/core/Checkbox';
 import Dropzone from "./Dropzone"
 import ChapterPDF from './ChapterPDF';
 import ChapterVideo from './ChapterVideo';
-import { useDropzone } from 'react-dropzone'
+import PdfUpload from './pdfUpload';
+import DocUpload from './docUpload';
 
 let lectures = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let chapterName = ["Enter Chapter Name", "Function Component", "Routing", "API"];
@@ -28,8 +29,11 @@ export default function EditForm() {
   })
   const [batch, setBatch] = useState({
     batch: "",
-    url: "",
-    doc: '',
+    maxStudents: "",
+    classStartDate: '',
+    classEndDate:'',
+    classStartTime:'',
+    classEndTime:''
   })
   const [course, setCourse] = useState({
     courseName: "",
@@ -42,10 +46,10 @@ export default function EditForm() {
     isFeatured: '',
     numHrsVideoOnDemand: '',
     durationInWeaks: '',
-    hasOnDemandVideo: '',
-    hasDownloadableResources: '',
-    hasLifeTimeAccess: '',
-    hasCertification: '',
+    hasOnDemandVideo: true,
+    hasDownloadableResources: true,
+    hasLifeTimeAccess: true,
+    hasCertification: true,
     bannerImage: '',
     language: '',
     courseMode: '',
@@ -60,22 +64,11 @@ export default function EditForm() {
 
 
 
-  const onDrop = useCallback(acceptedFiles => {
-    console.log(acceptedFiles[0]);
-    const name = acceptedFiles[0].name;
-    previewImageHandler(name);
-  }, [])
-
-  const previewImageHandler = (name) => {
-
-    setPreviewImage(name);
-
-  };
+  
   const overviewHandler = (image) => {
     const reader = new FileReader();
     reader.readAsDataURL(image);
     reader.onloadend = () => {
-
       setImageInput(reader.result);
 
     };
@@ -83,7 +76,6 @@ export default function EditForm() {
 
   };
 
-  const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop, accept: 'application/pdf' })
 
   const onCheckboxChange = (e) => {
     setChecked(e.target.checked);
@@ -91,23 +83,11 @@ export default function EditForm() {
       ...course,
       [e.target.name]: e.target.checked,
     });
+   
   };
 
-  let handleChangeChapter = (e) => {
-    const newChapter = e.target.value;
-    setChapter({ name: newChapter });
-  }
-  const active = () => {
-
-    if (document.getElementById("pdfBroachure"))
-      document.getElementById("pdfBroachure").style.borderColor = "rgb(68, 176, 238)";
-  }
-  const inactive = () => {
-    if (document.getElementById("pdfBroachure"))
-
-      document.getElementById("pdfBroachure").style.borderColor = "#D7D7D7";
-  }
-
+  
+ 
   const handelImageInputChange = (e) => {
     const image = e.target.files[0];
     overviewHandler(image);
@@ -134,8 +114,15 @@ export default function EditForm() {
       [e.target.name]: e.target.value,
     });
   };
+  const onInputBatch = (e) => {
+    setBatch({
+      ...batch,
+      [e.target.name]: e.target.value,
+    });
+  };
 
   const onSubmit = (e) => {
+    e.preventDefault();
 
     let data = {
       courseName: course.courseName,
@@ -159,34 +146,35 @@ export default function EditForm() {
       maxPrice: course.maxPrice,
       isApproved: course.isApproved,
       chapters: chapter,
-      batches:'',
-      numLectures: 1
+      batches:batch,
+      numLectures: course.numLectures
     };
-    var v = document.getElementById('addIndiv').checkValidity();
-    var v = document.getElementById('addIndiv').reportValidity();
+    var v = document.getElementById('addCourse').checkValidity();
+    var v = document.getElementById('addCourse').reportValidity();
 
-    // const val = validate();
-    // const dateval = datevalidate();
+    
     e.preventDefault();
 
-    // if (v) {
-    //   axios({
-    //     url: "https://ftschamp.trikaradev.xyz/api/create-donor",
-    //     method: "POST",
-    //     data,
-    //     headers: {
-    //       Authorization: `Bearer ${localStorage.getItem("login")}`,
-    //     },
-    //   }).then((res) => {
-    //     console.log("edit1", res.data);
-    //     alert("success");
+    if (v) {
+      // axios({
+      //   url: "https://ftschamp.trikaradev.xyz/api/create-donor",
+      //   method: "POST",
+      //   data,
+      //   headers: {
+      //     Authorization: `Bearer ${localStorage.getItem("login")}`,
+      //   },
+      // }).then((res) => {
+      //   console.log("addCourse", res.data);
+      //   alert("success");
 
-    //   });
-    // }
+      // });
+      console.log(data)
+    }
 
   };
   return (
     <div className="editForm">
+      <form id="addCourse">
       <div class="uk-card uk-card-default uk-card-large uk-card-body">
 
         <div class="uk-grid uk-child-width-expand@s  uk-text-left" uk-grid="true">
@@ -348,8 +336,8 @@ export default function EditForm() {
                       onChange={(e) => handelImageInputChange(e)}
                       hidden
                     />
-                    <label for='upload-image'>
-                      <i class="fas fa-plus fa-2x"></i>
+                    <label style={{color:'lightgray'}} for='upload-image'>
+                      <i class="fas fa-plus"></i><br></br>
                      Upload Image
                     </label>
                   </div>
@@ -369,25 +357,7 @@ export default function EditForm() {
         <div className="form-details uk-text-left uk-margin-top">
           <label className="edit-course-name">Course Broachure</label><br></br>
           <div className="dropContain">
-            <div id="pdfBroachure" className="dragzone uk-text-center" {...getRootProps()}>
-              <input {...getInputProps()} />
-              <i className="fas fa-times-circle pdfCloseEdit"></i>
-              <i class="fas fa-file-pdf fa-5x"></i>
-
-              {
-                isDragActive ?
-                  active()
-                  :
-
-                  inactive()
-              }
-              {!previewImage ? (
-                ''
-              ) : (
-                <p>{previewImage} </p>
-
-              )}
-            </div>
+            <PdfUpload></PdfUpload>
           </div>
         </div>
         <div class="uk-grid uk-child-width-expand@s uk-text-left" uk-grid="true">
@@ -411,29 +381,11 @@ export default function EditForm() {
               name="url"
               value={chapter.url}
               onChange={(e) => onInputChapter(e)}
-              className="edit-inputBatch" type="text" placeholder="Batch A" />
+              className="edit-inputBatch" type="text" placeholder="Type here" />
 
             <div >
               <div className="dropContain uk-margin-top">
-                <div id="pdfBroachure" className="dragzone uk-text-center" {...getRootProps()}>
-                  <input {...getInputProps()} />
-                  <i className="fas fa-times-circle pdfCloseEdit"></i>
-                  <i class="fas fa-file-pdf fa-5x"></i>
-
-                  {
-                    isDragActive ?
-                      active()
-                      :
-
-                      inactive()
-                  }
-                  {!previewImage ? (
-                    ''
-                  ) : (
-                    <p>{previewImage} </p>
-
-                  )}
-                </div>
+               <DocUpload></DocUpload>
               </div>
             </div>
 
@@ -510,28 +462,52 @@ export default function EditForm() {
         <h5 className='uk-text-left uk-margin-large-top uk-margin-bottom'>Batches</h5>
         <div className="uk-child-width-1-3@s uk-text-left uk-grid">
           <div>
-            <label className="edit-course-name" >Batch Name</label>
-            <input className="edit-inputBatch" type="text" placeholder="Batch A" />
+            <label className="edit-course-name"  >Batch Name</label>
+            <input
+             name="batch"
+                value={batch.batch}
+                onChange={(e) => onInputBatch(e)}
+                 className="edit-inputBatch" type="text" placeholder="Batch A" />
           </div>
           <div >
             <label className="edit-course-name" >Max Students Allowed</label>
-            <input className="edit-inputBatch" type="text" placeholder="100" />
+            <input
+             name="maxStudents"
+             value={batch.maxStudents}
+             onChange={(e) => onInputBatch(e)}
+              className="edit-inputBatch" type="text" placeholder="100" />
           </div>
           <div >
             <label className="edit-course-name" >Class Start Date</label>
-            <input className="edit-inputBatch" type="text" placeholder="DD:MM:YYYY" />
+            <input
+             name="classStartDate"
+             value={batch.classStartDate}
+             onChange={(e) => onInputBatch(e)}
+              className="edit-inputBatch" type="text" placeholder="DD:MM:YYYY" />
           </div>
           <div className="uk-margin-top" >
             <label className="edit-course-name" >Class End Date</label>
-            <input className="edit-inputBatch" type="text" placeholder="DD:MM:YYYY" />
+            <input
+            name="classEndDate"
+            value={batch.classEndDate}
+            onChange={(e) => onInputBatch(e)}
+            className="edit-inputBatch" type="text" placeholder="DD:MM:YYYY" />
           </div>
           <div className="uk-margin-top" >
             <label className="edit-course-name">Class Start Time</label>
-            <input className="edit-inputBatch" type="text" placeholder="HH:MM" />
+            <input
+            name="classStartTime"
+            value={batch.classStartTime}
+            onChange={(e) => onInputBatch(e)}
+             className="edit-inputBatch" type="text" placeholder="HH:MM" />
           </div>
           <div className="uk-margin-top">
             <label className="edit-course-name">Class End Time</label>
-            <input className="edit-inputBatch" type="text" placeholder="HH:MM" />
+            <input 
+            name="classEndTime"
+            value={batch.classEndTime}
+            onChange={(e) => onInputBatch(e)}
+            className="edit-inputBatch" type="text" placeholder="HH:MM" />
           </div>
 
 
@@ -559,9 +535,10 @@ export default function EditForm() {
           </div>
         </div>
 
-        <button className="details-update-button">Update</button>
+        <button type="submit" onClick={(e) => onSubmit(e)} className="details-update-button">Update</button>
 
       </div>
+      </form>
     </div>
   )
 }

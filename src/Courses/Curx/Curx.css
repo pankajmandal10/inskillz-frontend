@@ -6,6 +6,19 @@
     color: #FFFFFF;
     text-transform: capitalize 
   }
+  .completedAssign{
+    background-color: #C8F4C8;
+    color: #2B7107;
+    border: 1px solid #35C635;
+    padding: 5px 15px;
+    border-radius: 6px;
+  }
+  .curx{
+    margin-top: -21px;
+    min-width: 275px;
+    height: 116px;
+    background: #143754 0% 0% no-repeat padding-box !important
+  }
   .curx-header-padding{
     padding-left: 8vw;
   }
@@ -238,7 +251,7 @@ opacity: 1;
 .resourceContainer{
   padding: 15px 10px;
   background-color: #F8F8F8;
-  height: 450px;
+  height: 436px;
   overflow-y: auto;
 }
 .nonPdLeft{
@@ -288,6 +301,20 @@ margin-top: 0px !important;
   @media only screen and (max-width: 544px) {
     .curx-header-padding{
       padding-left: 3vw;
+    }
+    .tabDwnld {
+      font-size: 10px !important;
+    }
+    .dwnldName {
+      font: normal normal bold 12px/18px Roboto;
+      color: #3F433D;
+      margin-top: 10px;
+  }
+    .curx{
+      margin-top: -21px;
+      min-width: 275px;
+      height: 90px;
+      background-color: #143754 !important
     }
     .reviewHeadTab th{
      font-size: 9px !important;

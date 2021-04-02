@@ -25,7 +25,7 @@ export default function CurxHeader() {
   return (
     <div className="cruxHeader">
 
-    <Card className={classes.curx} variant="outlined">
+    <Card className="curx" variant="outlined">
       <div className="uk-flex uk-flex-between">
         <td className="curx-header-padding">
           <p className="digitalMarketing">Digital Marketing</p>

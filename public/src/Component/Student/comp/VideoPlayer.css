@@ -1,0 +1,10 @@
+@media only screen and (max-width: 544px) {
+  .player-wrapper{
+    margin-top: -123px;
+    margin-bottom: 64px;
+    width: 100% !important;
+  }
+  .react-player{
+      width:100%  !important
+  }
+}

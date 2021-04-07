@@ -1,0 +1,137 @@
+.digital-marketing-batchs{
+    text-align: center;
+    font: normal normal normal 25px/29px Roboto;
+    color: #3583C5;
+  }
+.course-name{
+    text-align: left;
+    font: normal normal normal 14px/16px Roboto;
+    letter-spacing: 0px;
+    color: #A5A5A5;
+    margin-bottom: 6px;
+}
+.course-fee{
+    text-align: left;
+    font: normal normal normal 12px/14px Roboto;
+    letter-spacing: 0px;
+    color: #282A2C;
+    margin-bottom: 6px;
+}
+.why-digital-marketing{
+    text-align: left;
+    font: normal normal 500 18px/21px Roboto;
+    letter-spacing: 0px;
+    color: #143754;   
+}
+.course-fee-amount{
+    font: normal normal 500 18px/21px Roboto;
+    letter-spacing: 0px;
+    color: #143754;   
+}
+.batches{
+    text-align: left;
+    font: normal normal normal 14px/16px Roboto;
+    letter-spacing: 0px;
+    color: #A5A5A5;
+}
+.batch-name-date{
+    text-align: left;
+    font: normal normal normal 16px/27px Roboto;
+    letter-spacing: 0px;
+    color: #3583C5;
+    margin-bottom: 0px;
+}
+ .enroll-now-button{
+    background: #D3262A 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 5px #00000029;
+    border-radius: 6px;
+    color:#ffffff;
+    border:none;
+    padding-left: 10px;
+font-weight: 500;
+height: 25px;
+width: 100px;
+font: normal normal 500 13px/15px Roboto;
+}
+.price{
+    top: 359px;
+left: 404px;
+width: 27px;
+height: 14px;
+text-align: left;
+font: normal normal normal 12px/14px Roboto;
+letter-spacing: 0px;
+color: #282A2C;
+}
+.enroll-course-name{
+text-align: left;
+font: normal normal normal 12px/14px Roboto;
+letter-spacing: 0px;
+color: #282A2C;
+margin-bottom: 6px;
+}
+.enroll-price{
+    
+    text-align: left;
+    font: normal normal normal 12px/14px Roboto;
+    letter-spacing: 0px;
+    color: #282A2C; 
+margin-bottom: 6px;
+
+}
+.MuiDialog-paperWidthSm{
+    border-radius: 10px !important;
+    width: 600px;
+    padding: 10px;
+}
+.enroll-course-price{
+    width: 41px;
+height: 21px;
+text-align: left;
+font: normal normal bold 18px/21px Roboto;
+letter-spacing: 0px;
+color: #143754;
+}
+.form-select{
+    width: 158px;
+    height: 43px;
+    background: #D8D8D8 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    font: normal normal bold 18px/21px Roboto;
+}
+.get-enroll{
+    width: 158px;
+    height: 43px;
+    background: #D3262A 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 6px;
+    border: none;
+    color: #ffffff;
+    margin-top: 10px;
+}
+.batch-dropdown-options{
+    background-color: #ffffff;
+    width: 207px;
+    height: 14px;
+    text-align: left;
+    font: normal normal normal 12px/27px Roboto;
+    letter-spacing: 0px;
+    color: #3583C5;
+}
+.instructor-name{
+    text-align: left;
+    font: normal normal normal 16px/19px Roboto;
+    letter-spacing: 0px;
+    color: #143754;
+    padding-top: 10px;
+}
+.enroll-user-details{
+    text-align: left;
+    font: normal normal 500 16px/19px Roboto;
+    letter-spacing: 0px;
+    color: #143754;
+    padding-top: 10px;
+}
+.noMrg {
+    margin-top:0px !important
+  }

@@ -1,0 +1,156 @@
+.Component-root-8 {
+    padding: 23px 0px 0px 42px;
+}
+.googleSign{
+  width: 200px;
+  height: 32px;
+  background-color: #3583C5 !important;
+  color: #FFFFFF !important;
+  text-transform: none !important;
+  font: normal normal 400 11px/14px Roboto !important;
+  font-size: 12px !important;
+  border: none !important;
+  padding-left: 15px;
+  margin-top: 20px;
+}
+.facebookSign{
+  width: 200px;
+  height: 32px;
+
+background-color:#385898  !important;
+  color: #FFFFFF !important;
+  text-transform: none !important;
+  font: normal normal 400 11px/14px Roboto !important;
+  font-size: 12px !important;
+  border: none !important;
+  padding-left: 15px;
+}
+.login-button{
+  width: 153px;
+  height: 40px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 10px;
+  opacity: 1; 
+  border:none;
+  color:#D3262A
+}
+.inskills-logo{
+  width: 151px;
+  height: 46px;
+background: #3583C5 0% 0% no-repeat padding-box;
+}
+.forget{
+text-align: left;
+padding-left: 106px;
+font: normal normal normal 12px/24px Roboto;
+letter-spacing: 0px;
+color: #3583C5;
+opacity: 1;
+margin-bottom: 24px;
+}
+.login-submit-button{
+    width: 200px;
+    height: 35px;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 6px;
+    color: #FFFFFF;
+    text-transform: capitalize !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+}
+
+.studentLoginModal .MuiTabs-root{
+  border-bottom: none !important;
+}
+.studentLoginModal .MuiTabs-flexContainer button {
+  display: inline-block;
+  margin-right: 20px;
+  /* width:14vw; */
+  text-align: center;
+  border-bottom: 5px solid #ADB9C3;
+  transition: all 0.5s;
+  font: normal normal normal 22px/25px Roboto;
+  font-weight: 400;
+  cursor: pointer;
+  color: #6b6d6f;
+} 
+
+.studentLoginModal .MuiTabs-flexContainer button.Mui-selected {
+  border-bottom: 5px solid #337ab7;
+font: normal normal normal 22px/25px Roboto;
+letter-spacing: 0px;
+color: #143754;
+font-weight: 500;
+opacity: 1;
+}
+.studentLoginModal .MuiTabs-indicator {
+  display: none !important;
+}
+.separator{
+  width: 2px;
+  height: 220px;
+  position: absolute;
+  background-color: lightgray;
+  left:50%
+}
+.separatorTxt{
+  top: 65%;
+  left:49%;
+  position: absolute;
+  background-color: white;
+  font-size: 12px;
+}
+.login-blue-button{
+  margin-top: 13px !important;
+  width: 200px;
+  height: 35px;
+  /* background: #3583C5 0% 0% no-repeat padding-box; */
+  box-shadow: 0px 3px 6px #00000029 !important;
+  border-radius: 6px !important;
+  color: #FFFFFF !important;
+  text-transform:capitalize !important;
+  background-color: #3583C5 !important;
+}
+.visit {
+  text-decoration: underline;
+  font: normal normal normal 12px/14px Roboto;
+  color: #143754;
+  padding-left: 220px;
+}
+@media only screen and (max-width: 544px){
+  .MuiTabs-scroller.MuiTabs-fixed {
+    margin-top: 0px;
+  }
+  .googleSign,.facebookSign{
+    width:140px !important;
+    padding-left: 5px !important;
+    font-size: 10px !important; 
+  }
+  .studentLoginModal input{
+    width: 100% !important;
+  }
+  .login-submit-button{
+    width: 100% !important;
+  }
+  .login-blue-button{
+    width: 100% !important;
+  }
+  .MuiDialogContent-root{
+     padding: 10px !important;
+  }
+  .forget{
+    padding-left: 40px;
+  }
+  .progressRightContain{
+    padding-left: 45px !important;
+  }
+  .progressRightContain2{
+    padding-left: 15px !important;
+  }
+  .visit{
+    padding-left: 0px !important;
+    display: block !important;
+    margin-top: 10px;
+  }
+}

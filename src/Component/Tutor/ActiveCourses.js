@@ -59,7 +59,7 @@ const AntTabs = withStyles({
 const AntTab = withStyles((theme) => ({
   root: {
     textTransform: 'none',
-    minWidth: "31vw",
+    minWidth: "49%",
     border: "1px solid #D3262A",
     fontWeight: theme.typography.fontWeightRegular,
     fontFamily: [
@@ -80,7 +80,7 @@ const AntTab = withStyles((theme) => ({
     },
     '&$selected': {
       background:"#D3262A",
-      color: "fff !important"
+      color: "#ffffff"
     },
     '&:focus': {
       color: '#fff',
@@ -91,7 +91,7 @@ const AntTab = withStyles((theme) => ({
 
 const StyledTabs = withStyles({
   indicator: {
-    display: 'flex',
+    display: 'none',
     justifyContent: 'center',
     backgroundColor: 'transparent',
     '& > span': {
@@ -106,7 +106,7 @@ const StyledTabs = withStyles({
 const StyledTab = withStyles((theme) => ({
   root: {
     textTransform: 'none',
-    color: '#fff',
+    color: '#ffffff',
     fontWeight: theme.typography.fontWeightRegular,
     fontSize: theme.typography.pxToRem(15),
     marginRight: theme.spacing(1),
@@ -142,7 +142,7 @@ export default function TutorTabs() {
       <div className={classes.demo1}>
         <div className="activeCourses" >
           <AntTabs value={value} onChange={handleChange} aria-label="ant example">
-            <AntTab label="Offline Courses" {...a11yProps(0)} />
+            <AntTab label="Offline Courses" {...a11yProps(0)} style={{borderRadius: "6px 0px 0px 6px"}} />
             <AntTab label="Live Courses" {...a11yProps(0)} style={{borderRadius: "0px 6px 6px 0px"}}/>
           </AntTabs>
         </div>

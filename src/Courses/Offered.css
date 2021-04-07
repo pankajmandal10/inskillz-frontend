@@ -16,14 +16,13 @@
 
 }
 .bannerTxt{
-    /* filter: brightness(100%) !important; */
+    margin-left: 7.5vw;
 
 }
 .course-1{
      color: #fff;
     padding-top: 170px;
     margin-bottom: 10px;
-    margin-left: 93px;
     font-size: 42px; 
     text-align: left;
     font: normal normal bold 42px/49px Roboto;
@@ -35,8 +34,8 @@
 .detail{
     width: 40%;
     text-align: left;
+    margin-left: 4px;
     color: #fff;
-    margin-left: 97px;
     font: normal normal 300 22px/24px Roboto;
 }
 @media only screen and (max-width: 544px) {
@@ -46,12 +45,12 @@
         font-size: 12px;
     }
     .course-1{
-        margin-left: 12%;
+        /* margin-left: 12%; */
         font: normal normal bold 30px/9px Roboto;
         padding-bottom: 8px;
     }
     .detail{ 
-        margin-left: 12%;
+        /* margin-left: 12%; */
         margin-top: 10px !important;
         line-height: 17px;
         font-size: 16px;

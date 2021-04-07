@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     border:"none",
     borderRadius: "10px",
     textAlign:"start",
-    paddingLeft:"10px"
+    paddingLeft:"0px"
 
   },
   input: {
@@ -27,8 +27,8 @@ const useStyles = makeStyles((theme) => ({
     opacity: "1",
   },
   iconButton: {
-     marginLeft: "-6px",
-     marginTop:'-5px'
+     marginTop:'-3px',
+     marginLeft:'-3px'
   },
   divider: {
     height: 28,
@@ -43,7 +43,7 @@ export default function Searchbox() {
     <div className="homeSearch">
     <Paper component="form" className={classes.root}>
       <IconButton type="submit" className={classes.iconButton} aria-label="search">
-       <img src={search}></img>
+       <img className='searchIcon' src={search}></img>
         {/* <SearchIcon className="search-icon" style={{ fontSize: 28,marginLeft: "-7px", marginTop: "-5px" }} /> */}
       </IconButton>
       <InputBase

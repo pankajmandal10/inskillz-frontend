@@ -23,6 +23,10 @@ margin-top:3px;
     justify-content: space-between;
 
 }
+.searchIcon{
+    width: 22px !important;
+    opacity: .8;
+}
 .containerNav{
     display: flex;
     width: 100vw;
@@ -105,7 +109,8 @@ height: 21px;
   border-radius: 10px;
   opacity: 1; 
   border:none;
-  color:#D3262A
+  color:#D3262A;
+  margin-left:2vw
 }
 @media only screen and (max-width: 544px){
     .MuiPaper-root.makeStyles-root-1.MuiPaper-elevation1.MuiPaper-rounded{

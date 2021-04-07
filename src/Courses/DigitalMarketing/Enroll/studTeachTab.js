@@ -197,6 +197,11 @@ export default function TeachTab(props) {
     history.push("/profile-details");   
     dispatch(userLogin())
   };
+  const teachLogin = () => {
+    props.close();
+    history.push("/instructor");   
+    // dispatch(userLogin())
+  };
   return (
     <div className="studentLoginModal">
     <NavSignup handleClose={handleClose} open={open} />
@@ -251,11 +256,11 @@ export default function TeachTab(props) {
               <br />
               <input className={classes.textbox} type="password" />
               <div className="forget">Forgot Password</div>
-              <Link to="/instructor" >
-              <Button className="login-submit-button" style={{ background: "#D3262A 0% 0% no-repeat padding-box", color: "#FFFFFF" }}>
+              
+              <Button onClick={teachLogin} className="login-submit-button" style={{ background: "#D3262A 0% 0% no-repeat padding-box", color: "#FFFFFF" }}>
                   Sign In
                </Button>
-               </Link> 
+               
             </div>
          
           <div >

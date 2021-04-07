@@ -85,17 +85,12 @@ export default function Instructor() {
         <Contact email="Johndeo@gmail.com" contact="8884115208" city="Bangalore,Karnataka" street="12th cross, BTM Layout" pin="Bangalore India,560078" />
       </div>
       <div class="col-md-8">
-        <div className="profile-tabs">
+        <div className="profile-tabs tutorTabs">
           <TutorTabs />
         </div>
       </div>
       
-      <div className="uk-hidden@s uk-padding ">
-        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="true">
-          
-
-        </div>
-      </div>
+      
       <BestPlan />
     </div>
   )

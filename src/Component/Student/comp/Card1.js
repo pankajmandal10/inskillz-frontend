@@ -3,7 +3,7 @@ import "./Selling.css"
 import image3 from "../../Assets/image/image3.png"
 import star from "../../Assets/image/star.svg";
 import star1 from "../../Assets/image/star1.svg";
-
+import CourseRating from './courseRating'
 export default class Card1 extends Component {
   render() {
     return (
@@ -14,14 +14,15 @@ export default class Card1 extends Component {
           <p className="name">{this.props.name}</p>
           <p className="instructor">By instructor Name</p>
           <div className="uk-flex uk-flex-between">
-            <div className="uk-flex">
+            <CourseRating></CourseRating>
+            {/* <div className="uk-flex">
               <img className="star" src={star} />
               <img className="star" src={star} />
               <img className="star" src={star} />
               <img className="star" src={star} />
               <img className="star" src={star1} />
               <span className="rate" style={{ color: "#ffffff", fontSize: "12px" }}> 5.0</span>
-            </div>
+            </div> */}
             <span className="view">View Course</span>
 
           </div>

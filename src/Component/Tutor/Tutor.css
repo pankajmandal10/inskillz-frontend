@@ -87,15 +87,19 @@ padding: 20px;
 }
 .free{
     background: transparent linear-gradient(180deg, #872E4A 0%, #441725 100%) 0% 0% no-repeat padding-box;
-    width: 23.41vw;
-    height: 13.7vh;
+    height: 85px;
     text-align: center;
     font: normal normal 300 30px Roboto;
     letter-spacing: 0px;
     color: #FFFFFF;
-    padding-top: 23px;
+    margin-bottom: 25px;
 }
-
+.free p , .standard p , .premium p{
+  font: normal normal 300 30px Roboto;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  margin-top: 24px;
+}
 .uk-card-header{
     padding: 0% !important;
 }
@@ -163,13 +167,12 @@ padding: 20px;
 }
 .standard{
     background: transparent linear-gradient(262deg, #2E5B9A 0%, #3583C5 100%) 0% 0% no-repeat padding-box;
-    width: 23.41vw;
-    height: 13.7vh;
+    height: 85px;
     text-align: center;
     font: normal normal 300 30px Roboto;
     letter-spacing: 0px;
     color: #FFFFFF;
-    padding-top: 23px;
+    margin-bottom: 25px;
 }
 .select-standard-button{
     width: 200px;
@@ -184,13 +187,12 @@ padding: 20px;
 }
 .premium{
     background: transparent linear-gradient(180deg, #00D98E 0%, #006D47 100%) 0% 0% no-repeat padding-box;
-    width: 23.41vw;
-    height: 13.7vh;
+    height: 85px;
     text-align: center;
     font: normal normal 300 30px Roboto;
     letter-spacing: 0px;
     color: #FFFFFF;
-    padding-top: 23px;
+    margin-bottom: 25px;
 }
 .select-premium-button{
     width: 200px;
@@ -203,10 +205,16 @@ padding: 20px;
     color: #FFFFFF;
     opacity: 1;
 }
-  .bestPlan-card .uk-card .uk-card-hover .uk-card-body .uk-text-center{
-    height: 87vh;
-  }
-
+.bestPlan-card  .uk-card-body {
+  padding-bottom: 30px !important;
+}
+/* tabs  */
+.activeCourses .MuiTabs-flexContainer .Mui-selected span{
+  color: #ffffff !important;
+}
+.activeCourses .MuiTabs-indicator{
+  display: none !important;
+}
 /* schedule live class  Modal */
 
 .schedule-live-class{
@@ -555,7 +563,9 @@ padding: 20px;
       color: #FFFFFF;
       margin-top: 11vh;
     }
-
+    .Active-Course{
+      margin-bottom: 30px;
+    }
 
   @media only screen and (max-width: 544px) {
 
@@ -624,27 +634,12 @@ padding: 20px;
     .tutor-plan .uk-grid>* {
       padding-left: 0px;
     }
-    .free {
-      width: 31vw;
-      height: 10vh;
-      font: normal normal 300 20px Roboto;
-    }
-    .standard {
-      width: 31vw;
-      height: 10vh;
-      font: normal normal 300 20px Roboto;
-    }
-    .premium {
-      width: 31vw;
-      height: 10vh;
-      font: normal normal 300 20px Roboto;
-    }
+    
     .monthly-fee {
       font: normal normal 900 23px/21px Roboto;
     }
-    .bestPlan-card .uk-card .uk-card-hover .uk-card-body .uk-text-center{
-      width: 32vw;
-      height: 74vh;
+    .bestPlan-card  .uk-card-body {
+      padding-bottom: 30px !important;
     }
     
     .select-button {
@@ -656,18 +651,22 @@ padding: 20px;
     .select-premium-button {
       width: 31vw;
     }
-    .text-area {
-      width: 31vw;
-    }
-    .text-area1 {
-      width: 31vw;
-    }
+    
     .sample-text {
       font: normal normal normal 10px/35px Roboto;
-      padding-left: 4px;
+      padding-left: 15px;
     }
     .sample-text1 {
       font: normal normal normal 10px/35px Roboto;
-      padding-left: 4px;
+      padding-left: 15px;
     }
+    .tutorTabs .MuiBox-root{
+      padding-left: 5px;
+      padding-right:5px;
+
+    }
+    .tutor-plan{
+      margin-left: 12px;
+    }
+    
   }

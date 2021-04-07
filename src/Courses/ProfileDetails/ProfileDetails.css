@@ -228,6 +228,10 @@ border-radius: 6px;
 font-size: 18px;
 margin-top: -52px;
 }
+.offlineBtns{
+  float: right;
+  margin-top: -52px;
+}
 .edit-courses-button{
 width: 142px;
 height: 40px;
@@ -237,8 +241,18 @@ border-radius: 6px;
 opacity: 1;
 color: #D3262A;
 background: #fff;
-position: absolute;
-margin-top: -52px;
+
+}
+.viewDetail-button{
+  margin-left: 10px;
+  color: #FFFFFF;
+  border: none;
+  width: 142px;
+  height: 40px;
+  background: #D3262A 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 6px;
+  font-size: 18px;
 }
 .recommended{
 text-align: left;
@@ -529,6 +543,7 @@ float: right;
   .contactContainer{
     max-width: 103vw !important;
   }
+  
   .get-started-text{
     padding: 10px 0px 10px 22px;
     font: normal normal bold 16px/21px Roboto;
@@ -580,6 +595,11 @@ float: right;
     height: 30px;
     margin-top: -45px;
   }
+  .viewDetail-button{
+    width: 90px;
+    font-size: 14px !important;
+    height: 30px;
+  }
   .recMobileSlider li{
     padding: 0px 15px !important;
   }
@@ -603,11 +623,14 @@ float: right;
     margin-bottom: 30px;
   }
   .edit-courses-button {
-    width: 87px;
+    width: 90px;
     height: 30px;
     font-size: 13px;
-    margin-top: -80px;
-    margin-left: 14vw;
+    
+  }
+  .offlineBtns{
+    margin-top: 5px;
+    float: left;
   }
   .scheduleLiveCourses{
     width: 128px;

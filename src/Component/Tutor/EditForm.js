@@ -42,12 +42,11 @@ let chapterName6 = [
   'API',
 ];
 let categories = [
-  'Category 01',
-  'Category 01',
-  'Category 01',
-  'Category 01',
-  'Category 01',
-  'Category 01',
+  'Illustration',
+  'Graphic Design',
+  'UI-UX Design',
+  'Web Devolopment'
+  
 ];
 
 export default function EditForm() {
@@ -179,6 +178,7 @@ export default function EditForm() {
 
     console.log(course);
 
+
     // var v = document.getElementById('addCourse').checkValidity();
 
     // v.reportValidity();
@@ -227,11 +227,10 @@ export default function EditForm() {
                 <label className='edit-course-name'>Category</label>
 
                 <select
-                  name='numLectures'
-                  value={course.numLectures}
+                  name='category'
+                  value={course.category}
                   onChange={(e) => onInputChange(e)}
                   className='edit-inputType'
-                  //  onChange={(e) => handleDropdown(e)}
                 >
                   {categories.map((Course) => (
                     <option value={Course}>{Course}</option>

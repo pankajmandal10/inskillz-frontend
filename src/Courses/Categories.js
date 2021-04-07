@@ -47,9 +47,7 @@ export default function Categories() {
                             <Link color="inherit" href="/" >
                                 Photography
                         </Link>
-                        <Link color="inherit" href="/" >
-                        Digital Photography(11)
-                        </Link>
+
                             {/* <Typography color="textPrimary"></Typography> */}
                         </Breadcrumbs>
                     </div>
@@ -90,15 +88,15 @@ export default function Categories() {
                         <Link color="inherit" href="/" >
                             Photography
                         </Link>
-                        
+
 
                         <Typography color="textPrimary">Digital Photography</Typography>
                     </Breadcrumbs>
                 </div>
-                <div style={{marginLeft:'40px',marginRight:'25px'}}>
-                <hr></hr>
+                <div style={{ marginLeft: '40px', marginRight: '25px' }}>
+                    <hr></hr>
                 </div>
-                
+
             </div>
 
             <div className="container  uk-grid uk-visible@s">
@@ -107,7 +105,7 @@ export default function Categories() {
                         <div class="uk-width-auto">
                             <ul class="uk-tab-left" uk-tab="connect: #my-id">
                                 <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>All  <span className="numb" >123</span></a></li>
-                                <li>
+                                {/* <li>
                                     <a style={{ padding: "0px" }}>
                                         <ul uk-accordion="true">
 
@@ -127,8 +125,8 @@ export default function Categories() {
                                             </li>
                                         </ul>
                                     </a>
-                                </li>
-                                {/* <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>All  <span className="numb" >1234</span></a></li> */}
+                                </li> */}
+                                <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Photography  <span className="numb" >1234</span></a></li>
                                 <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Illustration  <span className="numb" >33</span></a></li>
                                 <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>Graphic-Design  <span className="numb" >12</span></a></li>
                                 <li><a style={{ justifyContent: 'space-between', display: 'flex' }}>UI UX Design  <span className="numb" >15</span></a></li>
@@ -152,7 +150,7 @@ export default function Categories() {
                 <div className="uk-width-3-4" >
                     <div class="uk-width-expand">
                         <ul id="my-id" class="uk-switcher">
-                            <li>
+                            {/* <li>
                                 <ul id="secondSwitch" class="uk-switcher">
                                     <li>
                                         <DigitalPhotography></DigitalPhotography>
@@ -160,7 +158,7 @@ export default function Categories() {
                                     </li>
                                     <li><h1>hii</h1></li>
                                 </ul>
-                            </li>
+                            </li> */}
                             <li>
                                 <DigitalPhotography></DigitalPhotography>
                             </li>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Card1 from "../Component/Student/comp/Card1"
+import Card1 from "../Component/Student/comp/carousalCard"
 import InfiniteCarousel from 'react-leaf-carousel';
 import { Link } from "react-router-dom";
 import image6 from "../Component/Assets/image/image6.png"

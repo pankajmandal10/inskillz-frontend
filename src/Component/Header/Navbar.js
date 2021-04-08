@@ -38,7 +38,7 @@ export default function Navbar() {
     <div className="inskillzNav" >
       <NavLogin handleClose={handleClose} open={open} />
       <div className="beta uk-visible@s">This site is under Development , some functionalities may not work properly.</div>
-      <nav className="navbar navbar-expand-lg navbar-light" style={{ background: "#3583c5", opacity: "1" }}>
+      <nav className="navbar navbar-expand-lg navbar-light " style={{ background: "#3583c5", opacity: "1" }}>
         <div className="containerNav">
           <Link to="/"><img className="inskill logo" src={Inskills} /></Link>
 
@@ -49,7 +49,10 @@ export default function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <Searchbox />
 
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0 " style={{ fontSize: "18px", padding: "0px 4vw" }}>
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 " >
+             
+            </ul>
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 " style={{ fontSize: "18px", paddingLeft: "4vw" }}>
               <li className="nav-item-1">
                 <Link className="nav-link" to="/courses" >Courses</Link>
               </li>

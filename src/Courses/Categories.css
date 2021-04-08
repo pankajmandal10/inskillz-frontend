@@ -78,9 +78,12 @@ html, body {
     content:"\2212";
 
   }
-      .catSwitcher a:hover {
-        color: #FFFFFF;
+  .catSwitcher a:hover{
+        color: #FFFFFF !important;
         background: #2066A2 0% 0% no-repeat padding-box;
+  }
+      .catSwitcher a:hover .numb  {
+        color: #FFFFFF !important;
       }
       
       .main {
@@ -112,7 +115,7 @@ html, body {
         color: #315069;
       }
       .catSwitcher{
-        overflow-y: scroll;
+        overflow-y: auto;
         max-height: 850px;
       }
       .photoContain{
@@ -126,6 +129,7 @@ html, body {
         color: white !important;
         border-left: none !important;
       }
+      
       .uk-tab>.uk-active>a{
         border-color: transparent !important;
         background-color:#2066A2 ;

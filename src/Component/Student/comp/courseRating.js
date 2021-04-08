@@ -1,5 +1,4 @@
 import React from 'react';
-import "./Curx.css"
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Rating from '@material-ui/lab/Rating';
@@ -79,10 +78,9 @@ const useStyles = makeStyles({
   },
 });
 
-export default function ReviewStar() {
+export default function CourseRating() {
   const classes = useStyles();
   const [value, setValue] = React.useState(2);
-  const [hover, setHover] = React.useState(-1);
 
   return (
     <div className={classes.root}>
@@ -93,16 +91,11 @@ export default function ReviewStar() {
           precision={0.5}
           value={value}
           emptyIcon={<StarBorderIcon fontSize="inherit" />}
-          onChange={(event, newValue) => {
-          setValue(newValue);
-        }}
-        onChangeActive={(event, newHover) => {
-          setHover(newHover);
-        }}
+         readOnly
         />
       </Box>
-      <div className="revTxt">
-      {value !== null && <Box >{labels[hover !== -1 ? hover : value]}</Box>}
+      <div className="courseRate">
+      {value !== null && <Box >{labels[value]}</Box>}
       </div>
     </div>
   );

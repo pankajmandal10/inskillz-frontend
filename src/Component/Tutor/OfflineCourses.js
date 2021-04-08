@@ -21,9 +21,12 @@ export default function ActiveCourses(props) {
                   <p className="instructor-names">Courses Language {props.coursesLanguage}</p>
                   <p className="progressTxt">Chapter 02</p>
                   <p className="chapterTag">The Crux of Social media</p>
+                  <div className='uk-flex offlineBtns'>
                   <span><Link to="/edit-course-Details"><button className="edit-courses-button" type="submit">Edit Courses</button></Link></span>
-                  <span><Link to="/curx"><button className="continue-button" type="submit">View Details</button></Link></span>
-                </div>
+                  <span><Link to="/curx"><button className="viewDetail-button" type="submit">View Details</button></Link></span>
+               
+                  </div>
+                  </div>
                </div>
               </div>
            </div>

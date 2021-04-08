@@ -10,6 +10,11 @@
     /* text-transform: capitalize; */
     opacity: 1
   }
+  .courseRate{
+    color: #ffffff;
+    margin-left: 5px;
+    margin-top: -5px;
+  }
   .inst{
     top: 442px;
     left: 99px;

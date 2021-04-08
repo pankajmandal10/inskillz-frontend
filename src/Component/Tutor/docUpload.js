@@ -1,13 +1,17 @@
 import React , { useState, useCallback } from 'react'
 import { useDropzone } from 'react-dropzone'
 
-export default function DocUpload() {
+export default function DocUpload( inputChange ) {
   const [previewImage, setPreviewImage] = useState("");
 
   const onDrop = useCallback(acceptedFiles => {
     console.log(acceptedFiles[0]);
+    const file = acceptedFiles[0];
+
     const name = acceptedFiles[0].name;
     previewImageHandler(name);
+    inputChange(file);
+
   }, [])
 
   const previewImageHandler = (name) => {

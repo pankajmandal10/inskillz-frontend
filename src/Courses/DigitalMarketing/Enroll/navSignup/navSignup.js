@@ -55,12 +55,25 @@ export default function NavSignup(props) {
   
 
   return (
-    <div>
+    <div className="signup-logo-inskillz">
       <Dialog onClose={props.handleClose} aria-labelledby="customized-dialog-title" open={props.open}>
-        <DialogTitle id="customized-dialog-title" onClose={props.handleClose}>
-        <img className="inskills-logo" src={Inskills} />
+        <DialogTitle id="customized-dialog-title" onClose={props.handleClose} >
+        <div className="uk-flex">
+          <div>
+            <img className="inskills-logo" src={Inskills} />
+          </div>
+          <div>
+            <div className="separators"></div>
+          </div>
+          <div>
+            <p className="student-signUp">Teacher SignUp</p>
+          </div>
+        </div>
+        {/* <img className="inskills-logo" src={Inskills} />
+        <span className="separators"></span>
+        <span ><h1 className="student-signUp">Student SignUp</h1></span> */}
         </DialogTitle>
-        <DialogContent>
+        <DialogContent style={{paddingTop:"0px"}}>
            <SignupTutor close={props.handleClose} />
         </DialogContent>
       </Dialog>

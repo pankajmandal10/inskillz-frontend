@@ -161,7 +161,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-export default function SignupTutor() {
+export default function SignupTutor(props) {
 
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
@@ -296,12 +296,10 @@ export default function SignupTutor() {
     <div className="studentLoginModal">
     <div className={classes.root}>
       <div className={classes.demo1}>
-        <AntTabs value={value} onChange={handleChange} aria-label="ant example">
-          <AntTab label="Teacher Sign Up" {...a11yProps(0)} />
-        </AntTabs>
-        <TabPanel value={value} index={0}>
-          <div className="separator"></div>
-          <span className="separatorTxt">Or</span>
+        
+        <TabPanel value={value} index={0} className="signup">
+          <div className="separator-signup"></div>
+          <span className="separatorTxt-signup">Or</span>
           <div className='uk-child-width-1-2 uk-grid'>
             <div>
               <div className="uk-margin-small-bottom">
@@ -328,23 +326,26 @@ export default function SignupTutor() {
                 <input className={classes.textbox} type="text" value={phone} onChange={handlePhoneChange}/>
                 <br />
               </div>
-              
-              {/* <div className="forget">Forgot Password</div> */}
-              {/* <Button className="login-submit-button" style={{ background: "#D3262A 0% 0% no-repeat padding-box", color: "#FFFFFF" }}> Sign In </Button> */}
+              <div className="uk-margin-small-bottom">
+                <lable className={classes.username}>Create Password</lable>
+                <br />
+                <input className={classes.textbox} type="password" value={password} onChange={handlePasswordChange} />
+              </div>
+              <div className="uk-margin-small-bottom">
+                <lable className={classes.username}>Conform Password</lable>
+                <br />
+                <input className={classes.textbox} type="password" value={confirmPassword} onChange={handleConfirmPasswordChange}/>
+              </div>
+
             </div>
          
-          <div >
-              <lable className={classes.username}>Create Password</lable>
-              <br />
-              <input className={classes.textbox} type="password" value={password} onChange={handlePasswordChange} />
-              <lable className={classes.username}>Conform Password</lable>
-              <br />
-              <input className={classes.textbox} type="password" value={confirmPassword} onChange={handleConfirmPasswordChange}/>
-
+          <div style={{paddingTop: "8vh"}}>
             <button className="googleSign uk-text-left"><i className="fab fa-google fa-lg uk-margin-right"></i>Sign Up with Google</button>
             <button className="facebookSign  uk-text-left uk-margin-small-top"><i className="fab fa-facebook fa-lg uk-margin-small-right"></i>Continue with Facebook</button>
-            <Typography className={classes.enrolled}>Not Enrolled yet ? Why Don't you Sign up quickly here</Typography>
-            <Button className={classes.signIn} onClick={submit}> Create Account </Button>
+            <Typography className={classes.enrolled}>Have already an account ? <a href="#" onClick={props.close}>Login here</a></Typography>
+            {/* <Button className={classes.signIn} onClick={submit}> Create Account </Button> */}
+            <Button className="login-submit-button" style={{ background: "#3583C5 0% 0% no-repeat padding-box", color: "#FFFFFF" }} onClick={submit}> Create Account </Button>
+            
           </div>
           </div>
 

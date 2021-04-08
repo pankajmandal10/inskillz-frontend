@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     border:"none"
   },
   heading: {
-    width: "68vw",
+    width: "100%",
     height: "7vh",
     border: "none",
     borderRadius: 6,
@@ -29,20 +29,11 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function Chapter() {
+export default function Chapter(props) {
   const classes = useStyles();
-  const[chapter , setChapter]= useState({
-    chapter: '',
-    url: '',
-    doc: '',
-  });;
+ 
 
-  const onInputChapter = (e) => {
-    setChapter({
-      ...chapter,
-      [e.target.name]: e.target.value,
-    });
-  };
+  
 
   return (
     <div className={classes.root}>
@@ -53,29 +44,42 @@ export default function Chapter() {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <input className={classes.heading} placeholder="Enter Chapter Name" />
+          <h6>Chapter {props.num}</h6>
         </AccordionSummary>
         <AccordionDetails className={classes.pdfUpload}>
+          <div className="dropContain">
           <Typography style={{background:"#FFFFFF"}}>
+          <label className='edit-course-name uk-margin-remove-top'>
+                Enter Chapter Name
+              </label>
+              <input
+                name='chapterName'
+                value={props.chapter.chapterName}
+                onChange={(e) => props.onInputChapter(e)}
+                className='edit-inputType'
+                type='text'
+                placeholder='Type here'
+              />
           <label className='edit-course-name uk-margin-top'>
                 Enter Video URL
               </label>
               <input
                 name='url'
-                value={chapter.url}
-                onChange={(e) => onInputChapter(e)}
-                className='edit-inputBatch'
+                value={props.chapter.url}
+                onChange={(e) => props.onInputChapter(e)}
+                className='edit-inputType'
                 type='text'
                 placeholder='Type here'
               />
               <div>
-                <div className='dropContain uk-margin-top'>
-                  <DocUpload />
+                <div className='dropContain uk-margin-top uk-padding-small'>
+                  <DocUpload inputChange={props.inputChange}/>
                 </div>
               </div>
           
               {/* <PdfUpload  /> */}
           </Typography>
+          </div>
         </AccordionDetails>
       </Accordion>
     </div>

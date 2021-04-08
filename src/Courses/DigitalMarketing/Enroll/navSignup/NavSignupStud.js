@@ -21,7 +21,7 @@ import SignupStud from "./SignupStud"
 const styles = (theme) => ({
   root: {
     margin: 0,
-    padding: "23px 0px 0px 42px",
+    padding: "2.7vh 0px 0px 2.2vw",
   },
   closeButton: {
     position: 'absolute',
@@ -56,12 +56,25 @@ export default function NavSignupStud(props) {
   
 
   return (
-    <div>
+    <div className="signup-logo-inskillz">
       <Dialog onClose={props.handleClose1} aria-labelledby="customized-dialog-title" open={props.open1}>
-        <DialogTitle id="customized-dialog-title" onClose={props.handleClose1}>
-        <img className="inskills-logo" src={Inskills} />
+        <DialogTitle id="customized-dialog-title" onClose={props.handleClose1} >
+        <div className="uk-flex">
+          <div>
+            <img className="inskills-logo" src={Inskills} />
+          </div>
+          <div>
+            <div className="separators"></div>
+          </div>
+          <div>
+            <p className="student-signUp">Student SignUp</p>
+          </div>
+        </div>
+        {/* <img className="inskills-logo" src={Inskills} />
+        <span className="separators"></span>
+        <span ><h1 className="student-signUp">Student SignUp</h1></span> */}
         </DialogTitle>
-        <DialogContent>
+        <DialogContent style={{paddingTop:"0px"}}>
            <SignupStud close={props.handleClose1} />
         </DialogContent>
       </Dialog>

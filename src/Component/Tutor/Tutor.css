@@ -58,6 +58,16 @@ padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #F4F4F4;
+  margin-top: 30px !important;
+}
+.uploadContainer{
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F4F4F4;
+  
 }
 .fa-file-pdf{
   color: rgb(216, 10, 10);
@@ -394,6 +404,11 @@ padding: 20px;
     letter-spacing: 0px;
     color: #FFFFFF;
   }
+  .uploadTxt{
+    font: normal normal normal 12px/16px Roboto;
+    font-weight: 300;
+    margin-top:10px ;
+  }
   .editForm .uk-card.uk-card-default.uk-card-large.uk-card-body{
     margin: 1.61vh 8.8vw 52vh 8.8vw;
   }
@@ -406,9 +421,10 @@ padding: 20px;
     font: normal normal normal 15px/24px Roboto;
     letter-spacing: 0px;
     color: #143754;
+    margin-top: 20px;
   }
   .edit-inputType {
-    width: 35vw;
+    width: 100%;
     height: 5.5vh;
     background: #F4F4F4 0% 0% no-repeat padding-box;
     border-radius: 6px;
@@ -418,7 +434,7 @@ padding: 20px;
     font: normal normal 300 16px/21px Roboto;
     letter-spacing: 0px;
     color: #143754;
-    padding-left: 20px;
+    padding-left: 10px;
   }
   .edit-inputBatch {
     width: 100%;
@@ -431,24 +447,24 @@ padding: 20px;
     font: normal normal 300 16px/21px Roboto;
     letter-spacing: 0px;
     color: #143754;
-    padding-left: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
   }
   .edit-course-includes {
-    width: 32.8vw;
+    width: 100%;
     height: 6.4vh;
     background: #F4F4F4 0% 0% no-repeat padding-box;
     border-radius: 6px;
     border: none;
-    margin-top: 5vh;
     text-align: left;
     font: normal normal 300 16px/21px Roboto;
     letter-spacing: 0px;
     color: #143754;
-    padding-left: 20px;
+    padding-left: 10px;
   }
   .edit-checkbox-style{
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
   }
   .edit-includes{
     margin-top: 4vh;
@@ -564,12 +580,19 @@ padding: 20px;
       margin-top: 11vh;
     }
 
-
+    .dropContain .MuiTypography-root{
+          width: 100% !important;
+    }
 
     .Active-Course{
       margin-bottom: 30px;
     }
-
+.editForm select{
+  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #f4f4f4;
+  -webkit-appearance: none;
+  background-position-x: 96%;
+  background-size: 3%;
+}
 
   @media only screen and (max-width: 544px) {
 

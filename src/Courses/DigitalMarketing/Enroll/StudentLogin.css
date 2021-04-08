@@ -94,12 +94,35 @@ opacity: 1;
   background-color: lightgray;
   left:50%
 }
+.separator-signup{
+  width: 2px;
+  margin-top: 62px;
+  height: 330px;
+  position: absolute;
+  background-color: lightgray;
+  left: 50%;
+}
 .separatorTxt{
   top: 65%;
   left:49%;
   position: absolute;
   background-color: white;
   font-size: 12px;
+}
+.separatorTxt-signup{
+  top: 57%;
+  left:49%;
+  position: absolute;
+  background-color: white;
+  font-size: 12px;
+}
+.separators{
+  width: 3px;
+  height: 40px;
+  position: absolute;
+  background-color: lightgray;
+  left:36%;
+
 }
 .login-blue-button{
   margin-top: 13px !important;
@@ -117,6 +140,13 @@ opacity: 1;
   font: normal normal normal 12px/14px Roboto;
   color: #143754;
   padding-left: 220px;
+}
+.student-signUp{
+  margin-top: 2vh;
+  padding-left: 2vw;
+  font: normal normal normal 25px/20px Roboto;
+  letter-spacing: 0px;
+  color: #143754;
 }
 @media only screen and (max-width: 544px){
   .MuiTabs-scroller.MuiTabs-fixed {
@@ -152,5 +182,13 @@ opacity: 1;
     padding-left: 0px !important;
     display: block !important;
     margin-top: 10px;
+  }
+  .student-signUp {
+    margin-top: 2vh;
+    font: normal normal normal 21px/20px Roboto;
+  }
+  .separators {
+    width: 3px;
+    left: 45%;
   }
 }

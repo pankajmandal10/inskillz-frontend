@@ -43,7 +43,7 @@ let chapterName6 = [
 ];
 let categories = [
   'Category 01',
-  'Category 01',
+  'Category 02',
   'Category 01',
   'Category 01',
   'Category 01',
@@ -148,6 +148,7 @@ export default function EditForm() {
       [e.target.name]: e.target.value,
     });
   };
+
   const onInputBatch = (e) => {
     setBatch({
       ...batch,
@@ -164,20 +165,28 @@ export default function EditForm() {
     courseData.set(
       'overViewImage',
       courseOverviewImage,
-      course.courseName + 'overview_image'
+      `${course.courseName
+        .toLowerCase()
+        .trim()
+        .replaceAll(' ', '')
+        .replace(/[^a-zA-Z ]/g, '')}_overview_image`
     );
     courseData.set(
       'broacherFile',
       courseBroacherFile,
-      course.courseName + 'broacher_file'
+      `${course.courseName
+        .toLowerCase()
+        .trim()
+        .replaceAll(' ', '')
+        .replace(/[^a-zA-Z ]/g, '')}_broacher_file`
     );
+
     courseData.set('courseName', course.courseName);
-    courseData.set('category', course.category);
     courseData.set('numLectures', course.numLectures);
+    courseData.set('instructor', course.instructor);
 
+    console.log(courseData);
     dispatch(addNewCourseAction(courseData));
-
-    console.log(course);
 
     // var v = document.getElementById('addCourse').checkValidity();
 
@@ -441,7 +450,11 @@ export default function EditForm() {
                   ) : (
                     <div>
                       <i className='fas fa-times-circle overviewCloseEdit'></i>
-                      <img className='overviewThumbnail' src={imageInput}></img>
+                      <img
+                        alt='overviewThumbnail'
+                        className='overviewThumbnail'
+                        src={imageInput}
+                      />
                     </div>
                   )}
                 </div>

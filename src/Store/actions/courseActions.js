@@ -36,3 +36,28 @@ export const addNewCourseAction = (courseData) => async (dispatch) => {
     });
   }
 };
+
+export const getAllCoursesAction = () => async (dispatch) => {
+  try {
+    dispatch({
+      type: GET_ALL_COURSES_REQUEST,
+    });
+
+    const { data } = await axios.get('/api/courses/listAllCourse');
+
+    console.log(data);
+
+    dispatch({
+      type: GET_ALL_COURSES_SUCCESS,
+      payload: data,
+    });
+  } catch (error) {
+    dispatch({
+      type: GET_ALL_COURSES_FAIL,
+      payload:
+        error.response && error.response.data.message
+          ? error.response.data.message
+          : error.message,
+    });
+  }
+};

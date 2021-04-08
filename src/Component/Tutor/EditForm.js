@@ -8,6 +8,8 @@ import PdfUpload from './pdfUpload';
 import DocUpload from './docUpload';
 import { useDispatch } from 'react-redux';
 import { addNewCourseAction } from '../../Store/actions/courseActions';
+import Chapter from './Chapter';
+import { Button } from 'bootstrap';
 
 let lectures = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let chapterName = [
@@ -141,18 +143,19 @@ export default function EditForm() {
       [e.target.name]: e.target.value,
     });
   };
-  const onInputChapter = (e) => {
-    setChapter({
-      ...chapter,
-      [e.target.name]: e.target.value,
-    });
-  };
+  // const onInputChapter = (e) => {
+  //   setChapter({
+  //     ...chapter,
+  //     [e.target.name]: e.target.value,
+  //   });
+  // };
   const onInputBatch = (e) => {
     setBatch({
       ...batch,
       [e.target.name]: e.target.value,
     });
   };
+  const [count, setCount] = useState(1);
 
   //Add Course Submit Handler
   const onSubmit = (e) => {
@@ -199,6 +202,10 @@ export default function EditForm() {
     //   console.log(data);
     // }
   };
+  const handleChapter = () => {
+     return (<Chapter />)
+     
+  }
   return (
     <div className='editForm'>
       <form id='addCourse'>
@@ -411,6 +418,38 @@ export default function EditForm() {
 
           <div class='uk-child-width-expand@s uk-margin-top uk-text-left'>
             <div className='form-details'>
+              <label className='edit-course-name'>Banner Image</label>
+              <br></br>
+              <div className='overviewContain'>
+                <div>
+                  {!imageInput ? (
+                    <div className='overviewImg uk-text-center'>
+                      <input
+                        type='file'
+                        accept='image/*'
+                        id='upload-image'
+                        onChange={(e) => handelImageInputChange(e)}
+                        hidden
+                      />
+                      <label style={{ color: 'lightgray' }} for='upload-image'>
+                        <i class='fas fa-plus'></i>
+                        <br></br>
+                        Upload Image
+                      </label>
+                    </div>
+                  ) : (
+                    <div>
+                      <i className='fas fa-times-circle overviewCloseEdit'></i>
+                      <img className='overviewThumbnail' src={imageInput}></img>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class='uk-child-width-expand@s uk-margin-top uk-text-left'>
+            <div className='form-details'>
               <label className='edit-course-name'>Course Overview</label>
               <br></br>
               <div className='overviewContain'>
@@ -418,7 +457,7 @@ export default function EditForm() {
                   name='overViewText'
                   value={course.overViewText}
                   onChange={(e) => onInputChange(e)}
-                  style={{ height: '120px' }}
+                  style={{ height: '120px', background: "#fff" }}
                   className='edit-inputBatch'
                 ></textarea>
                 <div>
@@ -459,9 +498,10 @@ export default function EditForm() {
             uk-grid='true'
           >
             <div className='chapter-details'>
-              <label className='edit-course-name'>Chapter 1</label>
+              <label className='edit-course-name'>Chapter {count}</label>
+              
               <div id='select-chapter-dropdown'>
-                <select
+                {/* <select
                   name='chapter'
                   value={chapter.chapter}
                   onChange={(e) => onInputChapter(e)}
@@ -471,9 +511,13 @@ export default function EditForm() {
                   {chapterName.map((Chapter) => (
                     <option value={Chapter}>{Chapter}</option>
                   ))}
-                </select>
+                </select> */}
+                <Chapter />
+                <button className="AddMoreChapter" type="button" onClick={() => handleChapter()}>Add More Chapter</button>
+
+      
               </div>
-              <label className='edit-course-name uk-margin-top'>
+              {/* <label className='edit-course-name uk-margin-top'>
                 Enter Video URL
               </label>
               <input
@@ -483,13 +527,13 @@ export default function EditForm() {
                 className='edit-inputBatch'
                 type='text'
                 placeholder='Type here'
-              />
+              /> */}
 
-              <div>
+              {/* <div>
                 <div className='dropContain uk-margin-top'>
                   <DocUpload></DocUpload>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -560,7 +604,7 @@ export default function EditForm() {
         </div>
     
         */}
-          <h5 className='uk-text-left uk-margin-large-top uk-margin-bottom'>
+          {/* <h5 className='uk-text-left uk-margin-large-top uk-margin-bottom'>
             Batches
           </h5>
           <div className='uk-child-width-1-3@s uk-text-left uk-grid'>
@@ -658,7 +702,120 @@ export default function EditForm() {
                 />
               </div>
             </div>
+          </div> */}
+          <div className="accordion accordion-flush" id="accordionFlushExample">
+             <div className="accordion-item">
+               <h2 className="accordion-header" id="flush-headingOne">
+                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style={{background:"#F4F4F4",borderRadius:"6px"}}>
+                    Batch 1
+                 </button>
+               </h2>
+               <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                 <div className="accordion-body">
+                   <div className='uk-child-width-1-3@s uk-text-left uk-grid'>
+                     <div>
+                       <label className='edit-course-name'>Batch Name</label>
+                       <input
+                          name='batch'
+                          value={batch.batch}
+                          onChange={(e) => onInputBatch(e)}
+                          className='edit-inputBatch'
+                          type='text'
+                          placeholder='Batch A'
+                       />
+                     </div>
+                   <div>
+                   <label className='edit-course-name'>Max Students Allowed</label>
+                   <input
+                     name='maxStudents'
+                     value={batch.maxStudents}
+                     onChange={(e) => onInputBatch(e)}
+                     className='edit-inputBatch'
+                     type='text'
+                     placeholder='100'
+                   />
+                 </div>
+            <div>
+              <label className='edit-course-name'>Class Start Date</label>
+              <input
+                name='classStartDate'
+                value={batch.classStartDate}
+                onChange={(e) => onInputBatch(e)}
+                className='edit-inputBatch'
+                type='text'
+                placeholder='DD:MM:YYYY'
+              />
+            </div>
+            <div className='uk-margin-top'>
+              <label className='edit-course-name'>Class End Date</label>
+              <input
+                name='classEndDate'
+                value={batch.classEndDate}
+                onChange={(e) => onInputBatch(e)}
+                className='edit-inputBatch'
+                type='text'
+                placeholder='DD:MM:YYYY'
+              />
+            </div>
+            <div className='uk-margin-top'>
+              <label className='edit-course-name'>Class Start Time</label>
+              <input
+                name='classStartTime'
+                value={batch.classStartTime}
+                onChange={(e) => onInputBatch(e)}
+                className='edit-inputBatch'
+                type='text'
+                placeholder='HH:MM'
+              />
+            </div>
+            <div className='uk-margin-top'>
+              <label className='edit-course-name'>Class End Time</label>
+              <input
+                name='classEndTime'
+                value={batch.classEndTime}
+                onChange={(e) => onInputBatch(e)}
+                className='edit-inputBatch'
+                type='text'
+                placeholder='HH:MM'
+              />
+            </div>
           </div>
+          <div class='uk-grid uk-child-width-expand@s uk-text-left' uk-grid>
+            <div className='form-details'>
+              <label className='edit-course-name'>Course Minimum Price</label>
+              <div>
+                <input
+                  name='minPrice'
+                  value={course.minPrice}
+                  onChange={(e) => onInputChange(e)}
+                  className='edit-inputType'
+                  type='text'
+                  placeholder='600'
+                />
+              </div>
+            </div>
+            <div className='form-details'>
+              <label className='edit-course-name'>Course Maximum Price</label>
+              <div>
+                <input
+                  name='maxPrice'
+                  value={course.maxPrice}
+                  onChange={(e) => onInputChange(e)}
+                  className='edit-inputType'
+                  type='text'
+                  placeholder='1500'
+                />
+              </div>
+            </div>
+          </div>
+                 </div>
+               </div>
+             </div>
+             <div>
+             <button className='AddMoreBatch'>Add More Batch</button>
+             </div>
+          </div>
+          
 
           <button
             type='submit'

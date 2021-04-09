@@ -6,6 +6,9 @@ import {
   GET_ALL_COURSES_FAIL,
   GET_ALL_COURSES_REQUEST,
   GET_ALL_COURSES_SUCCESS,
+  GET_ALL_CATEGORIES_REQUEST,
+  GET_ALL_CATEGORIES_SUCCESS,
+  GET_ALL_CATEGORIES_FAIL,
 } from '../actions/actionTypes';
 
 export const addNewCourseReducer = (state = {}, action) => {
@@ -56,7 +59,32 @@ export const getAllCoursesReducer = (state = { courses: [] }, action) => {
   }
 };
 
+export const getAllCategoriesReducer = (state = { categories: [] }, action) => {
+  switch (action.type) {
+    case GET_ALL_CATEGORIES_REQUEST:
+      return {
+        ...state,
+        loading: true,
+      };
+    case GET_ALL_CATEGORIES_SUCCESS:
+      return {
+        ...state,
+        loading: false,
+        categories: action.payload,
+      };
+    case GET_ALL_CATEGORIES_FAIL:
+      return {
+        ...state,
+        loading: false,
+        error: action.payload,
+      };
+    default:
+      return state;
+  }
+};
+
 export const courseReducer = combineReducers({
   addNewCourse: addNewCourseReducer,
   getAllCourses: getAllCoursesReducer,
+  getAllCategories: getAllCategoriesReducer,
 });

@@ -1,6 +1,5 @@
-import React,{useState} from 'react'
-import "../StudentLogin.css"
-
+import React, { useState } from 'react';
+import '../StudentLogin.css';
 
 import { makeStyles, withStyles } from '@material-ui/core/styles';
 import Tabs from '@material-ui/core/Tabs';
@@ -11,14 +10,19 @@ import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import { useHistory } from 'react-router-dom';
-
+import { useDispatch, useSelector } from 'react-redux';
 
 function TabPanel(props) {
+  //initialize
+  const dispatch = useDispatch();
+
+  const { loading, error, userInfo } = useSelector((state) => state.user.loign);
+
   const { children, value, index, ...other } = props;
 
   return (
     <div
-      role="tabpanel"
+      role='tabpanel'
       hidden={value !== index}
       id={`simple-tabpanel-${index}`}
       aria-labelledby={`simple-tab-${index}`}
@@ -125,44 +129,41 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
   },
   username: {
-    textAlign: "left",
-    font: "normal normal normal 15px/24px Roboto",
-    color: "#143754",
-    marginTop: 13
+    textAlign: 'left',
+    font: 'normal normal normal 15px/24px Roboto',
+    color: '#143754',
+    marginTop: 13,
   },
   textbox: {
     width: 200,
     height: 40,
-    background: "#F4F4F4 0% 0% no-repeat padding-box",
+    background: '#F4F4F4 0% 0% no-repeat padding-box',
     borderRadius: 6,
-    border: "none",
+    border: 'none',
   },
-
 
   enrolled: {
     marginTop: 30,
     width: 172,
     height: 33,
-    textAlign: "center",
-    font: "normal normal 300 12px/19px Roboto",
-    color: "#143754",
-    marginBottom:15
+    textAlign: 'center',
+    font: 'normal normal 300 12px/19px Roboto',
+    color: '#143754',
+    marginBottom: 15,
   },
   signIn: {
     marginTop: 13,
     width: 200,
     height: 35,
-    background: "#3583C5 0% 0% no-repeat padding-box",
-    boxShadow: "0px 3px 6px #00000029",
+    background: '#3583C5 0% 0% no-repeat padding-box',
+    boxShadow: '0px 3px 6px #00000029',
     borderRadius: 6,
-    color: "#FFFFFF",
-    textTransform:"capitalize"
-  }
+    color: '#FFFFFF',
+    textTransform: 'capitalize',
+  },
 }));
 
-
 export default function SignupTutor(props) {
-
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
@@ -173,185 +174,165 @@ export default function SignupTutor(props) {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const history = useHistory();
-  
 
-  function validateEmail(mail) 
-    {
-       if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(mail))
-       {
-         return (true)
-       }
-       
-       return (false)
+  function validateEmail(mail) {
+    if (
+      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
+        mail
+      )
+    ) {
+      return true;
     }
-    
-    function validatePhone(inputtxt)
-    {
-       var phoneno = /^\d{10}$/;
-       if((inputtxt.match(phoneno)))
-       {
-         return true;
-       }else{
 
-         return false;
-       }
-     }
+    return false;
+  }
 
+  function validatePhone(inputtxt) {
+    var phoneno = /^\d{10}$/;
+    if (inputtxt.match(phoneno)) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
   const handleFirstNameChange = (e) => {
-    		 	     
-    setFirstName(e.target.value);       
- }
- 
- const handleLastNameChange = (e) => {
-             
-    setLastName(e.target.value);        
- }
- 
- const handleEmailChange = (e) => {
-             
-    setEmail(e.target.value);        
- }
- 
- const handlePhoneChange = (e) => {
-             
-    setPhone(e.target.value);        
- }
- 
- const handlePasswordChange = (e) => {
-             
-    setPassword(e.target.value);        
- }
- 
- const handleConfirmPasswordChange = (e) => {
-             
-    setConfirmPassword(e.target.value);        
- }   
+    setFirstName(e.target.value);
+  };
 
- const submit = () => {       
-    
-  var fieldsEmpty = false;
-  var emailInValid = false;
-  var phoneInvalid = false;
-  
-  if(firstName == ''){
-     fieldsEmpty = true;
-  }
-  
-  if(lastName == ''){
-     fieldsEmpty = true;
-  }
-  
-  if(email == ''){
-    fieldsEmpty = true;
-  } 
-  
-  if(!validateEmail(email)){
-      emailInValid = true;               
-  }
-  
-  
- 
-  
-  
-  if(phone == ''){
-    fieldsEmpty = true;
-  }
-  
-  
-  if(!validatePhone(phone)){
-    phoneInvalid = true;              
-  }
-   
-  if(password == ''){
-    fieldsEmpty = true;
-  }
-  
-  if(confirmPassword == ''){
-    fieldsEmpty = true;
-  }
-  
-  if(fieldsEmpty){       	
-    
-    alert('One or more fields are empty');
-    
-  }else if(emailInValid){
-     alert("Please enter a valid email")    
-  }else if(phoneInvalid){
-     alert("Please enter a valid phone number")    
-  }else if(password !== confirmPassword){
-    alert('Passwords do not match');
-  }else{
-    alert('acount is created')
-  }
-  console.log("Teacher new Account is created",firstName,lastName,email,phone,password,confirmPassword);
- }
+  const handleLastNameChange = (e) => {
+    setLastName(e.target.value);
+  };
 
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handlePhoneChange = (e) => {
+    setPhone(e.target.value);
+  };
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const handleConfirmPasswordChange = (e) => {
+    setConfirmPassword(e.target.value);
+  };
+
+  const handelCreateAccount = () => {};
 
   return (
-    <div className="studentLoginModal">
-    <div className={classes.root}>
-      <div className={classes.demo1}>
-        
-        <TabPanel value={value} index={0} className="signup">
-          <div className="separator-signup"></div>
-          <span className="separatorTxt-signup">Or</span>
-          <div className='uk-child-width-1-2 uk-grid'>
-            <div>
-              <div className="uk-margin-small-bottom">
-                <lable className={classes.username}>First Name</lable>
-                <br />
-                <input className={classes.textbox}  type="text" value={firstName} onChange={handleFirstNameChange}/>
-                <br />
-              </div>
-              <div className="uk-margin-small-bottom">
-                <lable className={classes.username}>Last Name</lable>
-                <br />
-                <input className={classes.textbox} type="text" value={lastName} onChange={handleLastNameChange}/>
-                <br />
-              </div>
-              <div className="uk-margin-small-bottom">
-                <lable className={classes.username}>Email</lable>
-                <br />
-                <input className={classes.textbox} type="text" value={email} onChange={handleEmailChange} />
-                <br />
-              </div>
-              <div className="uk-margin-small-bottom">
-                <lable className={classes.username}>Phone</lable>
-                <br />
-                <input className={classes.textbox} type="text" value={phone} onChange={handlePhoneChange}/>
-                <br />
-              </div>
-              <div className="uk-margin-small-bottom">
-                <lable className={classes.username}>Create Password</lable>
-                <br />
-                <input className={classes.textbox} type="password" value={password} onChange={handlePasswordChange} />
-              </div>
-              <div className="uk-margin-small-bottom">
-                <lable className={classes.username}>Conform Password</lable>
-                <br />
-                <input className={classes.textbox} type="password" value={confirmPassword} onChange={handleConfirmPasswordChange}/>
+    <div className='studentLoginModal'>
+      <div className={classes.root}>
+        <div className={classes.demo1}>
+          <TabPanel value={value} index={0} className='signup'>
+            <div className='separator-signup'></div>
+            <span className='separatorTxt-signup'>Or</span>
+            <div className='uk-child-width-1-2 uk-grid'>
+              <div>
+                <div className='uk-margin-small-bottom'>
+                  <lable className={classes.username}>First Name</lable>
+                  <br />
+                  <input
+                    className={classes.textbox}
+                    type='text'
+                    value={firstName}
+                    onChange={handleFirstNameChange}
+                  />
+                  <br />
+                </div>
+                <div className='uk-margin-small-bottom'>
+                  <lable className={classes.username}>Last Name</lable>
+                  <br />
+                  <input
+                    className={classes.textbox}
+                    type='text'
+                    value={lastName}
+                    onChange={handleLastNameChange}
+                  />
+                  <br />
+                </div>
+                <div className='uk-margin-small-bottom'>
+                  <lable className={classes.username}>Email</lable>
+                  <br />
+                  <input
+                    className={classes.textbox}
+                    type='text'
+                    value={email}
+                    onChange={handleEmailChange}
+                  />
+                  <br />
+                </div>
+                <div className='uk-margin-small-bottom'>
+                  <lable className={classes.username}>Phone</lable>
+                  <br />
+                  <input
+                    className={classes.textbox}
+                    type='text'
+                    value={phone}
+                    onChange={handlePhoneChange}
+                  />
+                  <br />
+                </div>
+                <div className='uk-margin-small-bottom'>
+                  <lable className={classes.username}>Create Password</lable>
+                  <br />
+                  <input
+                    className={classes.textbox}
+                    type='password'
+                    value={password}
+                    onChange={handlePasswordChange}
+                  />
+                </div>
+                <div className='uk-margin-small-bottom'>
+                  <lable className={classes.username}>Conform Password</lable>
+                  <br />
+                  <input
+                    className={classes.textbox}
+                    type='password'
+                    value={confirmPassword}
+                    onChange={handleConfirmPasswordChange}
+                  />
+                </div>
               </div>
 
+              <div style={{ paddingTop: '8vh' }}>
+                <button className='googleSign uk-text-left'>
+                  <i className='fab fa-google fa-lg uk-margin-right'></i>Sign Up
+                  with Google
+                </button>
+                <button className='facebookSign  uk-text-left uk-margin-small-top'>
+                  <i className='fab fa-facebook fa-lg uk-margin-small-right'></i>
+                  Continue with Facebook
+                </button>
+                <Typography className={classes.enrolled}>
+                  Have already an account ?{' '}
+                  <a href='#' onClick={props.close}>
+                    Login here
+                  </a>
+                </Typography>
+                {/* <Button className={classes.signIn} onClick={submit}> Create Account </Button> */}
+                <Button
+                  className='login-submit-button'
+                  style={{
+                    background: '#3583C5 0% 0% no-repeat padding-box',
+                    color: '#FFFFFF',
+                  }}
+                  onClick={handelCreateAccount}
+                >
+                  {' '}
+                  Create Account{' '}
+                </Button>
+              </div>
             </div>
-         
-          <div style={{paddingTop: "8vh"}}>
-            <button className="googleSign uk-text-left"><i className="fab fa-google fa-lg uk-margin-right"></i>Sign Up with Google</button>
-            <button className="facebookSign  uk-text-left uk-margin-small-top"><i className="fab fa-facebook fa-lg uk-margin-small-right"></i>Continue with Facebook</button>
-            <Typography className={classes.enrolled}>Have already an account ? <a href="#" onClick={props.close}>Login here</a></Typography>
-            {/* <Button className={classes.signIn} onClick={submit}> Create Account </Button> */}
-            <Button className="login-submit-button" style={{ background: "#3583C5 0% 0% no-repeat padding-box", color: "#FFFFFF" }} onClick={submit}> Create Account </Button>
-            
-          </div>
-          </div>
-
-        </TabPanel>
+          </TabPanel>
+        </div>
       </div>
     </div>
-    </div>
-  )
+  );
 }

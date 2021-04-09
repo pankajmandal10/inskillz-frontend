@@ -8,7 +8,7 @@ import App from './App';
 
 import store from './Store/Store';
 
-axios.defaults.baseURL = 'http://localhost:5000/';
+axios.defaults.baseURL = 'https://inskillz-backend.herokuapp.com/';
 
 ReactDOM.render(
   <Provider store={store}>
